@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/igli/Desktop/LuaAssignment/cmake-build-release"/>
+				<Option working_dir="/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/igli/Desktop/LuaAssignment/cmake-build-release"/>
+				<Option working_dir="/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/igli/Desktop/LuaAssignment/cmake-build-release"/>
+				<Option working_dir="/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LuaAssignment">
-				<Option output="/Users/igli/Desktop/LuaAssignment/cmake-build-release/LuaAssignment" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/igli/Desktop/LuaAssignment/cmake-build-release"/>
+				<Option output="/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/LuaAssignment" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 LuaAssignment"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 LuaAssignment"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LuaAssignment/fast">
-				<Option output="/Users/igli/Desktop/LuaAssignment/cmake-build-release/LuaAssignment" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/igli/Desktop/LuaAssignment/cmake-build-release"/>
+				<Option output="/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/LuaAssignment" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,116 +75,116 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 LuaAssignment/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 LuaAssignment/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/AudioSource.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/AudioSource.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/AudioSource.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/AudioSource.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Collider.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Collider.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Component.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Component.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Entity.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Entity.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Game.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Game.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/IVector.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/IVector.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Physics.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Physics.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Rigidbody.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Rigidbody.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Rigidbody.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Rigidbody.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Scene.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Scene.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/SceneManager.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SceneManager.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/SceneManager.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SceneManager.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/SpriteRenderer.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SpriteRenderer.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/SpriteRenderer.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SpriteRenderer.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Text.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Text.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Text.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Text.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/TextComponent.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/TextComponent.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/TextComponent.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/TextComponent.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Utils.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Utils.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/Utils.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Utils.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Engine/main.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/main.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Game/MainGame.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainGame.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/Game/MainGame.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainGame.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/TestComponent.cpp">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/TestComponent.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/TestComponent.h">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/TestComponent.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/CMakeLists.txt">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/LuaAssignment/FindSFML.cmake">
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/FindSFML.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
