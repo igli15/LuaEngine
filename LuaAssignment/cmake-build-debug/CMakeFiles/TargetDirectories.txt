@@ -1,0 +1,3 @@
+/Users/igli/Desktop/LuaAssignment/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/igli/Desktop/LuaAssignment/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/igli/Desktop/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir
