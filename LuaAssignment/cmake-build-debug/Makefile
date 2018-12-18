@@ -231,6 +231,60 @@ Engine/Entity.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.s
 .PHONY : Engine/Entity.cpp.s
 
+Engine/EventQueue.o: Engine/EventQueue.cpp.o
+
+.PHONY : Engine/EventQueue.o
+
+# target to build an object file
+Engine/EventQueue.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.o
+.PHONY : Engine/EventQueue.cpp.o
+
+Engine/EventQueue.i: Engine/EventQueue.cpp.i
+
+.PHONY : Engine/EventQueue.i
+
+# target to preprocess a source file
+Engine/EventQueue.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.i
+.PHONY : Engine/EventQueue.cpp.i
+
+Engine/EventQueue.s: Engine/EventQueue.cpp.s
+
+.PHONY : Engine/EventQueue.s
+
+# target to generate assembly for a file
+Engine/EventQueue.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.s
+.PHONY : Engine/EventQueue.cpp.s
+
+Engine/EventType.o: Engine/EventType.cpp.o
+
+.PHONY : Engine/EventType.o
+
+# target to build an object file
+Engine/EventType.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.o
+.PHONY : Engine/EventType.cpp.o
+
+Engine/EventType.i: Engine/EventType.cpp.i
+
+.PHONY : Engine/EventType.i
+
+# target to preprocess a source file
+Engine/EventType.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.i
+.PHONY : Engine/EventType.cpp.i
+
+Engine/EventType.s: Engine/EventType.cpp.s
+
+.PHONY : Engine/EventType.s
+
+# target to generate assembly for a file
+Engine/EventType.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.s
+.PHONY : Engine/EventType.cpp.s
+
 Engine/Game.o: Engine/Game.cpp.o
 
 .PHONY : Engine/Game.o
@@ -555,6 +609,33 @@ Game/MainGame.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.s
 .PHONY : Game/MainGame.cpp.s
 
+Game/TestEvent.o: Game/TestEvent.cpp.o
+
+.PHONY : Game/TestEvent.o
+
+# target to build an object file
+Game/TestEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o
+.PHONY : Game/TestEvent.cpp.o
+
+Game/TestEvent.i: Game/TestEvent.cpp.i
+
+.PHONY : Game/TestEvent.i
+
+# target to preprocess a source file
+Game/TestEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.i
+.PHONY : Game/TestEvent.cpp.i
+
+Game/TestEvent.s: Game/TestEvent.cpp.s
+
+.PHONY : Game/TestEvent.s
+
+# target to generate assembly for a file
+Game/TestEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.s
+.PHONY : Game/TestEvent.cpp.s
+
 TestComponent.o: TestComponent.cpp.o
 
 .PHONY : TestComponent.o
@@ -603,6 +684,12 @@ help:
 	@echo "... Engine/Entity.o"
 	@echo "... Engine/Entity.i"
 	@echo "... Engine/Entity.s"
+	@echo "... Engine/EventQueue.o"
+	@echo "... Engine/EventQueue.i"
+	@echo "... Engine/EventQueue.s"
+	@echo "... Engine/EventType.o"
+	@echo "... Engine/EventType.i"
+	@echo "... Engine/EventType.s"
 	@echo "... Engine/Game.o"
 	@echo "... Engine/Game.i"
 	@echo "... Engine/Game.s"
@@ -639,6 +726,9 @@ help:
 	@echo "... Game/MainGame.o"
 	@echo "... Game/MainGame.i"
 	@echo "... Game/MainGame.s"
+	@echo "... Game/TestEvent.o"
+	@echo "... Game/TestEvent.i"
+	@echo "... Game/TestEvent.s"
 	@echo "... TestComponent.o"
 	@echo "... TestComponent.i"
 	@echo "... TestComponent.s"

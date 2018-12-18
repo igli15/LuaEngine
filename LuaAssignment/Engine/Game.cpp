@@ -8,7 +8,9 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <iostream>
 #include "SceneManager.h"
-//#include "../Game/MainMenu.h"
+
+#include "EventQueue.h"
+
 
 
 Engine::SceneManager* Engine::Game::m_sceneManager;
@@ -16,6 +18,8 @@ Engine::SceneManager* Engine::Game::m_sceneManager;
 Engine::Game* Engine::Game::instance;
 
 Engine::Physics* Engine::Game::m_physics;
+
+Engine::EventQueue* Engine::Game::m_eventQueue;
 
 Engine::Game::Game(unsigned int width, unsigned int height,std::string gameTitle)
 {
@@ -31,6 +35,7 @@ void Engine::Game::Build()
     m_screenBits = sf::VideoMode::getDesktopMode().bitsPerPixel;
     m_physics = GetPhysics();
     m_sceneManager = GetSceneManager();
+    m_eventQueue = GetEventQueue();
     m_window = new sf::RenderWindow(sf::VideoMode(m_width,m_height,m_screenBits),m_title);
    // (m_sceneManager->CreateScene<MainMenu>("MainMenu"));
 }
@@ -56,8 +61,10 @@ void Engine::Game::Gameloop()
 
             m_sceneManager->ClearDestroyedScene();
 
+            m_eventQueue->HandleEvents();
             if(m_sceneManager->GetCurrentScene() != nullptr)
             {
+
                 m_sceneManager->GetCurrentScene()->ClearDeadEntities();
                 m_sceneManager->GetCurrentScene()->UpdateScene(ticksPerMilliseconds); //Update the current scene
             }
@@ -123,6 +130,12 @@ unsigned int Engine::Game::Width()
 unsigned int Engine::Game::Height()
 {
     return m_height;
+}
+
+Engine::EventQueue *Engine::Game::GetEventQueue()
+{
+    if(m_eventQueue == nullptr) return new EventQueue();
+    return m_eventQueue;
 }
 
 

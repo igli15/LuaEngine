@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include "MainGame.h"
-
+#include "TestEvent.h"
 
 //There is supposed to be only one MainGame Class.
 //Use this class to create scenes via SceneManager Class.;
@@ -19,6 +19,16 @@ MainGame::MainGame() : Game(1920, 1080,"Engine")
     std::cout<<Game::Instance()->Width()<<std::endl;
     std::cout<<Game::Instance()->Height()<<std::endl;
 
+    TestEvent* t = new TestEvent();
 
+    Game::GetEventQueue()->RegisterEvent<TestEvent>( []() -> void {std::cout<<"WORKED";});
+
+    Game::GetEventQueue()->QueueEventType<TestEvent>();
+
+}
+
+void MainGame::TestFunction()
+{
+    std::cout<<"HELLO";
 }
 

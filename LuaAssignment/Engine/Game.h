@@ -8,6 +8,7 @@
 #include <vector>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include "Physics.h"
+#include "EventQueue.h"
 
 
 namespace Engine {
@@ -15,6 +16,7 @@ namespace Engine {
     class Entity;
     class Scene;
     class SceneManager;
+
 
     class Game {
     public:
@@ -26,6 +28,7 @@ namespace Engine {
         static Game* Instance();
         static SceneManager* GetSceneManager();
         static Physics* GetPhysics();
+        static EventQueue* GetEventQueue();
 
         unsigned int Width();
         unsigned int Height();
@@ -37,6 +40,7 @@ namespace Engine {
 
         static SceneManager* m_sceneManager;
         static Physics* m_physics;
+        static EventQueue* m_eventQueue;
 
     protected:
         unsigned int m_width;

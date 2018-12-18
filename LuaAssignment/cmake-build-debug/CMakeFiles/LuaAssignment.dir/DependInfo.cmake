@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/Collider.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/Component.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o"
+  "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventQueue.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.o"
+  "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/Game.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/IVector.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/Physics.cpp.o"
@@ -20,6 +22,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Utils.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/Utils.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/main.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/main.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainGame.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o"
+  "/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/TestEvent.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/TestComponent.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/TestComponent.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

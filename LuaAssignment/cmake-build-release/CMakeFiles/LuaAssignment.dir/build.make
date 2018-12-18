@@ -265,9 +265,48 @@ CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainGame.cpp -o CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.s
 
+CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.o: CMakeFiles/LuaAssignment.dir/flags.make
+CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.o: ../Engine/EventType.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.o -c /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.cpp
+
+CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.cpp > CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.i
+
+CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.cpp -o CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.s
+
+CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.o: CMakeFiles/LuaAssignment.dir/flags.make
+CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.o: ../Engine/EventQueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.o -c /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventQueue.cpp
+
+CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventQueue.cpp > CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.i
+
+CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventQueue.cpp -o CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.s
+
+CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o: CMakeFiles/LuaAssignment.dir/flags.make
+CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o: ../Game/TestEvent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o -c /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/TestEvent.cpp
+
+CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/TestEvent.cpp > CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.i
+
+CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/TestEvent.cpp -o CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.s
+
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: CMakeFiles/LuaAssignment.dir/flags.make
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: ../Engine/Entity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o -c /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.cpp
 
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.i: cmake_force
@@ -296,6 +335,9 @@ LuaAssignment_OBJECTS = \
 "CMakeFiles/LuaAssignment.dir/Engine/TextComponent.cpp.o" \
 "CMakeFiles/LuaAssignment.dir/Engine/AudioSource.cpp.o" \
 "CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o" \
+"CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.o" \
+"CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.o" \
+"CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o" \
 "CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o"
 
 # External object files for target LuaAssignment
@@ -317,6 +359,9 @@ LuaAssignment: CMakeFiles/LuaAssignment.dir/Engine/Text.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/Engine/TextComponent.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/Engine/AudioSource.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o
+LuaAssignment: CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.o
+LuaAssignment: CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.o
+LuaAssignment: CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/build.make
 LuaAssignment: /usr/local/lib/libsfml-system.dylib
@@ -325,7 +370,7 @@ LuaAssignment: /usr/local/lib/libsfml-graphics.dylib
 LuaAssignment: /usr/local/lib/libsfml-network.dylib
 LuaAssignment: /usr/local/lib/libsfml-audio.dylib
 LuaAssignment: CMakeFiles/LuaAssignment.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable LuaAssignment"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable LuaAssignment"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LuaAssignment.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

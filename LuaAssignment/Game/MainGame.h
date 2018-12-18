@@ -12,6 +12,8 @@ class MainGame : public Engine::Game {
 public:
 
     MainGame();
+
+    void TestFunction();
 };
 
 

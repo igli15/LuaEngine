@@ -106,6 +106,18 @@
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventQueue.cpp">
+			<Option target="LuaAssignment"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventQueue.h">
+			<Option target="LuaAssignment"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.cpp">
+			<Option target="LuaAssignment"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h">
+			<Option target="LuaAssignment"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
@@ -173,6 +185,12 @@
 			<Option target="LuaAssignment"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainGame.h">
+			<Option target="LuaAssignment"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/TestEvent.cpp">
+			<Option target="LuaAssignment"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/TestEvent.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/TestComponent.cpp">
