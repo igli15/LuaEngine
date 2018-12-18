@@ -20,7 +20,7 @@ namespace Engine {
 
     class Game {
     public:
-        ~Game();
+        virtual ~Game();
         void Build();
         void Gameloop();
         Game(unsigned int  width,unsigned int height,std::string gameTitle);
