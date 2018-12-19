@@ -13,6 +13,7 @@ Engine::Text::Text()
 void Engine::Text::Build()
 {
     m_textComponent =  AddComponent<TextComponent>();
+
     Entity::Build();
 }
 
@@ -32,5 +33,12 @@ void Engine::Text::SetPosition(float x, float y)
 void Engine::Text::SetText(const std::string &text)
 {
     m_textComponent->SetText(text);
+}
+
+void Engine::Text::Start()
+{
+    Entity::Start();
+    setOrigin(m_textComponent->GetText()->getLocalBounds().width/2,m_textComponent->GetText()->getLocalBounds().height/2);
+    m_textComponent->GetText()->setOrigin(m_textComponent->GetText()->getLocalBounds().width/2,m_textComponent->GetText()->getLocalBounds().height/2);
 }
 

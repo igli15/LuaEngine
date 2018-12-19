@@ -15,7 +15,7 @@ void MainLevel::BuildScene()
 
    Engine::Text* t = Instantiate<Engine::Text>();
    t->SetPosition(Engine::Game::Instance()->Width()/2, Engine::Game::Instance()->Height()/2);
-   
+
 
 }
 

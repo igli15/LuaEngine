@@ -19,6 +19,7 @@ private:
 public:
     Text();
     void Build() override;
+    void Start() override;
     void ScaleEntity(const float& scaleX,const float & scaleY) override;
     void SetPosition(float x,float y) override;
     void SetText(const std::string& text);
