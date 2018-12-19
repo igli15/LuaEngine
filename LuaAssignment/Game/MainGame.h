@@ -12,7 +12,7 @@ class MainGame : public Engine::Game {
 public:
 
     MainGame();
-    
+
 };
 
 

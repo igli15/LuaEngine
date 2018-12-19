@@ -829,6 +829,10 @@ CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventQueue.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Text.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/TextComponent.h

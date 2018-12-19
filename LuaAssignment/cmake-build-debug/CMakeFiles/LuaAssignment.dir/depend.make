@@ -828,6 +828,10 @@ CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: /usr/local/include/SFML/Window
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Engine/Collider.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Engine/Component.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Engine/Entity.h
+CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Engine/EventQueue.h
+CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Engine/EventType.h
+CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Engine/Game.h
+CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Engine/Physics.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Engine/Scene.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Engine/Text.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Engine/TextComponent.h

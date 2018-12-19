@@ -29,3 +29,8 @@ void Engine::Text::SetPosition(float x, float y)
     m_textComponent->GetText()->setPosition(x,y);
 }
 
+void Engine::Text::SetText(const std::string &text)
+{
+    m_textComponent->SetText(text);
+}
+

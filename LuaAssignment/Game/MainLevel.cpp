@@ -6,9 +6,17 @@
 #include "MainLevel.h"
 
 
+#include "../Engine/Text.h"
+#include "../Engine/Game.h"
+
 void MainLevel::BuildScene()
 {
     std::cout<<"Welcome to MainLevel"<<std::endl;
+
+   Engine::Text* t = Instantiate<Engine::Text>();
+   t->SetPosition(Engine::Game::Instance()->Width()/2, Engine::Game::Instance()->Height()/2);
+   
+
 }
 
 MainLevel::~MainLevel()
