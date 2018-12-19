@@ -780,6 +780,11 @@ CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainGame.cpp
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainGame.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/TestEvent.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lauxlib.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.hpp
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/luaconf.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lualib.h
  /usr/local/include/SFML/Config.hpp
  /usr/local/include/SFML/Graphics/BlendMode.hpp
  /usr/local/include/SFML/Graphics/Color.hpp

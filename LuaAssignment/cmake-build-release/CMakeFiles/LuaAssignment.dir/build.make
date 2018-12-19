@@ -369,6 +369,7 @@ LuaAssignment: /usr/local/lib/libsfml-window.dylib
 LuaAssignment: /usr/local/lib/libsfml-graphics.dylib
 LuaAssignment: /usr/local/lib/libsfml-network.dylib
 LuaAssignment: /usr/local/lib/libsfml-audio.dylib
+LuaAssignment: /usr/local/lib/liblua5.3.dylib
 LuaAssignment: CMakeFiles/LuaAssignment.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable LuaAssignment"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LuaAssignment.dir/link.txt --verbose=$(VERBOSE)

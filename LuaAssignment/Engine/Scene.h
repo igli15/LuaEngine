@@ -34,7 +34,7 @@ namespace Engine {
         void RenderAllText(sf::RenderWindow& window);
         virtual void StartScene();
         virtual void UpdateScene(float timeStep);
-        void BuildScene();
+        virtual void BuildScene() = 0;
         void DestroyAllEntities();
         void ClearDeadEntities();
 

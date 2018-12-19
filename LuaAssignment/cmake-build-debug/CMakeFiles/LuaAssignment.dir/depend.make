@@ -779,6 +779,11 @@ CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../Engine/Physics.h
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../Game/MainGame.cpp
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../Game/MainGame.h
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../Game/TestEvent.h
+CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../LuaSrc/lauxlib.h
+CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../LuaSrc/lua.h
+CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../LuaSrc/lua.hpp
+CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../LuaSrc/luaconf.h
+CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../LuaSrc/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: /usr/local/include/SFML/Config.hpp
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: /usr/local/include/SFML/Graphics/BlendMode.hpp
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: /usr/local/include/SFML/Graphics/Color.hpp

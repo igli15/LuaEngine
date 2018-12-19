@@ -17,5 +17,15 @@ if (SFML_FOUND)
 endif()
 
 
+FIND_PACKAGE(Lua 5.3 REQUIRED)
+
+set(INCLUDE_DIRS ${LUA_INCLUDE_DIR})
+
+add_definitions(-DLUA)
+
+include_directories(${INCLUDE_DIRS})
+
+target_link_libraries(${ProjectId} ${LUA_LIBRARY})
+
 
 

@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include "../LuaSrc/lua.hpp"
 #include "MainGame.h"
 #include "TestEvent.h"
 
@@ -14,6 +15,12 @@
 MainGame::MainGame() : Game(1920, 1080,"Engine")
 {
     Game::Build();   //Used to build the game
+
+    lua_State* lua = luaL_newstate();
+    luaL_openlibs(lua);
+    luaL_loadfile(lua,"../LuaScripts/HelloWorld.lua");
+    lua_call(lua,0,0);
+    lua_close(lua);
 
     std::cout<<"Hello World "<<std::endl;
     std::cout<<Game::Instance()->Width()<<std::endl;

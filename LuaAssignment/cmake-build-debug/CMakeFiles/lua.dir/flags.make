@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_FLAGS =  -std=c++11 -g  
 
-CXX_DEFINES = -DLUA
+CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include -I/usr/local/include/lua 
+CXX_INCLUDES = -I/usr/local/include -I/usr/local/bin -I/usr/local/include/lua 
 

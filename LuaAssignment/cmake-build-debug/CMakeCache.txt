@@ -203,11 +203,35 @@ CMAKE_STRIP:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The directory containing a CMake configuration file for LUA53.TXT.
+LUA53.TXT_DIR:PATH=LUA53.TXT_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for LUA53.
+LUA53_DIR:PATH=LUA53_DIR-NOTFOUND
+
+//Path to a file.
+LUA_INCLUDE_DIR:PATH=/usr/local/include/lua
+
+//Path to a library.
+LUA_LIBRARY:FILEPATH=/usr/local/lib/liblua5.3.dylib
+
+//The directory containing a CMake configuration file for Lua53.5.
+Lua53.5_DIR:PATH=Lua53.5_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for Lua53.
+Lua53_DIR:PATH=Lua53_DIR-NOTFOUND
+
 //Value Computed by CMake
 LuaAssignment_BINARY_DIR:STATIC=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug
 
 //Value Computed by CMake
 LuaAssignment_SOURCE_DIR:STATIC=/Users/igli/Desktop/LuaEngine/LuaAssignment
+
+//The directory containing a CMake configuration file for LuaFind.
+LuaFind_DIR:PATH=LuaFind_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for Makefile.
+Makefile_DIR:PATH=Makefile_DIR-NOTFOUND
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
@@ -417,6 +441,12 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Lua
+FIND_PACKAGE_MESSAGE_DETAILS_Lua:INTERNAL=[/usr/local/lib/liblua5.3.dylib][/usr/local/include/lua][v5.3.5(5.3)]
+//ADVANCED property for variable: LUA_INCLUDE_DIR
+LUA_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LUA_LIBRARY
+LUA_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SFML_AUDIO_LIBRARY_DYNAMIC_DEBUG
