@@ -22,6 +22,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Utils.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/Utils.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/main.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/main.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainGame.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o"
+  "/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainLevel.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/TestEvent.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/TestComponent.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/TestComponent.cpp.o"
   )

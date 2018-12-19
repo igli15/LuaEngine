@@ -25,6 +25,9 @@ namespace Engine {
     public:
         void HandleEvents();
 
+        /** Queue An Event Type
+         * @tparam T
+         */
         template<typename T>
         void QueueEventType() {
             T *eventType = new T();
@@ -32,6 +35,10 @@ namespace Engine {
             m_eventTypes.push_back(eventType);
         }
 
+        /** Register events is used once to register a handler(function) To a specific Event Type
+         * @tparam T EventType
+         * @param functionToAdd functionHandler
+         */
         template<typename T>
         void RegisterEvent(const std::function<void()> &functionToAdd)
         {

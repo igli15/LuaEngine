@@ -27,14 +27,13 @@ namespace Engine {
         void ClearDestroyedScene();
 
         template <typename  T>
-        T* CreateScene(std::string sceneName)
+        T* CreateScene(const std::string& sceneName)
         {
             if(m_currentScene != nullptr) DestroyScene(m_currentScene);
-            T* scene = new T(sceneName);
+            T* scene = new T();
             m_currentScene = scene;
+            m_currentScene->SetName(sceneName);
             m_currentScene->BuildScene();
-            m_currentScene->StartScene();
-           // std::cout<<"Created Scene"<<std::endl;
 
             return scene;
         }

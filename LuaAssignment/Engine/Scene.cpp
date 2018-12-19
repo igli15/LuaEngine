@@ -8,9 +8,9 @@
 #include "SpriteRenderer.h"
 #include <iostream>
 
-Engine::Scene::Scene(const std::string &name)
+Engine::Scene::Scene()
 {
-    m_name = name;
+
 }
 
 std::string Engine::Scene::GetName()
@@ -27,15 +27,6 @@ void Engine::Scene::RenderAllEntities(sf::RenderWindow& window)
     for (int i = m_spriteRenderVector.size() -1 ; i >= 0; i--)
     {
         m_spriteRenderVector[i]->RenderSprite(window);
-    }
-}
-
-
-void Engine::Scene::StartScene()
-{
-    for(int i = m_entities.size() - 1; i >= 0; i-- )
-    {
-        m_entities[i]->Start();
     }
 }
 
@@ -99,6 +90,11 @@ void Engine::Scene::RenderAllText(sf::RenderWindow& window)
     {
         m_textRenderVector[i]->DrawText(window);
     }
+}
+
+void Engine::Scene::SetName(const std::string &name)
+{
+    m_name = name;
 }
 
 

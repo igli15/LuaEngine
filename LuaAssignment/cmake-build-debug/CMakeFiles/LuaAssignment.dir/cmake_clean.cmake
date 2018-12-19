@@ -18,6 +18,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.o"
   "CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.o"
   "CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o"
+  "CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o"
   "CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o"
   "LuaAssignment.pdb"
   "LuaAssignment"

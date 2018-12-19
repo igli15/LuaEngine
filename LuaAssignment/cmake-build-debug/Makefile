@@ -609,6 +609,33 @@ Game/MainGame.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.s
 .PHONY : Game/MainGame.cpp.s
 
+Game/MainLevel.o: Game/MainLevel.cpp.o
+
+.PHONY : Game/MainLevel.o
+
+# target to build an object file
+Game/MainLevel.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o
+.PHONY : Game/MainLevel.cpp.o
+
+Game/MainLevel.i: Game/MainLevel.cpp.i
+
+.PHONY : Game/MainLevel.i
+
+# target to preprocess a source file
+Game/MainLevel.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.i
+.PHONY : Game/MainLevel.cpp.i
+
+Game/MainLevel.s: Game/MainLevel.cpp.s
+
+.PHONY : Game/MainLevel.s
+
+# target to generate assembly for a file
+Game/MainLevel.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.s
+.PHONY : Game/MainLevel.cpp.s
+
 Game/TestEvent.o: Game/TestEvent.cpp.o
 
 .PHONY : Game/TestEvent.o
@@ -726,6 +753,9 @@ help:
 	@echo "... Game/MainGame.o"
 	@echo "... Game/MainGame.i"
 	@echo "... Game/MainGame.s"
+	@echo "... Game/MainLevel.o"
+	@echo "... Game/MainLevel.i"
+	@echo "... Game/MainLevel.s"
 	@echo "... Game/TestEvent.o"
 	@echo "... Game/TestEvent.i"
 	@echo "... Game/TestEvent.s"

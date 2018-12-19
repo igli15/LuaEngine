@@ -5,7 +5,10 @@
 #include <iostream>
 #include "../LuaSrc/lua.hpp"
 #include "MainGame.h"
+#include "../Engine/SceneManager.h"
+#include "../Engine/Scene.h"
 #include "TestEvent.h"
+#include "MainLevel.h"
 
 //There is supposed to be only one MainGame Class.
 //Use this class to create scenes via SceneManager Class.;
@@ -26,16 +29,13 @@ MainGame::MainGame() : Game(1920, 1080,"Engine")
     std::cout<<Game::Instance()->Width()<<std::endl;
     std::cout<<Game::Instance()->Height()<<std::endl;
 
+    Game::GetSceneManager()->CreateScene<MainLevel>("MainLevel");
+
     TestEvent* t = new TestEvent();
 
     Game::GetEventQueue()->RegisterEvent<TestEvent>( []() -> void {std::cout<<"WORKED";});
 
     Game::GetEventQueue()->QueueEventType<TestEvent>();
 
-}
-
-void MainGame::TestFunction()
-{
-    std::cout<<"HELLO";
 }
 

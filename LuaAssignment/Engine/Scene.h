@@ -28,22 +28,28 @@ namespace Engine {
         std::vector<Engine::SpriteRenderer*> m_spriteRenderVector;
         std::vector<Engine::TextComponent*> m_textRenderVector;
         std::vector<Engine::Entity*> m_EntityGarbage;
-        Scene(const std::string& name);
+        Scene();
         std::string GetName();
         void RenderAllEntities(sf::RenderWindow& window);
         void RenderAllText(sf::RenderWindow& window);
-        virtual void StartScene();
         virtual void UpdateScene(float timeStep);
         virtual void BuildScene() = 0;
         void DestroyAllEntities();
         void ClearDeadEntities();
+        void SetName(const std::string& name);
 
+        /*!
+         * Used to Instantiate an GameObject In the Current Scene.
+         * @tparam T Type of GameObject
+         * @return Pointer to the created GameObject
+         */
         template <typename T>
-        T* Instantiate()     //Instansiate is used to spawn entities in the current scene.
+        T* Instantiate()
         {
             T* entityToCreate = new T;
             m_entities.push_back(entityToCreate);
             m_entities.at(m_entities.size() - 1)->parentScene = this;
+            m_entities.at(m_entities.size() - 1)->Build();
             m_entities.at(m_entities.size() - 1)->Start();
             return entityToCreate;
         }
