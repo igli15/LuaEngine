@@ -11,7 +11,11 @@ void Engine::SpriteRenderer::RenderSprite(sf::RenderWindow &window)
 {
     if(m_sprite != nullptr)
     {
-        window.draw(*m_sprite);
+        sf::RenderStates spriteRenderStates(m_sprite->getTransform());
+
+        spriteRenderStates.transform *= m_parent->getTransform();
+
+        window.draw(*m_sprite,spriteRenderStates);
     }
 
 }
@@ -46,7 +50,7 @@ void Engine::SpriteRenderer::CreateSprite(const std::string& filename)
     m_texture->loadFromFile(filename);
     m_sprite = new sf::Sprite();
     m_sprite->setTexture(*m_texture);
-    m_sprite->setOrigin(m_sprite->getGlobalBounds().width/2,m_sprite->getGlobalBounds().height/2);
+    //m_sprite->setOrigin(m_sprite->getLocalBounds().width/2,m_sprite->getLocalBounds().height/2);
 }
 
 sf::Sprite *Engine::SpriteRenderer::GetSprite()
@@ -59,7 +63,6 @@ void Engine::SpriteRenderer::Start()
 {
     Component::Start();
     m_parent->parentScene->m_spriteRenderVector.push_back(this);
-    //std::cout<<"Added"<<std::endl;
 }
 
 Engine::SpriteRenderer::~SpriteRenderer()

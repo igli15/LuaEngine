@@ -22,6 +22,7 @@ std::string Engine::Scene::GetName()
 
 void Engine::Scene::RenderAllEntities(sf::RenderWindow& window)
 {
+
     if( m_spriteRenderVector.size() == 0) return;
 
     for (int i = m_spriteRenderVector.size() -1 ; i >= 0; i--)

@@ -28,46 +28,47 @@ void Engine::Entity::SetTag(const std::string& tag)
 void Engine::Entity::Move(float x, float y)
 {
     move(x,y);
-    m_sprite->move(x,y);
+
 }
 
 void Engine::Entity::Move(const sf::Vector2f& vec)
 {
     move(vec);
-    if(m_sprite != nullptr)
-    m_sprite->move(vec);
 }
 
 void Engine::Entity::SetPosition(float x, float y)
 {
     setPosition(x,y);
-    if(m_sprite!= nullptr)
-    m_sprite->setPosition(x,y);
+
+    /*if(m_sprite!= nullptr)
+    {
+        m_sprite->setPosition(x, y);
+    }*/
 }
 
 void Engine::Entity::SetPosition(const sf::Vector2f& vec)
 {
     setPosition(vec);
-    if(m_sprite!= nullptr)
-    m_sprite->setPosition(vec);
+
 }
 
 sf::Vector2f Engine::Entity::GetPosition()
 {
-    if(m_sprite!= nullptr)
-    return m_sprite->getPosition();
+    return getPosition();
 }
 
 void Engine::Entity::SetRotation(float angle)
 {
     setRotation(angle);
-    m_sprite->setRotation(angle);
+
+    /*if(m_sprite != nullptr)
+    m_sprite->setRotation(angle);*/
 }
 
 void Engine::Entity::Rotate(float angle)
 {
     rotate(angle);
-    m_sprite->rotate(angle);
+
 }
 
 
@@ -205,10 +206,6 @@ unsigned int Engine::Entity::ID() const
 void Engine::Entity::ScaleEntity(const float &scaleX, const float &scaleY)
 {
     setScale(scaleX,scaleY);
-    if(m_sprite != nullptr)
-    {
-        m_sprite->setScale(scaleX,scaleY);
-    }
 
     Collider* collider = GetComponent<Collider>();
     if(collider != nullptr)
