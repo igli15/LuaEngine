@@ -3,6 +3,7 @@
 #include <iostream>
 #include "IVector.h"
 #include "math.h"
+#include <algorithm>
 #include "Collider.h"
 
 std::map<std::string,Engine::Entity*> Engine::Entity::TagDictionary;
@@ -36,23 +37,17 @@ void Engine::Entity::Move(const sf::Vector2f& vec)
     move(vec);
 }
 
-void Engine::Entity::SetPosition(float x, float y)
+void Engine::Entity::SetLocalPosition(float x, float y)
 {
-    setPosition(x,y);
-
-    /*if(m_sprite!= nullptr)
-    {
-        m_sprite->setPosition(x, y);
-    }*/
+    setPosition(x, y);
 }
 
-void Engine::Entity::SetPosition(const sf::Vector2f& vec)
+void Engine::Entity::SetLocalPosition(const sf::Vector2f &vec)
 {
     setPosition(vec);
-
 }
 
-sf::Vector2f Engine::Entity::GetPosition()
+sf::Vector2f Engine::Entity::GetLocalPosition()
 {
     return getPosition();
 }
@@ -139,6 +134,7 @@ Engine::Entity::~Entity()
     }
 
     delete m_sprite;
+    m_parentEntity = nullptr;
     m_sprite = nullptr;
     parentScene = nullptr;
 }
@@ -203,7 +199,7 @@ unsigned int Engine::Entity::ID() const
     return m_id;
 }
 
-void Engine::Entity::ScaleEntity(const float &scaleX, const float &scaleY)
+void Engine::Entity::ScaleEntityLocal(const float &scaleX, const float &scaleY)
 {
     setScale(scaleX,scaleY);
 
@@ -212,6 +208,97 @@ void Engine::Entity::ScaleEntity(const float &scaleX, const float &scaleY)
     {
         collider->SetWidth(m_width * scaleX);
     }
+}
+
+void Engine::Entity::AddChild(Engine::Entity *child)
+{
+    if(std::find(m_childerens.begin(),m_childerens.end(),child) != m_childerens.end())
+    {
+        return;
+    }
+
+    child->SetParent(this);
+    m_childerens.push_back(child);
+}
+
+void Engine::Entity::SetParent(Engine::Entity* parent)
+{
+    m_parentEntity = parent;
+    m_topParentNode = GetParentRecursively();
+}
+
+Engine::Entity *Engine::Entity::GetParentRecursively()
+{
+    Entity* parent = m_parentEntity;
+
+    while(parent != nullptr)
+    {
+        if(m_parentEntity->m_parentEntity == nullptr)
+            return  parent;
+
+        parent = m_parentEntity->m_parentEntity;
+    }
+
+    return parent;
+
+}
+
+Engine::Entity *Engine::Entity::GetParentEntity()
+{
+    return m_parentEntity;
+}
+
+void Engine::Entity::SetWorldPosition(float x, float y)
+{
+    sf::Vector2f v(x,y);
+
+   // Entity* parent = GetParentRecursively();
+    if(m_topParentNode != nullptr)
+    {
+        v = m_topParentNode->getTransform().getInverse().transformPoint(v);
+        setPosition(v);
+    }
+    else
+    {
+        setPosition(v);
+    }
+}
+
+void Engine::Entity::SetWorldPosition(sf::Vector2f vec)
+{
+   // Entity* parent = GetParentRecursively();
+    if(m_topParentNode != nullptr)
+    {
+        vec = m_topParentNode->getTransform().getInverse().transformPoint(vec);
+
+        setPosition(vec);
+    }
+    else
+    {
+        setPosition(vec);
+    }
+}
+
+sf::Vector2f Engine::Entity::GetWorldPosition()
+{
+   // Entity* parent = GetParentRecursively();
+
+    sf::Vector2f currentPos= getPosition();
+
+    if(m_topParentNode != nullptr)
+    {
+        currentPos = m_topParentNode->getTransform().transformPoint(currentPos);
+        return currentPos;
+    }
+    else
+    {
+        return GetLocalPosition();
+    }
+}
+
+Engine::Entity* Engine::Entity::GetChildAt(const int& index)
+{
+    return m_childerens.at(index);
 }
 
 

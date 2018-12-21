@@ -14,14 +14,14 @@
   <component name="ChangeListManager">
     <list default="true" id="f3d7eafb-701f-4880-88c3-db6dd240fdc8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Collider.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Collider.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Entity.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Entity.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Scene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Scene.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Entity.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Entity.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/SpriteRenderer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/SpriteRenderer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Text.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Text.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Text.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Text.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/MainLevel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/MainLevel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LuaAssignment" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LuaAssignment" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LuaAssignment" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -169,8 +169,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="3629" />
-          <entry key="h" value="3309" />
+          <entry key="cpp" value="5369" />
+          <entry key="h" value="3845" />
           <entry key="txt" value="155" />
         </counts>
       </usages-collector>
@@ -178,7 +178,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="155" />
           <entry key="Doxygen file" value="15" />
-          <entry key="ObjectiveC" value="6923" />
+          <entry key="ObjectiveC" value="9199" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -187,7 +187,7 @@
           <entry key="TXT" value="1" />
           <entry key="__functional_base" value="2" />
           <entry key="cmake" value="4" />
-          <entry key="cpp" value="32" />
+          <entry key="cpp" value="33" />
           <entry key="h" value="24" />
           <entry key="hpp" value="1" />
           <entry key="tuple" value="1" />
@@ -198,7 +198,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="5" />
-          <entry key="ObjectiveC" value="61" />
+          <entry key="ObjectiveC" value="62" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -212,7 +212,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Game/MainGame.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="852">
+            <state relative-caret-position="720">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="e#48#67#0" expanded="true" />
@@ -225,7 +225,7 @@
         <entry file="file://$PROJECT_DIR$/Engine/Game.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="512">
-              <caret line="80" column="54" lean-forward="true" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="68" />
+              <caret line="80" column="54" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="68" />
               <folding>
                 <element signature="e#48#65#0" expanded="true" />
               </folding>
@@ -238,11 +238,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Game/MainLevel.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="389">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#48#67#0" expanded="true" />
               </folding>
@@ -251,15 +251,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Physics.h">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Engine/Entity.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1503">
+              <caret line="296" column="1" lean-forward="true" selection-start-line="296" selection-start-column="1" selection-end-line="296" selection-end-column="1" />
+              <folding>
+                <element signature="e#1#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Engine/Entity.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="717">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="164">
+              <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -269,11 +276,14 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Engine/Entity.cpp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Engine/EventQueue.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="269">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="e#48#71#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -281,8 +291,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Engine/SpriteRenderer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-155">
-              <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+            <state relative-caret-position="360">
+              <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -291,7 +301,7 @@
         <entry file="file://$PROJECT_DIR$/Engine/Scene.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="29">
-              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -357,14 +367,14 @@
         <option value="$PROJECT_DIR$/Engine/SceneManager.h" />
         <option value="$PROJECT_DIR$/Game/MainGame.cpp" />
         <option value="$PROJECT_DIR$/Game/MainGame.h" />
-        <option value="$PROJECT_DIR$/Engine/Entity.h" />
         <option value="$PROJECT_DIR$/Engine/TextComponent.cpp" />
         <option value="$PROJECT_DIR$/Engine/Text.h" />
         <option value="$PROJECT_DIR$/Engine/Text.cpp" />
         <option value="$PROJECT_DIR$/Engine/Scene.cpp" />
         <option value="$PROJECT_DIR$/Engine/SpriteRenderer.cpp" />
-        <option value="$PROJECT_DIR$/Game/MainLevel.cpp" />
+        <option value="$PROJECT_DIR$/Engine/Entity.h" />
         <option value="$PROJECT_DIR$/Engine/Entity.cpp" />
+        <option value="$PROJECT_DIR$/Game/MainLevel.cpp" />
       </list>
     </option>
   </component>
@@ -540,12 +550,12 @@
       <workItem from="1545078923154" duration="15049000" />
       <workItem from="1545150091493" duration="3694000" />
       <workItem from="1545216026796" duration="10459000" />
-      <workItem from="1545321214260" duration="3683000" />
+      <workItem from="1545321214260" duration="10635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332405000" />
+    <option name="totallyTimeSpent" value="339357000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -768,13 +778,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/EventQueue.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#120#137#0" expanded="true" />
+            <element signature="e#758#770#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -882,17 +889,10 @@
     <entry file="file://$PROJECT_DIR$/Game/TestEvent.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Entity.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Game.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
-          <caret line="80" column="54" lean-forward="true" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="68" />
+          <caret line="80" column="54" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="68" />
           <folding>
             <element signature="e#48#65#0" expanded="true" />
           </folding>
@@ -902,20 +902,30 @@
     <entry file="file://$PROJECT_DIR$/Engine/Scene.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/EventQueue.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#48#71#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Engine/SpriteRenderer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-155">
-          <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+        <state relative-caret-position="360">
+          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Game/MainGame.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
+        <state relative-caret-position="720">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="e#48#67#0" expanded="true" />
@@ -923,20 +933,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game/MainLevel.cpp">
+    <entry file="file://$PROJECT_DIR$/Engine/Entity.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-          <folding>
-            <element signature="e#48#67#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="164">
+          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Entity.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="1503">
+          <caret line="296" column="1" lean-forward="true" selection-start-line="296" selection-start-column="1" selection-end-line="296" selection-end-column="1" />
+          <folding>
+            <element signature="e#1#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/MainLevel.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#48#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
