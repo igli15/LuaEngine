@@ -23,7 +23,7 @@ public:
     void ScaleEntityLocal(const float &scaleX, const float &scaleY) override;
     void SetLocalPosition(float x, float y) override;
     void SetText(const std::string& text);
-
+    TextComponent* GetTextComponent();
     };
 
 }

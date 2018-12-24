@@ -40,3 +40,8 @@ void Engine::Text::Start()
     Entity::Start();
 }
 
+Engine::TextComponent *Engine::Text::GetTextComponent()
+{
+    return m_textComponent;
+}
+
