@@ -38,7 +38,5 @@ void Engine::Text::SetText(const std::string &text)
 void Engine::Text::Start()
 {
     Entity::Start();
-    setOrigin(m_textComponent->GetText()->getLocalBounds().width/2,m_textComponent->GetText()->getLocalBounds().height/2);
-    m_textComponent->GetText()->setOrigin(m_textComponent->GetText()->getLocalBounds().width/2,m_textComponent->GetText()->getLocalBounds().height/2);
 }
 

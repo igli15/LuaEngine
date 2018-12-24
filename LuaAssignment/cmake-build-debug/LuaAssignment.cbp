@@ -158,6 +158,12 @@
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SceneManager.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Sprite.cpp">
+			<Option target="LuaAssignment"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Sprite.h">
+			<Option target="LuaAssignment"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SpriteRenderer.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>

@@ -16,16 +16,16 @@ void Engine::TextComponent::Start()
     m_text->setFont(*m_font);
 
     m_text->setString("This is Text");  //Default string
-    m_width = m_text->getGlobalBounds().width;
-    m_height = m_text->getGlobalBounds().height;
+    m_width = m_text->getLocalBounds().width;
+    m_height = m_text->getLocalBounds().height;
 }
 
 void Engine::TextComponent::SetText(const std::string &text)
 {
     m_text->setString(text);
 
-    m_width = m_text->getGlobalBounds().width;
-    m_height = m_text->getGlobalBounds().height;
+    m_width = m_text->getLocalBounds().width;
+    m_height = m_text->getLocalBounds().height;
 }
 
 void Engine::TextComponent::SetFont(const sf::Font &font)
@@ -33,16 +33,16 @@ void Engine::TextComponent::SetFont(const sf::Font &font)
     *m_font = font;
     m_text->setFont(font);
 
-    m_width = m_text->getGlobalBounds().width;
-    m_height = m_text->getGlobalBounds().height;
+    m_width = m_text->getLocalBounds().width;
+    m_height = m_text->getLocalBounds().height;
 }
 
 void Engine::TextComponent::SetCharacterSize(int size)
 {
     m_text->setCharacterSize(size);
 
-    m_width = m_text->getGlobalBounds().width;
-    m_height = m_text->getGlobalBounds().height;
+    m_width = m_text->getLocalBounds().width;
+    m_height = m_text->getLocalBounds().height;
 }
 
 void Engine::TextComponent::SetColor(const sf::Color &color)
@@ -52,7 +52,16 @@ void Engine::TextComponent::SetColor(const sf::Color &color)
 
 void Engine::TextComponent::DrawText(sf::RenderWindow &window)
 {
-    window.draw(*m_text);
+    sf::RenderStates textRenderStates(m_text->getTransform());
+
+    textRenderStates.transform *= m_parent->getTransform();
+
+    if(m_parent->GetParentEntity() != nullptr)
+    {
+        textRenderStates.transform *= m_parent->GetParentEntity()->getTransform();
+    }
+
+    window.draw(*m_text,textRenderStates);
 }
 
 Engine::TextComponent::~TextComponent()

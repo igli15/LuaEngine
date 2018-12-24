@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Rigidbody.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles/LuaAssignment.dir/Engine/Rigidbody.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles/LuaAssignment.dir/Engine/Scene.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SceneManager.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles/LuaAssignment.dir/Engine/SceneManager.cpp.o"
+  "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Sprite.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles/LuaAssignment.dir/Engine/Sprite.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SpriteRenderer.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles/LuaAssignment.dir/Engine/SpriteRenderer.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Text.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles/LuaAssignment.dir/Engine/Text.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/TextComponent.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles/LuaAssignment.dir/Engine/TextComponent.cpp.o"

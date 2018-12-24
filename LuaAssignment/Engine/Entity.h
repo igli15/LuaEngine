@@ -55,7 +55,11 @@ public:
 
         void SetParent(Engine::Entity* parent);
 
+        void SetTopParentNode(Engine::Entity* topParentNode);
+
         Engine::Entity* GetChildAt(const int& index);
+
+        int GetChildCount();
 
         bool operator==(const Entity& other)const;
 

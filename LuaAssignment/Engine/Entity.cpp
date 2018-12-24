@@ -225,6 +225,17 @@ void Engine::Entity::SetParent(Engine::Entity* parent)
 {
     m_parentEntity = parent;
     m_topParentNode = GetParentRecursively();
+
+    for (int i = 0; i < GetChildCount() ; ++i)
+    {
+        GetChildAt(i)->SetTopParentNode(m_topParentNode);
+    }
+
+}
+
+void Engine::Entity::SetTopParentNode(Engine::Entity *topParentNode)
+{
+    m_topParentNode = topParentNode;
 }
 
 Engine::Entity *Engine::Entity::GetParentRecursively()
@@ -299,6 +310,11 @@ sf::Vector2f Engine::Entity::GetWorldPosition()
 Engine::Entity* Engine::Entity::GetChildAt(const int& index)
 {
     return m_childerens.at(index);
+}
+
+int Engine::Entity::GetChildCount()
+{
+    return m_childerens.size();
 }
 
 

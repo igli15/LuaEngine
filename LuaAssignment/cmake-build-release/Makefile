@@ -447,6 +447,33 @@ Engine/SceneManager.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/SceneManager.cpp.s
 .PHONY : Engine/SceneManager.cpp.s
 
+Engine/Sprite.o: Engine/Sprite.cpp.o
+
+.PHONY : Engine/Sprite.o
+
+# target to build an object file
+Engine/Sprite.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/Sprite.cpp.o
+.PHONY : Engine/Sprite.cpp.o
+
+Engine/Sprite.i: Engine/Sprite.cpp.i
+
+.PHONY : Engine/Sprite.i
+
+# target to preprocess a source file
+Engine/Sprite.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/Sprite.cpp.i
+.PHONY : Engine/Sprite.cpp.i
+
+Engine/Sprite.s: Engine/Sprite.cpp.s
+
+.PHONY : Engine/Sprite.s
+
+# target to generate assembly for a file
+Engine/Sprite.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/Sprite.cpp.s
+.PHONY : Engine/Sprite.cpp.s
+
 Engine/SpriteRenderer.o: Engine/SpriteRenderer.cpp.o
 
 .PHONY : Engine/SpriteRenderer.o
@@ -735,6 +762,9 @@ help:
 	@echo "... Engine/SceneManager.o"
 	@echo "... Engine/SceneManager.i"
 	@echo "... Engine/SceneManager.s"
+	@echo "... Engine/Sprite.o"
+	@echo "... Engine/Sprite.i"
+	@echo "... Engine/Sprite.s"
 	@echo "... Engine/SpriteRenderer.o"
 	@echo "... Engine/SpriteRenderer.i"
 	@echo "... Engine/SpriteRenderer.s"
