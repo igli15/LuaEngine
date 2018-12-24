@@ -9,7 +9,6 @@
 
 void Card::Build()
 {
-
     Engine::Entity::Build();
 
     m_spriteRenderer = AddComponent<Engine::SpriteRenderer>();
@@ -26,6 +25,11 @@ void Card::Build()
     AddChild(m_cardName);
     AddChild(m_cardDescription);
 
+    m_cardName->SetLocalPosition(45,95);
+    m_cardDescription->SetLocalPosition(30,135);
+
+    m_cardName->SetText("Card Name");
+    m_cardDescription->SetText("Card Description");
 }
 
 void Card::Start()

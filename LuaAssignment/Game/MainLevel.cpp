@@ -16,22 +16,6 @@ void MainLevel::BuildScene()
 {
     std::cout<<"Welcome to MainLevel"<<std::endl;
 
-   /*Engine::Text* t = Instantiate<Engine::Text>();
-
-
-   Engine::Entity* entity = Instantiate<Engine::Entity>();
-   Engine::SpriteRenderer* sp =  entity->AddComponent<Engine::SpriteRenderer>();
-   sp->ApplySprite("../Assets/CardTemplate.png");
-   entity->Start();
-
-   entity->SetLocalPosition(Engine::Game::Instance()->Width() / 2, Engine::Game::Instance()->Height() / 2);
-   entity->setOrigin(entity->Width()/2,entity->Height()/2);
-
-   entity->AddChild(t);
-
-   t->Start();
-   t->SetLocalPosition(45,95);*/
-
    Card* card = Instantiate<Card>();
    card->SetLocalPosition(Engine::Game::Instance()->Width() / 2,Engine::Game::Instance()->Height() / 2);
 
