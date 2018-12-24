@@ -12,11 +12,12 @@
 namespace Engine {
 
 
-    class Sprite : Engine::Entity {
+    class Sprite : public Engine::Entity {
 
     public:
         void Build() override;
         SpriteRenderer* GetSpriteRenderer();
+
 
     private:
         SpriteRenderer* m_spriteRenderer;

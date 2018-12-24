@@ -20,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o"
   "CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o"
   "CMakeFiles/LuaAssignment.dir/Engine/Sprite.cpp.o"
+  "CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o"
   "CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o"
   "LuaAssignment.pdb"
   "LuaAssignment"

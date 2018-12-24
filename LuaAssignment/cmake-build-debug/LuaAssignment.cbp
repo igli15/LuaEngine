@@ -191,6 +191,12 @@
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/main.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Card.cpp">
+			<Option target="LuaAssignment"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Card.h">
+			<Option target="LuaAssignment"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainGame.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>

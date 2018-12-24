@@ -48,9 +48,10 @@ namespace Engine {
         {
             T* entityToCreate = new T;
             m_entities.push_back(entityToCreate);
-            m_entities.at(m_entities.size() - 1)->parentScene = this;
-            m_entities.at(m_entities.size() - 1)->Build();
-            m_entities.at(m_entities.size() - 1)->Start();
+            Entity* entity = m_entities.at(m_entities.size() - 1);
+            entity->parentScene = this;
+            entity->Build();
+            entity->Start();
             return entityToCreate;
         }
 

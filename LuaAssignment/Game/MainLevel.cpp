@@ -10,12 +10,13 @@
 #include "../Engine/Game.h"
 #include "../Engine/SpriteRenderer.h"
 #include "../Engine/IVector.h";
+#include "Card.h"
 
 void MainLevel::BuildScene()
 {
     std::cout<<"Welcome to MainLevel"<<std::endl;
 
-   Engine::Text* t = Instantiate<Engine::Text>();
+   /*Engine::Text* t = Instantiate<Engine::Text>();
 
 
    Engine::Entity* entity = Instantiate<Engine::Entity>();
@@ -29,7 +30,10 @@ void MainLevel::BuildScene()
    entity->AddChild(t);
 
    t->Start();
-   t->SetLocalPosition(45,95);
+   t->SetLocalPosition(45,95);*/
+
+   Card* card = Instantiate<Card>();
+   card->SetLocalPosition(Engine::Game::Instance()->Width() / 2,Engine::Game::Instance()->Height() / 2);
 
 }
 

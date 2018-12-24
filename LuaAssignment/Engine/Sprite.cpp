@@ -15,3 +15,4 @@ Engine::SpriteRenderer *Engine::Sprite::GetSpriteRenderer()
 {
     return m_spriteRenderer;
 }
+
