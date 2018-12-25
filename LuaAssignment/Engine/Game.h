@@ -34,8 +34,6 @@ namespace Engine {
         unsigned int Height();
 
     private:
-        sf::RenderWindow* m_window;
-
         static Game* instance;
 
         static SceneManager* m_sceneManager;
@@ -43,6 +41,7 @@ namespace Engine {
         static EventQueue* m_eventQueue;
 
     protected:
+        sf::RenderWindow* m_window;
         unsigned int m_width;
         unsigned int m_height;
         unsigned int m_screenBits;

@@ -20,6 +20,7 @@ void Engine::SpriteRenderer::RenderSprite(sf::RenderWindow &window)
             spriteRenderStates.transform *= m_parent->GetParentEntity()->getTransform();
         }
 
+
         window.draw(*m_sprite,spriteRenderStates);
     }
 

@@ -15,7 +15,7 @@
 //This class serves just as a place to create your scene.
 //Use Game::Instance to get properties of Game Class like width,height.
 
-MainGame::MainGame() : Game(1920, 1080,"Engine")
+MainGame::MainGame() : Game(sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height,"Engine")
 {
     Game::Build();   //Used to build the game
 

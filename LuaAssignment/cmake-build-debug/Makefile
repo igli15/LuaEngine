@@ -636,6 +636,33 @@ Game/Card.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Card.cpp.s
 .PHONY : Game/Card.cpp.s
 
+Game/Hand.o: Game/Hand.cpp.o
+
+.PHONY : Game/Hand.o
+
+# target to build an object file
+Game/Hand.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o
+.PHONY : Game/Hand.cpp.o
+
+Game/Hand.i: Game/Hand.cpp.i
+
+.PHONY : Game/Hand.i
+
+# target to preprocess a source file
+Game/Hand.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.i
+.PHONY : Game/Hand.cpp.i
+
+Game/Hand.s: Game/Hand.cpp.s
+
+.PHONY : Game/Hand.s
+
+# target to generate assembly for a file
+Game/Hand.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.s
+.PHONY : Game/Hand.cpp.s
+
 Game/MainGame.o: Game/MainGame.cpp.o
 
 .PHONY : Game/MainGame.o
@@ -810,6 +837,9 @@ help:
 	@echo "... Game/Card.o"
 	@echo "... Game/Card.i"
 	@echo "... Game/Card.s"
+	@echo "... Game/Hand.o"
+	@echo "... Game/Hand.i"
+	@echo "... Game/Hand.s"
 	@echo "... Game/MainGame.o"
 	@echo "... Game/MainGame.i"
 	@echo "... Game/MainGame.s"
