@@ -19,7 +19,7 @@ public:
     void Start() override;
     void Update(float timeStep) override;
     bool isHoldingCard = false;
-    Hand* GetHand();
+    void AddCardToHand(Card* card);
 };
 
 

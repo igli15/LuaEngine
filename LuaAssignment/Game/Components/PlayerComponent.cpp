@@ -4,6 +4,7 @@
 
 #include "PlayerComponent.h"
 #include "../Hand.h"
+#include "CardComponent.h"
 
 void PlayerComponent::Start()
 {
@@ -18,9 +19,11 @@ void PlayerComponent::Update(float timeStep)
 }
 
 
-Hand *PlayerComponent::GetHand()
+
+void PlayerComponent::AddCardToHand(Card *card)
 {
-    return m_hand;
+    card->GetComponent<CardComponent>()->SetPlayer(this);
+    m_hand->AddCard(card);
 }
 
 

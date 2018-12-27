@@ -21,8 +21,8 @@ void MainLevel::BuildScene()
 
     Card* card2 = Instantiate<Card>();
 
-    p->GetComponent<PlayerComponent>()->GetHand()->AddCard(card);
-    p->GetComponent<PlayerComponent>()->GetHand()->AddCard(card2);
+    p->GetComponent<PlayerComponent>()->AddCardToHand(card);
+    p->GetComponent<PlayerComponent>()->AddCardToHand(card2);
 }
 
 MainLevel::~MainLevel()

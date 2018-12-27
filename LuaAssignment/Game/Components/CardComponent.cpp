@@ -10,7 +10,6 @@
 void CardComponent::Start()
 {
     Component::Start();
-    m_playerComponent = Engine::Entity::FindEntityWithTag("Player")->GetComponent<PlayerComponent>();
 }
 
 void CardComponent::Update(float timeStep)

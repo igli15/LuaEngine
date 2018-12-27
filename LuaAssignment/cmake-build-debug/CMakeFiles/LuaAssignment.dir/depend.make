@@ -1033,6 +1033,7 @@ CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/Sp
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/SpriteRenderer.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/Text.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Game/Card.h
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Game/Components/CardComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Game/Components/PlayerComponent.cpp
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Game/Hand.h
