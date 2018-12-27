@@ -203,6 +203,12 @@
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.cpp">
+			<Option target="LuaAssignment"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h">
+			<Option target="LuaAssignment"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Hand.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
@@ -225,6 +231,12 @@
 			<Option target="LuaAssignment"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainLevel.h">
+			<Option target="LuaAssignment"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Player.cpp">
+			<Option target="LuaAssignment"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Player.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/TestEvent.cpp">

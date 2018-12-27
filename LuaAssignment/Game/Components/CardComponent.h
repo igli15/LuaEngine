@@ -9,19 +9,21 @@
 #include "../../Engine/Component.h"
 #include "../../Engine/SpriteRenderer.h"
 #include "../../Game/HandSlot.h"
+#include "PlayerComponent.h"
 
 class CardComponent : public Engine::Component {
 
 private:
-    Engine::SpriteRenderer* m_spriteRenderer;
+    PlayerComponent* m_playerComponent;
     HandSlot* m_slot;
     bool m_selected = false;
+    bool m_hovered = false;
 
 public:
     void Start() override;
     void Update(float timeStep) override;
     void SetHandSlot(HandSlot* slot);
-
+    void SetPlayer(PlayerComponent* playerComponent);
 };
 
 

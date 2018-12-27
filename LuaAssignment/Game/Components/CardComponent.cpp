@@ -10,7 +10,7 @@
 void CardComponent::Start()
 {
     Component::Start();
-    m_spriteRenderer = m_parent->GetComponent<Engine::SpriteRenderer>();
+    m_playerComponent = Engine::Entity::FindEntityWithTag("Player")->GetComponent<PlayerComponent>();
 }
 
 void CardComponent::Update(float timeStep)
@@ -22,24 +22,43 @@ void CardComponent::Update(float timeStep)
 
     auto mousePos = sf::Mouse::getPosition(*(Engine::Game::Instance()->GetWindow()));
 
-    if(mousePos.x > m_parent->GetWorldPosition().x - width/2 && mousePos.x < m_parent->GetWorldPosition().x + width/2
+    if(!m_playerComponent->isHoldingCard && mousePos.x > m_parent->GetWorldPosition().x - width/2 && mousePos.x < m_parent->GetWorldPosition().x + width/2
         && mousePos.y > m_parent->GetWorldPosition().y - height/2 && mousePos.y < m_parent->GetWorldPosition().y + height/2)
     {
+        m_hovered = true;
+        m_parent->SetWorldPosition(m_slot->pos->x,m_slot->pos->y - 80);
+
         if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
         {
             m_selected = true;
-            m_parent->SetWorldPosition(mousePos.x,mousePos.y);
         }
+    }
+    else if(m_hovered)
+    {
+        m_hovered = false;
+        m_parent->SetWorldPosition(m_slot->pos->x,m_slot->pos->y);
+    }
+
+    if(m_selected)
+    {
+        m_playerComponent->isHoldingCard = true;
+        m_parent->SetWorldPosition(mousePos.x,mousePos.y);
     }
 
     if(m_selected && !sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         m_parent->SetWorldPosition(m_slot->pos->x,m_slot->pos->y);
         m_selected = false;
+        m_playerComponent->isHoldingCard = false;
     }
 }
 
 void CardComponent::SetHandSlot(HandSlot* slot)
 {
     m_slot = slot;
+}
+
+void CardComponent::SetPlayer(PlayerComponent *playerComponent)
+{
+    m_playerComponent = playerComponent;
 }
