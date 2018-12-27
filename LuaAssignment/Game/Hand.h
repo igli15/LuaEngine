@@ -9,20 +9,16 @@
 #include <vector>
 #include "Card.h"
 #include "../Engine/IVector.h"
+#include "HandSlot.h"
 
 class Hand {
 
-    class HandSlot
-    {
-        public:
-            HandSlot(const unsigned int& pIndex,const Engine::IVector& pPos);
-            ~HandSlot();
-            Engine::IVector* pos;
-            unsigned int index;
-            Card* currentCard = nullptr;
-            bool IsEmpty();
+public:
 
-    };
+
+    Hand(float startX, float cardWidth, float cardHeight);
+    void AddCard(Card* card);
+    ~Hand();
 
 private:
     unsigned int m_maxCardCapacity = 8;
@@ -30,10 +26,6 @@ private:
     std::vector<HandSlot*> m_cardSlots;
     HandSlot* FindEmptySlot();
 
-public:
-    Hand(float startX, float cardWidth, float cardHeight);
-    void AddCard(Card* card);
-    ~Hand();
 
 };
 

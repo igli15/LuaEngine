@@ -636,6 +636,33 @@ Game/Card.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Card.cpp.s
 .PHONY : Game/Card.cpp.s
 
+Game/Components/CardComponent.o: Game/Components/CardComponent.cpp.o
+
+.PHONY : Game/Components/CardComponent.o
+
+# target to build an object file
+Game/Components/CardComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o
+.PHONY : Game/Components/CardComponent.cpp.o
+
+Game/Components/CardComponent.i: Game/Components/CardComponent.cpp.i
+
+.PHONY : Game/Components/CardComponent.i
+
+# target to preprocess a source file
+Game/Components/CardComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.i
+.PHONY : Game/Components/CardComponent.cpp.i
+
+Game/Components/CardComponent.s: Game/Components/CardComponent.cpp.s
+
+.PHONY : Game/Components/CardComponent.s
+
+# target to generate assembly for a file
+Game/Components/CardComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.s
+.PHONY : Game/Components/CardComponent.cpp.s
+
 Game/Hand.o: Game/Hand.cpp.o
 
 .PHONY : Game/Hand.o
@@ -662,6 +689,33 @@ Game/Hand.s: Game/Hand.cpp.s
 Game/Hand.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.s
 .PHONY : Game/Hand.cpp.s
+
+Game/HandSlot.o: Game/HandSlot.cpp.o
+
+.PHONY : Game/HandSlot.o
+
+# target to build an object file
+Game/HandSlot.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o
+.PHONY : Game/HandSlot.cpp.o
+
+Game/HandSlot.i: Game/HandSlot.cpp.i
+
+.PHONY : Game/HandSlot.i
+
+# target to preprocess a source file
+Game/HandSlot.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.i
+.PHONY : Game/HandSlot.cpp.i
+
+Game/HandSlot.s: Game/HandSlot.cpp.s
+
+.PHONY : Game/HandSlot.s
+
+# target to generate assembly for a file
+Game/HandSlot.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.s
+.PHONY : Game/HandSlot.cpp.s
 
 Game/MainGame.o: Game/MainGame.cpp.o
 
@@ -837,9 +891,15 @@ help:
 	@echo "... Game/Card.o"
 	@echo "... Game/Card.i"
 	@echo "... Game/Card.s"
+	@echo "... Game/Components/CardComponent.o"
+	@echo "... Game/Components/CardComponent.i"
+	@echo "... Game/Components/CardComponent.s"
 	@echo "... Game/Hand.o"
 	@echo "... Game/Hand.i"
 	@echo "... Game/Hand.s"
+	@echo "... Game/HandSlot.o"
+	@echo "... Game/HandSlot.i"
+	@echo "... Game/HandSlot.s"
 	@echo "... Game/MainGame.o"
 	@echo "... Game/MainGame.i"
 	@echo "... Game/MainGame.s"

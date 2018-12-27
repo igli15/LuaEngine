@@ -4,27 +4,9 @@
 
 #include "Hand.h"
 #include "../Engine/Game.h"
-
-bool Hand::HandSlot::IsEmpty()
-{
-    return currentCard == nullptr;
-}
-
-Hand::HandSlot::HandSlot(const unsigned int & pIndex,const Engine::IVector& pPos)
-{
-    pos = new Engine::IVector(0,0);
-    index = pIndex;
-    pos->x = pPos.x;
-    pos->y = pPos.y;
-}
-
-Hand::HandSlot::~HandSlot()
-{
-    delete(pos);
-    pos = nullptr;
-    currentCard = nullptr;
-}
-
+#include "HandSlot.h"
+#include "Card.h"
+#include "Components/CardComponent.h"
 
 Hand::Hand(float startX, float cardWidth, float cardHeight)
 {
@@ -44,7 +26,7 @@ Hand::~Hand()
     }
 }
 
-Hand::HandSlot *Hand::FindEmptySlot()
+HandSlot* Hand::FindEmptySlot()
 {
     for (unsigned int i = 0; i < m_slotNumber ; ++i)
     {
@@ -56,5 +38,6 @@ void Hand::AddCard(Card *card)
 {
     HandSlot* freeSlot = FindEmptySlot();
     freeSlot->currentCard = card;
+    card->GetComponent<CardComponent>()->SetHandSlot(freeSlot);
     card->SetWorldPosition(freeSlot->pos->x,freeSlot->pos->y);
 }

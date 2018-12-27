@@ -6,6 +6,7 @@
 #include "../Engine/SceneManager.h"
 #include "../Engine/Scene.h"
 #include "../Engine/Entity.h"
+#include "Components/CardComponent.h"
 
 void Card::Build()
 {
@@ -31,6 +32,8 @@ void Card::Build()
 
     m_cardName->SetText("Card Name");
     m_cardDescription->SetText("Card Description");
+
+    AddComponent<CardComponent>();
 }
 
 void Card::Start()

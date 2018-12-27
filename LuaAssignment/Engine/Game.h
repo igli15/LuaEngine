@@ -24,6 +24,7 @@ namespace Engine {
         void Build();
         void Gameloop();
         Game(unsigned int  width,unsigned int height,std::string gameTitle);
+        sf::RenderWindow* GetWindow();
 
         static Game* Instance();
         static SceneManager* GetSceneManager();

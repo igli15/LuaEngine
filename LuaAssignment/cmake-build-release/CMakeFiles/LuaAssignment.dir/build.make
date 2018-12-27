@@ -356,9 +356,35 @@ CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Hand.cpp -o CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.s
 
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: CMakeFiles/LuaAssignment.dir/flags.make
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Components/CardComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o -c /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.cpp
+
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.cpp > CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.i
+
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.cpp -o CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.s
+
+CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: CMakeFiles/LuaAssignment.dir/flags.make
+CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Game/HandSlot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o -c /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.cpp
+
+CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.cpp > CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.i
+
+CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.cpp -o CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.s
+
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: CMakeFiles/LuaAssignment.dir/flags.make
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: ../Engine/Entity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o -c /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.cpp
 
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.i: cmake_force
@@ -394,6 +420,8 @@ LuaAssignment_OBJECTS = \
 "CMakeFiles/LuaAssignment.dir/Engine/Sprite.cpp.o" \
 "CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o" \
 "CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o" \
+"CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o" \
+"CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o" \
 "CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o"
 
 # External object files for target LuaAssignment
@@ -422,6 +450,8 @@ LuaAssignment: CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/Engine/Sprite.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o
+LuaAssignment: CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o
+LuaAssignment: CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/build.make
 LuaAssignment: /usr/local/lib/libsfml-system.dylib
@@ -431,7 +461,7 @@ LuaAssignment: /usr/local/lib/libsfml-network.dylib
 LuaAssignment: /usr/local/lib/libsfml-audio.dylib
 LuaAssignment: /usr/local/lib/liblua5.3.dylib
 LuaAssignment: CMakeFiles/LuaAssignment.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable LuaAssignment"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable LuaAssignment"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LuaAssignment.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -138,4 +138,9 @@ Engine::EventQueue *Engine::Game::GetEventQueue()
     return m_eventQueue;
 }
 
+sf::RenderWindow *Engine::Game::GetWindow()
+{
+    return m_window;
+}
+
 

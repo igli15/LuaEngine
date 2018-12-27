@@ -22,6 +22,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LuaAssignment.dir/Engine/Sprite.cpp.o"
   "CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o"
   "CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o"
+  "CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o"
+  "CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o"
   "CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o"
   "LuaAssignment.pdb"
   "LuaAssignment"
