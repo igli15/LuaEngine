@@ -11,32 +11,26 @@ CardTemplate::CardTemplate(const std::string &name, const std::string &descripti
 
 }
 
-std::string CardTemplate::Name()
-{
+std::string CardTemplate::Name() const {
     return m_name;
 }
 
-std::string CardTemplate::Description()
-{
+std::string CardTemplate::Description() const {
     return m_description;
 }
 
-std::string CardTemplate::ImagePath()
-{
+std::string CardTemplate::ImagePath() const {
     return m_imagePath;
 }
 
-float CardTemplate::Cost()
-{
+float CardTemplate::Cost() const {
     return m_cost;
 }
 
-float CardTemplate::Damage()
-{
+float CardTemplate::Damage() const {
     return m_damage;
 }
 
-std::function<void()> CardTemplate::Ability()
-{
+std::function<void()> CardTemplate::Ability() const {
     return m_ability;
 }

@@ -24,7 +24,7 @@ protected:
 public:
     void Start() override;
     void Build() override;
-    void ApplyTemplate(CardTemplate cardTemplate);
+    void ApplyTemplate(const CardTemplate& cardTemplate);
     void SetCardName(const std::string& name);
     void SetCardDescription(const std::string& description);
     void SetCardImage(const std::string& path);

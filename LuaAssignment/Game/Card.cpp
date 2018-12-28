@@ -66,7 +66,7 @@ void Card::SetCardImage(const std::string &path)
     m_cardImage->GetSpriteRenderer()->ApplySprite(path);
 }
 
-void Card::ApplyTemplate(CardTemplate cardTemplate)
+void Card::ApplyTemplate(const CardTemplate& cardTemplate)
 {
     m_cardName->SetText(cardTemplate.Name());
     m_cardDescription->SetText(cardTemplate.Description());
