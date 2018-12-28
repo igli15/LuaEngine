@@ -8,36 +8,24 @@
 #include "Card.h"
 #include "Components/CardComponent.h"
 
-Hand::Hand(float startX, float cardWidth, float cardHeight)
+Hand::Hand()
 {
-    for (unsigned int i = 0; i < m_slotNumber ; ++i)
-    {
-        HandSlot* slot = new HandSlot(i,Engine::IVector(startX + cardWidth * (i+1),Engine::Game::Instance()->Height() -  cardHeight - 50));
-        m_cardSlots.push_back(slot);
-    }
+    m_startX = 100;
+    m_cardWidth = 400;
+    m_cardHeight = 570;
+    m_slotNumber = 5;
 }
 
-Hand::~Hand()
+void Hand::Build()
 {
-    for (unsigned int i = 0; i < m_slotNumber ; ++i)
-    {
-        delete(m_cardSlots[i]);
-        m_cardSlots[i] = nullptr;
-    }
+    Entity::Build();
+
+   m_handComponent = AddComponent<HandComponent>();
+   m_handComponent->AddSlots(m_slotNumber,m_startX,m_cardWidth,m_cardHeight);
 }
 
-HandSlot* Hand::FindEmptySlot()
-{
-    for (unsigned int i = 0; i < m_slotNumber ; ++i)
-    {
-        if(m_cardSlots[i]->IsEmpty()) return  m_cardSlots[i];
-    }
-}
 
-void Hand::AddCard(Card *card)
+HandComponent *Hand::GetHandComponent()
 {
-    HandSlot* freeSlot = FindEmptySlot();
-    freeSlot->currentCard = card;
-    card->GetComponent<CardComponent>()->SetHandSlot(freeSlot);
-    card->SetWorldPosition(freeSlot->pos->x,freeSlot->pos->y);
+    return m_handComponent;
 }

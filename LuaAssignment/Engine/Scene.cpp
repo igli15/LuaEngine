@@ -18,11 +18,8 @@ std::string Engine::Scene::GetName()
     return m_name;
 }
 
-
-
 void Engine::Scene::RenderAllEntities(sf::RenderWindow& window)
 {
-
     if( m_spriteRenderVector.size() == 0) return;
 
     for (int i = m_spriteRenderVector.size() -1 ; i >= 0; i--)
@@ -50,7 +47,6 @@ void Engine::Scene::UpdateScene(float timeStep)
 void Engine::Scene::DestroyEntity(Engine::Entity *objToDestroy)
 {
     objToDestroy->MarkEntityForDeletion();
-
 }
 
 void Engine::Scene::DestroyAllEntities()

@@ -17,6 +17,8 @@
 void MainLevel::BuildScene()
 {
     Player* p = Instantiate<Player>();
+
+
     Card* card = Instantiate<Card>();
 
     Card* card2 = Instantiate<Card>();

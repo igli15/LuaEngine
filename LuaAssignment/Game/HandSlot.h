@@ -7,10 +7,10 @@
 
 
 #include "../Engine/IVector.h"
-#include "Card.h"
 
+
+ class Card;
 class HandSlot {
-
 
 public:
     HandSlot(const unsigned int& pIndex,const Engine::IVector& pPos);

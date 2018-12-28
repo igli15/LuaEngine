@@ -4,13 +4,15 @@
 
 #include "PlayerComponent.h"
 #include "../Hand.h"
+#include "../Card.h"
 #include "CardComponent.h"
+#include "../../Engine/Scene.h"
 
 void PlayerComponent::Start()
 {
     Component::Start();
 
-    m_hand = new Hand(100,400,570);
+    m_hand = m_parent->parentScene->Instantiate<Hand>();
 }
 
 void PlayerComponent::Update(float timeStep)
@@ -19,11 +21,10 @@ void PlayerComponent::Update(float timeStep)
 }
 
 
-
 void PlayerComponent::AddCardToHand(Card *card)
 {
     card->GetComponent<CardComponent>()->SetPlayer(this);
-    m_hand->AddCard(card);
+    m_hand->GetHandComponent()->AddCard(card);
 }
 
 

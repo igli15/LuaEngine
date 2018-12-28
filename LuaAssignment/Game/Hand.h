@@ -10,22 +10,22 @@
 #include "Card.h"
 #include "../Engine/IVector.h"
 #include "HandSlot.h"
+#include "Components/HandComponent.h"
 
-class Hand {
-
-public:
-
-
-    Hand(float startX, float cardWidth, float cardHeight);
-    void AddCard(Card* card);
-    ~Hand();
+class Hand : public Engine::Entity {
 
 private:
-    unsigned int m_maxCardCapacity = 8;
-    unsigned int m_slotNumber = 5;
-    std::vector<HandSlot*> m_cardSlots;
-    HandSlot* FindEmptySlot();
+    float m_startX;
+    float m_cardWidth;
+    float m_cardHeight ;
 
+    HandComponent* m_handComponent;
+    unsigned int m_slotNumber;
+
+public:
+    Hand();
+    void Build() override;
+    HandComponent* GetHandComponent();
 
 };
 

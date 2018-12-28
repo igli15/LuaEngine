@@ -89,6 +89,7 @@ Engine::SpriteRenderer::~SpriteRenderer()
 
 Engine::SpriteRenderer::SpriteRenderer()
 {
+
 }
 
 

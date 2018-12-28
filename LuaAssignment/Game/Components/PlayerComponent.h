@@ -7,7 +7,9 @@
 
 
 #include "../../Engine/Component.h"
-#include "../Hand.h"
+
+class Hand;
+class Card;
 
 class PlayerComponent : public Engine::Component {
 

@@ -17,18 +17,15 @@ void Card::Build()
 
     setOrigin(Width()/2,Height()/2);
 
-    m_cardImage = parentScene->Instantiate<Engine::Sprite>();
-
     m_cardName = parentScene->Instantiate<Engine::Text>();
     m_cardDescription = parentScene->Instantiate<Engine::Text>();
 
-    AddChild(m_cardImage);
     AddChild(m_cardName);
     AddChild(m_cardDescription);
+   // AddChild(m_cardImage);
 
     m_cardName->SetLocalPosition(45,95);
     m_cardDescription->SetLocalPosition(30,135);
-
 
     m_cardName->SetText("Card Name");
     m_cardDescription->SetText("Card Description");
@@ -39,6 +36,10 @@ void Card::Build()
 void Card::Start()
 {
     Engine::Entity::Start();
+    m_cardImage = parentScene->Instantiate<Engine::Sprite>();
+
+    AddChild(m_cardImage);
+
 }
 
 Card::~Card()
@@ -76,5 +77,6 @@ void Card::ApplyTemplate(const CardTemplate& cardTemplate)
     m_cardComponent->SetDamage(cardTemplate.Damage());
     m_cardComponent->SetAbility(cardTemplate.Ability());
 }
+
 
 
