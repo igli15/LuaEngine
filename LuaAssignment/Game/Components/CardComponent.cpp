@@ -61,3 +61,18 @@ void CardComponent::SetPlayer(PlayerComponent *playerComponent)
 {
     m_playerComponent = playerComponent;
 }
+
+void CardComponent::SetDamage(float damage)
+{
+    m_damage = damage;
+}
+
+void CardComponent::SetCost(float cost)
+{
+    m_cost = cost;
+}
+
+void CardComponent::SetAbility(std::function<void()> ability)
+{
+    m_ability = ability;
+}

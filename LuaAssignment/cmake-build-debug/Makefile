@@ -636,6 +636,33 @@ Game/Card.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Card.cpp.s
 .PHONY : Game/Card.cpp.s
 
+Game/CardTemplate.o: Game/CardTemplate.cpp.o
+
+.PHONY : Game/CardTemplate.o
+
+# target to build an object file
+Game/CardTemplate.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o
+.PHONY : Game/CardTemplate.cpp.o
+
+Game/CardTemplate.i: Game/CardTemplate.cpp.i
+
+.PHONY : Game/CardTemplate.i
+
+# target to preprocess a source file
+Game/CardTemplate.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.i
+.PHONY : Game/CardTemplate.cpp.i
+
+Game/CardTemplate.s: Game/CardTemplate.cpp.s
+
+.PHONY : Game/CardTemplate.s
+
+# target to generate assembly for a file
+Game/CardTemplate.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.s
+.PHONY : Game/CardTemplate.cpp.s
+
 Game/Components/CardComponent.o: Game/Components/CardComponent.cpp.o
 
 .PHONY : Game/Components/CardComponent.o
@@ -945,6 +972,9 @@ help:
 	@echo "... Game/Card.o"
 	@echo "... Game/Card.i"
 	@echo "... Game/Card.s"
+	@echo "... Game/CardTemplate.o"
+	@echo "... Game/CardTemplate.i"
+	@echo "... Game/CardTemplate.s"
 	@echo "... Game/Components/CardComponent.o"
 	@echo "... Game/Components/CardComponent.i"
 	@echo "... Game/Components/CardComponent.s"

@@ -936,6 +936,9 @@ CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: /usr/local/include/SFML/Window/Win
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/CardTemplate.cpp
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/CardTemplate.h
+
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Engine/Collider.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Engine/Component.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Engine/Entity.h

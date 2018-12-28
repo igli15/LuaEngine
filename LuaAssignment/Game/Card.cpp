@@ -33,7 +33,7 @@ void Card::Build()
     m_cardName->SetText("Card Name");
     m_cardDescription->SetText("Card Description");
 
-    AddComponent<CardComponent>();
+    m_cardComponent = AddComponent<CardComponent>();
 }
 
 void Card::Start()
@@ -64,6 +64,17 @@ void Card::SetCardDescription(const std::string &description)
 void Card::SetCardImage(const std::string &path)
 {
     m_cardImage->GetSpriteRenderer()->ApplySprite(path);
+}
+
+void Card::ApplyTemplate(CardTemplate cardTemplate)
+{
+    m_cardName->SetText(cardTemplate.Name());
+    m_cardDescription->SetText(cardTemplate.Description());
+    m_spriteRenderer->ApplySprite(cardTemplate.ImagePath());
+
+    m_cardComponent->SetCost(cardTemplate.Cost());
+    m_cardComponent->SetDamage(cardTemplate.Damage());
+    m_cardComponent->SetAbility(cardTemplate.Ability());
 }
 
 
