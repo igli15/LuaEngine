@@ -10,18 +10,21 @@
 
 class Hand;
 class Card;
+class Deck;
 
 class PlayerComponent : public Engine::Component {
 
 private:
 
     Hand* m_hand;
+    Deck* m_deck;
 
 public:
     void Start() override;
     void Update(float timeStep) override;
     bool isHoldingCard = false;
     void AddCardToHand(Card* card);
+    void DrawCard();
 };
 
 

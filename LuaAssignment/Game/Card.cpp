@@ -71,7 +71,7 @@ void Card::ApplyTemplate(const CardTemplate& cardTemplate)
 {
     m_cardName->SetText(cardTemplate.Name());
     m_cardDescription->SetText(cardTemplate.Description());
-    m_spriteRenderer->ApplySprite(cardTemplate.ImagePath());
+    m_cardImage->GetSpriteRenderer()->ApplySprite(cardTemplate.ImagePath());
 
     m_cardComponent->SetCost(cardTemplate.Cost());
     m_cardComponent->SetDamage(cardTemplate.Damage());

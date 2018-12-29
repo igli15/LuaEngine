@@ -434,9 +434,35 @@ CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.cpp -o CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.s
 
+CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.o: CMakeFiles/LuaAssignment.dir/flags.make
+CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.o: ../Game/Deck.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.o -c /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Deck.cpp
+
+CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Deck.cpp > CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.i
+
+CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Deck.cpp -o CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.s
+
+CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: CMakeFiles/LuaAssignment.dir/flags.make
+CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Game/Components/DeckComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o -c /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.cpp
+
+CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.cpp > CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.i
+
+CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.cpp -o CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.s
+
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: CMakeFiles/LuaAssignment.dir/flags.make
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: ../Engine/Entity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o -c /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.cpp
 
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.i: cmake_force
@@ -478,6 +504,8 @@ LuaAssignment_OBJECTS = \
 "CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o" \
 "CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o" \
 "CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o" \
+"CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.o" \
+"CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o" \
 "CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o"
 
 # External object files for target LuaAssignment
@@ -512,6 +540,8 @@ LuaAssignment: CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o
+LuaAssignment: CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.o
+LuaAssignment: CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o
 LuaAssignment: CMakeFiles/LuaAssignment.dir/build.make
 LuaAssignment: /usr/local/lib/libsfml-system.dylib
@@ -521,7 +551,7 @@ LuaAssignment: /usr/local/lib/libsfml-network.dylib
 LuaAssignment: /usr/local/lib/libsfml-audio.dylib
 LuaAssignment: /usr/local/lib/liblua5.3.dylib
 LuaAssignment: CMakeFiles/LuaAssignment.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable LuaAssignment"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX executable LuaAssignment"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LuaAssignment.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

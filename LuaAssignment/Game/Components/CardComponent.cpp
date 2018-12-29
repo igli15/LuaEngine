@@ -76,3 +76,4 @@ void CardComponent::SetAbility(std::function<void()> ability)
 {
     m_ability = ability;
 }
+

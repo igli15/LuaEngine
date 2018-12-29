@@ -690,6 +690,33 @@ Game/Components/CardComponent.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.s
 .PHONY : Game/Components/CardComponent.cpp.s
 
+Game/Components/DeckComponent.o: Game/Components/DeckComponent.cpp.o
+
+.PHONY : Game/Components/DeckComponent.o
+
+# target to build an object file
+Game/Components/DeckComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o
+.PHONY : Game/Components/DeckComponent.cpp.o
+
+Game/Components/DeckComponent.i: Game/Components/DeckComponent.cpp.i
+
+.PHONY : Game/Components/DeckComponent.i
+
+# target to preprocess a source file
+Game/Components/DeckComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.i
+.PHONY : Game/Components/DeckComponent.cpp.i
+
+Game/Components/DeckComponent.s: Game/Components/DeckComponent.cpp.s
+
+.PHONY : Game/Components/DeckComponent.s
+
+# target to generate assembly for a file
+Game/Components/DeckComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.s
+.PHONY : Game/Components/DeckComponent.cpp.s
+
 Game/Components/HandComponent.o: Game/Components/HandComponent.cpp.o
 
 .PHONY : Game/Components/HandComponent.o
@@ -743,6 +770,33 @@ Game/Components/PlayerComponent.s: Game/Components/PlayerComponent.cpp.s
 Game/Components/PlayerComponent.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.s
 .PHONY : Game/Components/PlayerComponent.cpp.s
+
+Game/Deck.o: Game/Deck.cpp.o
+
+.PHONY : Game/Deck.o
+
+# target to build an object file
+Game/Deck.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.o
+.PHONY : Game/Deck.cpp.o
+
+Game/Deck.i: Game/Deck.cpp.i
+
+.PHONY : Game/Deck.i
+
+# target to preprocess a source file
+Game/Deck.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.i
+.PHONY : Game/Deck.cpp.i
+
+Game/Deck.s: Game/Deck.cpp.s
+
+.PHONY : Game/Deck.s
+
+# target to generate assembly for a file
+Game/Deck.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.s
+.PHONY : Game/Deck.cpp.s
 
 Game/Hand.o: Game/Hand.cpp.o
 
@@ -1005,12 +1059,18 @@ help:
 	@echo "... Game/Components/CardComponent.o"
 	@echo "... Game/Components/CardComponent.i"
 	@echo "... Game/Components/CardComponent.s"
+	@echo "... Game/Components/DeckComponent.o"
+	@echo "... Game/Components/DeckComponent.i"
+	@echo "... Game/Components/DeckComponent.s"
 	@echo "... Game/Components/HandComponent.o"
 	@echo "... Game/Components/HandComponent.i"
 	@echo "... Game/Components/HandComponent.s"
 	@echo "... Game/Components/PlayerComponent.o"
 	@echo "... Game/Components/PlayerComponent.i"
 	@echo "... Game/Components/PlayerComponent.s"
+	@echo "... Game/Deck.o"
+	@echo "... Game/Deck.i"
+	@echo "... Game/Deck.s"
 	@echo "... Game/Hand.o"
 	@echo "... Game/Hand.i"
 	@echo "... Game/Hand.s"

@@ -10,6 +10,7 @@
 #include "../../Engine/SpriteRenderer.h"
 #include "../../Game/HandSlot.h"
 #include "PlayerComponent.h"
+#include "../CardTemplate.h"
 
 class CardComponent : public Engine::Component {
 
