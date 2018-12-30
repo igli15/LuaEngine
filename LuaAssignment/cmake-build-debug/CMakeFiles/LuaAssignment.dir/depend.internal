@@ -1191,6 +1191,19 @@ CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.cpp
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.h
+ /usr/local/include/SFML/Config.hpp
+ /usr/local/include/SFML/Graphics/Color.hpp
+ /usr/local/include/SFML/Graphics/Export.hpp
+ /usr/local/include/SFML/Graphics/Image.hpp
+ /usr/local/include/SFML/Graphics/Rect.hpp
+ /usr/local/include/SFML/Graphics/Rect.inl
+ /usr/local/include/SFML/Graphics/Texture.hpp
+ /usr/local/include/SFML/System/Export.hpp
+ /usr/local/include/SFML/System/NonCopyable.hpp
+ /usr/local/include/SFML/System/Vector2.hpp
+ /usr/local/include/SFML/System/Vector2.inl
+ /usr/local/include/SFML/Window/Export.hpp
+ /usr/local/include/SFML/Window/GlResource.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
@@ -1495,7 +1508,12 @@ CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventQueue.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Sprite.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SpriteRenderer.h
@@ -1511,6 +1529,23 @@ CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Deck.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Hand.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
+ /usr/local/include/SFML/Audio.hpp
+ /usr/local/include/SFML/Audio/AlResource.hpp
+ /usr/local/include/SFML/Audio/Export.hpp
+ /usr/local/include/SFML/Audio/InputSoundFile.hpp
+ /usr/local/include/SFML/Audio/Listener.hpp
+ /usr/local/include/SFML/Audio/Music.hpp
+ /usr/local/include/SFML/Audio/OutputSoundFile.hpp
+ /usr/local/include/SFML/Audio/Sound.hpp
+ /usr/local/include/SFML/Audio/SoundBuffer.hpp
+ /usr/local/include/SFML/Audio/SoundBufferRecorder.hpp
+ /usr/local/include/SFML/Audio/SoundFileFactory.hpp
+ /usr/local/include/SFML/Audio/SoundFileFactory.inl
+ /usr/local/include/SFML/Audio/SoundFileReader.hpp
+ /usr/local/include/SFML/Audio/SoundFileWriter.hpp
+ /usr/local/include/SFML/Audio/SoundRecorder.hpp
+ /usr/local/include/SFML/Audio/SoundSource.hpp
+ /usr/local/include/SFML/Audio/SoundStream.hpp
  /usr/local/include/SFML/Config.hpp
  /usr/local/include/SFML/Graphics.hpp
  /usr/local/include/SFML/Graphics/BlendMode.hpp

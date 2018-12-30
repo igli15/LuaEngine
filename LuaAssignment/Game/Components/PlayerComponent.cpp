@@ -9,6 +9,7 @@
 #include "CardComponent.h"
 #include "DeckComponent.h"
 #include "../../Engine/Scene.h"
+#include "../../Engine/Game.h"
 
 void PlayerComponent::Start()
 {
@@ -17,7 +18,7 @@ void PlayerComponent::Start()
     m_hand = m_parent->parentScene->Instantiate<Hand>();
     m_deck = m_parent->parentScene->Instantiate<Deck>();
 
-    CardTemplate* t = new CardTemplate("LOL","DESC","../Assets/CardArtTest.png",10,20, nullptr);
+    CardTemplate* t = new CardTemplate("LOL","DESC",Engine::Game::GetResourceManager()->GetTexture("CardArtTest"),10,20, nullptr);
     m_deck->GetDeckComponent()->AddCardTemplate(t);
 
     DrawCard();

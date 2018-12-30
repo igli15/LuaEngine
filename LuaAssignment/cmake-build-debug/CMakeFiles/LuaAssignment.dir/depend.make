@@ -1190,6 +1190,19 @@ CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: /usr/local/include/SFML/Window/Win
 
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/CardTemplate.cpp
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/CardTemplate.h
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/Config.hpp
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/Graphics/Color.hpp
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/Graphics/Export.hpp
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/Graphics/Image.hpp
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/Graphics/Rect.hpp
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/Graphics/Rect.inl
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/Graphics/Texture.hpp
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/System/Export.hpp
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/System/NonCopyable.hpp
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/System/Vector2.hpp
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/System/Vector2.inl
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/Window/Export.hpp
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/Window/GlResource.hpp
 
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Engine/Collider.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Engine/Component.h
@@ -1494,7 +1507,12 @@ CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: /usr/local/inc
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/Collider.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/Component.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/Entity.h
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/EventQueue.h
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/EventType.h
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/Game.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/IVector.h
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/Physics.h
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/ResourceManager.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/Scene.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/Sprite.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/SpriteRenderer.h
@@ -1510,6 +1528,23 @@ CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Game/Comp
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Game/Deck.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Game/Hand.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Game/HandSlot.h
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/InputSoundFile.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/Listener.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/Music.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/OutputSoundFile.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/Sound.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/SoundBuffer.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/SoundBufferRecorder.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/SoundFileFactory.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/SoundFileFactory.inl
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/SoundFileReader.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/SoundFileWriter.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/SoundRecorder.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/SoundSource.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/SoundStream.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Config.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Graphics.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Graphics/BlendMode.hpp

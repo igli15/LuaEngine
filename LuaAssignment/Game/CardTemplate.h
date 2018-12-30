@@ -8,24 +8,25 @@
 
 #include <string>
 #include <functional>
+#include <SFML/Graphics/Texture.hpp>
 
 class CardTemplate {
 
 protected:
     std::string m_name;
     std::string m_description;
-    std::string m_imagePath;
+    sf::Texture* m_image;
     float m_cost;
     float m_damage;
     std::function<void()> m_ability;
 
 public:
-    CardTemplate(const std::string& name,const std::string& description, const std::string& imagePath,
+    CardTemplate(const std::string& name,const std::string& description, sf::Texture* image ,
                 int cost,int damage,const std::function<void()>& ability);
 
     std::string Name() const;
     std::string Description() const;
-    std::string ImagePath() const;
+    sf::Texture* Image() const;
     int Cost() const;
     int Damage() const;
     std::function<void()> Ability() const;

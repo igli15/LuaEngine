@@ -24,6 +24,7 @@ void MainGame::LoadResources(Engine::ResourceManager &resourceManager)
 {
     Game::LoadResources(resourceManager);
 
+    resourceManager.LoadTexture("../Assets/CardArtTest.png","CardArtTest");
     resourceManager.LoadTexture("../Assets/CardTemplate.png","CardBackground");
 }
 

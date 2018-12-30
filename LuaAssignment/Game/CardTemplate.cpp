@@ -4,9 +4,9 @@
 
 #include "CardTemplate.h"
 
-CardTemplate::CardTemplate(const std::string &name, const std::string &description, const std::string &imagePath,
+CardTemplate::CardTemplate(const std::string &name, const std::string &description, sf::Texture* image,
                            int cost, int damage, const std::function<void()>& ability)
-                           : m_name(name), m_description(description),m_imagePath(imagePath),m_cost(cost),m_damage(damage),m_ability(ability) {
+                           : m_name(name), m_description(description),m_image(image),m_cost(cost),m_damage(damage),m_ability(ability) {
 
 
 }
@@ -19,10 +19,6 @@ std::string CardTemplate::Description() const {
     return m_description;
 }
 
-std::string CardTemplate::ImagePath() const {
-    return m_imagePath;
-}
-
 int CardTemplate::Cost() const {
     return m_cost;
 }
@@ -33,4 +29,9 @@ int CardTemplate::Damage() const {
 
 std::function<void()> CardTemplate::Ability() const {
     return m_ability;
+}
+
+sf::Texture* CardTemplate::Image() const
+{
+    return m_image;
 }
