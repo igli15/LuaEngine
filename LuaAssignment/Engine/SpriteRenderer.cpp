@@ -92,6 +92,37 @@ Engine::SpriteRenderer::SpriteRenderer()
 
 }
 
+sf::Sprite *Engine::SpriteRenderer::ApplyTexture(sf::Texture *texture)
+{
+    if(m_sprite == nullptr)
+    {
+        m_texture = texture;
+        m_sprite = new sf::Sprite();
+        m_sprite->setTexture(*m_texture);
+
+        m_parent->ApplySprite(m_sprite);
+        m_parent->SetWidth(m_sprite->getGlobalBounds().width);
+        m_parent->SetHeight(m_sprite->getGlobalBounds().height);
+        return m_sprite;
+    }
+    else
+    {
+        delete m_sprite;
+        m_sprite = nullptr;
+        delete m_texture;
+        m_texture = nullptr;
+
+        m_texture = texture;
+        m_sprite = new sf::Sprite();
+        m_sprite->setTexture(*m_texture);
+
+        m_parent->ApplySprite(m_sprite);
+        m_parent->SetWidth(m_sprite->getGlobalBounds().width);
+        m_parent->SetHeight(m_sprite->getGlobalBounds().height);
+        return m_sprite;
+    }
+}
+
 
 
 

@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/Game.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/IVector.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/Physics.cpp.o"
+  "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/ResourceManager.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Rigidbody.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/Rigidbody.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/Scene.cpp.o"
   "/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SceneManager.cpp" "/Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/LuaAssignment.dir/Engine/SceneManager.cpp.o"

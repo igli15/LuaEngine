@@ -12,6 +12,8 @@ int main() {
 
     MainGame* game = new MainGame();
 
+    game->LoadResources(*(Engine::Game::GetResourceManager()));
+    game->Build();
     game->Gameloop();
 
     return 0;

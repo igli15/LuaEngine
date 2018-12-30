@@ -9,6 +9,7 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include "Physics.h"
 #include "EventQueue.h"
+#include "ResourceManager.h"
 
 
 namespace Engine {
@@ -21,7 +22,8 @@ namespace Engine {
     class Game {
     public:
         virtual ~Game();
-        void Build();
+        virtual void LoadResources(ResourceManager& manager) = 0;
+        virtual void Build() = 0;
         void Gameloop();
         Game(unsigned int  width,unsigned int height,std::string gameTitle);
         sf::RenderWindow* GetWindow();
@@ -30,13 +32,14 @@ namespace Engine {
         static SceneManager* GetSceneManager();
         static Physics* GetPhysics();
         static EventQueue* GetEventQueue();
+        static Engine::ResourceManager* GetResourceManager();
 
         unsigned int Width();
         unsigned int Height();
 
     private:
         static Game* instance;
-
+        static Engine::ResourceManager* m_resourceManager;
         static SceneManager* m_sceneManager;
         static Physics* m_physics;
         static EventQueue* m_eventQueue;

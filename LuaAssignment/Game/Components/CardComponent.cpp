@@ -62,12 +62,12 @@ void CardComponent::SetPlayer(PlayerComponent *playerComponent)
     m_playerComponent = playerComponent;
 }
 
-void CardComponent::SetDamage(float damage)
+void CardComponent::SetDamage(int damage)
 {
     m_damage = damage;
 }
 
-void CardComponent::SetCost(float cost)
+void CardComponent::SetCost(int cost)
 {
     m_cost = cost;
 }

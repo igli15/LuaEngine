@@ -21,13 +21,13 @@ protected:
 
 public:
     CardTemplate(const std::string& name,const std::string& description, const std::string& imagePath,
-                float cost,float damage,const std::function<void()>& ability);
+                int cost,int damage,const std::function<void()>& ability);
 
     std::string Name() const;
     std::string Description() const;
     std::string ImagePath() const;
-    float Cost() const;
-    float Damage() const;
+    int Cost() const;
+    int Damage() const;
     std::function<void()> Ability() const;
 };
 

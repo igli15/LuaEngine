@@ -19,8 +19,8 @@ private:
     HandSlot* m_slot;
     bool m_selected = false;
     bool m_hovered = false;
-    float m_damage;
-    float m_cost;
+    int m_damage;
+    int m_cost;
     std::function<void()> m_ability;
 
 public:
@@ -28,8 +28,8 @@ public:
     void Update(float timeStep) override;
     void SetHandSlot(HandSlot* slot);
     void SetPlayer(PlayerComponent* playerComponent);
-    void SetDamage(float damage);
-    void SetCost(float cost);
+    void SetDamage(int damage);
+    void SetCost(int cost);
     void SetAbility(std::function<void()> ability);
 };
 

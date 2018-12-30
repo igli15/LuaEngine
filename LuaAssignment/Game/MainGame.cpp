@@ -17,6 +17,18 @@
 
 MainGame::MainGame() : Game(sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height,"Engine")
 {
+
+}
+
+void MainGame::LoadResources(Engine::ResourceManager &resourceManager)
+{
+    Game::LoadResources(resourceManager);
+
+    resourceManager.LoadTexture("../Assets/CardTemplate.png","CardBackground");
+}
+
+void MainGame::Build()
+{
     Game::Build();   //Used to build the game
 
     lua_State* lua = luaL_newstate();
@@ -36,6 +48,7 @@ MainGame::MainGame() : Game(sf::VideoMode::getDesktopMode().width, sf::VideoMode
     Game::GetEventQueue()->RegisterEvent<TestEvent>( []() -> void {std::cout<<"WORKED";});
 
     Game::GetEventQueue()->QueueEventType<TestEvent>();
-
 }
+
+
 

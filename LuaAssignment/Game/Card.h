@@ -19,6 +19,7 @@ protected:
     Engine::Sprite* m_cardImage;
     Engine::Text* m_cardName;
     Engine::Text* m_cardDescription;
+    Engine::Text* m_cardCost;
     CardComponent* m_cardComponent;
 
 public:

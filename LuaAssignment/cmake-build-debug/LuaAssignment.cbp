@@ -140,6 +140,12 @@
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.cpp">
+			<Option target="LuaAssignment"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.h">
+			<Option target="LuaAssignment"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Rigidbody.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>

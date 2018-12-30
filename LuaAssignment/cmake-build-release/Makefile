@@ -366,6 +366,33 @@ Engine/Physics.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/Physics.cpp.s
 .PHONY : Engine/Physics.cpp.s
 
+Engine/ResourceManager.o: Engine/ResourceManager.cpp.o
+
+.PHONY : Engine/ResourceManager.o
+
+# target to build an object file
+Engine/ResourceManager.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/ResourceManager.cpp.o
+.PHONY : Engine/ResourceManager.cpp.o
+
+Engine/ResourceManager.i: Engine/ResourceManager.cpp.i
+
+.PHONY : Engine/ResourceManager.i
+
+# target to preprocess a source file
+Engine/ResourceManager.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/ResourceManager.cpp.i
+.PHONY : Engine/ResourceManager.cpp.i
+
+Engine/ResourceManager.s: Engine/ResourceManager.cpp.s
+
+.PHONY : Engine/ResourceManager.s
+
+# target to generate assembly for a file
+Engine/ResourceManager.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/ResourceManager.cpp.s
+.PHONY : Engine/ResourceManager.cpp.s
+
 Engine/Rigidbody.o: Engine/Rigidbody.cpp.o
 
 .PHONY : Engine/Rigidbody.o
@@ -1023,6 +1050,9 @@ help:
 	@echo "... Engine/Physics.o"
 	@echo "... Engine/Physics.i"
 	@echo "... Engine/Physics.s"
+	@echo "... Engine/ResourceManager.o"
+	@echo "... Engine/ResourceManager.i"
+	@echo "... Engine/ResourceManager.s"
 	@echo "... Engine/Rigidbody.o"
 	@echo "... Engine/Rigidbody.i"
 	@echo "... Engine/Rigidbody.s"

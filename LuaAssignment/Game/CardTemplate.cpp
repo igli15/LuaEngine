@@ -5,7 +5,7 @@
 #include "CardTemplate.h"
 
 CardTemplate::CardTemplate(const std::string &name, const std::string &description, const std::string &imagePath,
-                           float cost, float damage, const std::function<void()>& ability)
+                           int cost, int damage, const std::function<void()>& ability)
                            : m_name(name), m_description(description),m_imagePath(imagePath),m_cost(cost),m_damage(damage),m_ability(ability) {
 
 
@@ -23,11 +23,11 @@ std::string CardTemplate::ImagePath() const {
     return m_imagePath;
 }
 
-float CardTemplate::Cost() const {
+int CardTemplate::Cost() const {
     return m_cost;
 }
 
-float CardTemplate::Damage() const {
+int CardTemplate::Damage() const {
     return m_damage;
 }
 

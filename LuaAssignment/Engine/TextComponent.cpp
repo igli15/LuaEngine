@@ -18,6 +18,7 @@ void Engine::TextComponent::Start()
     m_text->setString("This is Text");  //Default string
     m_width = m_text->getLocalBounds().width;
     m_height = m_text->getLocalBounds().height;
+
 }
 
 void Engine::TextComponent::SetText(const std::string &text)
@@ -26,6 +27,7 @@ void Engine::TextComponent::SetText(const std::string &text)
 
     m_width = m_text->getLocalBounds().width;
     m_height = m_text->getLocalBounds().height;
+
 }
 
 void Engine::TextComponent::SetFont(const sf::Font &font)

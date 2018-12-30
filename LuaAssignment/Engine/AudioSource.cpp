@@ -7,7 +7,7 @@
 void Engine::AudioSource::PlayOneShotSound(const std::string& soundTag)
 {
     m_soundMap[soundTag]->setVolume(m_volume);
-   m_soundMap[soundTag]->play();
+    m_soundMap[soundTag]->play();
 }
 
 void Engine::AudioSource::PlayMusic()

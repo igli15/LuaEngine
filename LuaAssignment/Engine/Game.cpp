@@ -21,12 +21,15 @@ Engine::Physics* Engine::Game::m_physics;
 
 Engine::EventQueue* Engine::Game::m_eventQueue;
 
+Engine::ResourceManager* Engine::Game::m_resourceManager;
+
 Engine::Game::Game(unsigned int width, unsigned int height,std::string gameTitle)
 {
     instance = this;
     m_width = width;
     m_height = height;
     m_title = gameTitle;
+
 }
 
 
@@ -34,6 +37,7 @@ void Engine::Game::Build()
 {
     m_screenBits = sf::VideoMode::getDesktopMode().bitsPerPixel;
     m_physics = GetPhysics();
+
     m_sceneManager = GetSceneManager();
     m_eventQueue = GetEventQueue();
     m_window = new sf::RenderWindow(sf::VideoMode(m_width,m_height,m_screenBits),m_title);
@@ -141,6 +145,19 @@ Engine::EventQueue *Engine::Game::GetEventQueue()
 sf::RenderWindow *Engine::Game::GetWindow()
 {
     return m_window;
+}
+
+Engine::ResourceManager *Engine::Game::GetResourceManager()
+{
+    if(m_resourceManager == nullptr) return new ResourceManager();
+
+
+    return m_resourceManager;
+}
+
+void Engine::Game::LoadResources(Engine::ResourceManager &manager)
+{
+    m_resourceManager = &manager;
 }
 
 
