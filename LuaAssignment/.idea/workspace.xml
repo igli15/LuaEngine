@@ -13,45 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d7eafb-701f-4880-88c3-db6dd240fdc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Engine/ResourceManager.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Engine/ResourceManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/AudioSource.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/AudioSource.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/SpriteRenderer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/SpriteRenderer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/SpriteRenderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/SpriteRenderer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/TextComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/TextComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Card.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Card.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Card.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Card.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/CardTemplate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/CardTemplate.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/CardTemplate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/CardTemplate.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/CardComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/CardComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/CardComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/CardComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/MainGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/MainGame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/MainGame.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/MainGame.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LuaAssignment" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LuaAssignment.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LuaAssignment.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LuaAssignment.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LuaAssignment.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LuaAssignment.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LuaAssignment.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LuaAssignment.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LuaAssignment.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LuaAssignment.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LuaAssignment.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LuaAssignment.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LuaAssignment.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/LuaAssignment.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/LuaAssignment.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/ResourceManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/ResourceManager.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -201,7 +164,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="12745" />
+          <entry key="cpp" value="12861" />
           <entry key="h" value="8692" />
           <entry key="txt" value="155" />
         </counts>
@@ -210,7 +173,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="155" />
           <entry key="Doxygen file" value="15" />
-          <entry key="ObjectiveC" value="21422" />
+          <entry key="ObjectiveC" value="21538" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -220,7 +183,7 @@
           <entry key="__functional_base" value="2" />
           <entry key="algorithm" value="1" />
           <entry key="cmake" value="4" />
-          <entry key="cpp" value="122" />
+          <entry key="cpp" value="123" />
           <entry key="h" value="82" />
           <entry key="hpp" value="1" />
           <entry key="inl" value="1" />
@@ -233,7 +196,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="6" />
-          <entry key="ObjectiveC" value="212" />
+          <entry key="ObjectiveC" value="213" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -274,6 +237,18 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Engine/Game.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="682">
+              <caret line="160" column="69" selection-start-line="160" selection-start-column="69" selection-end-line="160" selection-end-column="69" />
+              <folding>
+                <element signature="e#48#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Engine/SceneManager.h">
           <provider selected="true" editor-type-id="text-editor">
@@ -292,11 +267,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Game/Card.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="19" column="98" selection-start-line="19" selection-start-column="98" selection-end-line="19" selection-end-column="98" />
+            <state relative-caret-position="452">
+              <caret line="19" column="88" lean-forward="true" selection-start-line="19" selection-start-column="88" selection-end-line="19" selection-end-column="88" />
               <folding>
                 <element signature="e#48#65#0" expanded="true" />
               </folding>
@@ -307,7 +282,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Engine/SpriteRenderer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
+            <state relative-caret-position="3330">
               <caret line="114" column="8" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
             </state>
           </provider>
@@ -316,8 +291,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Engine/ResourceManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1863">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="-28">
+              <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
               <folding>
                 <element signature="e#48#76#0" expanded="true" />
               </folding>
@@ -332,18 +307,6 @@
               <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#48#65#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Game/Components/PlayerComponent.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-              <folding>
-                <element signature="e#48#76#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -419,10 +382,10 @@
         <option value="$PROJECT_DIR$/Engine/Game.h" />
         <option value="$PROJECT_DIR$/Game/MainGame.h" />
         <option value="$PROJECT_DIR$/Game/MainGame.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Game.cpp" />
         <option value="$PROJECT_DIR$/Engine/main.cpp" />
-        <option value="$PROJECT_DIR$/Engine/ResourceManager.cpp" />
         <option value="$PROJECT_DIR$/Engine/SpriteRenderer.cpp" />
+        <option value="$PROJECT_DIR$/Engine/ResourceManager.cpp" />
+        <option value="$PROJECT_DIR$/Engine/Game.cpp" />
         <option value="$PROJECT_DIR$/Game/Card.cpp" />
       </list>
     </option>
@@ -602,12 +565,12 @@
       <workItem from="1545321214260" duration="20893000" />
       <workItem from="1545680016112" duration="9330000" />
       <workItem from="1545871067466" duration="650000" />
-      <workItem from="1545872033445" duration="31783000" />
+      <workItem from="1545872033445" duration="32341000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="391378000" />
+    <option name="totallyTimeSpent" value="391936000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1017,16 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Game.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="159" column="33" selection-start-line="159" selection-start-column="33" selection-end-line="159" selection-end-column="33" />
-          <folding>
-            <element signature="e#48#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Scene.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
@@ -1085,23 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/SpriteRenderer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="114" column="8" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/ResourceManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1863">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="e#48#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Game/MainGame.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
@@ -1109,10 +1045,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/SpriteRenderer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3330">
+          <caret line="114" column="8" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Game/Card.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="19" column="98" selection-start-line="19" selection-start-column="98" selection-end-line="19" selection-end-column="98" />
+        <state relative-caret-position="452">
+          <caret line="19" column="88" lean-forward="true" selection-start-line="19" selection-start-column="88" selection-end-line="19" selection-end-column="88" />
+          <folding>
+            <element signature="e#48#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/ResourceManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+          <folding>
+            <element signature="e#48#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/Game.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="160" column="69" selection-start-line="160" selection-start-column="69" selection-end-line="160" selection-end-column="69" />
           <folding>
             <element signature="e#48#65#0" expanded="true" />
           </folding>

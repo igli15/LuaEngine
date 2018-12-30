@@ -12,6 +12,7 @@ void Engine::ResourceManager::LoadTexture(const std::string &path, const std::st
     {
         //errorHandle
         std::cout<<"Error Loading Texture"<<std::endl;
+        texture->loadFromFile("ErrorTexture");
         return;
     }
 
@@ -60,7 +61,8 @@ sf::Texture *Engine::ResourceManager::GetTexture(const std::string &tag)
     if(textureMap.find(tag) == textureMap.end())
     {
         std::cout<<"There is no Texture resource with that name!"<<std::endl;
-        return nullptr ;
+
+        return GetTexture("ErrorTexture");
     }
 
     return textureMap[tag];

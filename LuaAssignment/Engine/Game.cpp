@@ -158,6 +158,7 @@ Engine::ResourceManager *Engine::Game::GetResourceManager()
 void Engine::Game::LoadResources(Engine::ResourceManager &manager)
 {
     m_resourceManager = &manager;
+    manager.LoadTexture("../Assets/ErrorTexture.png","ErrorTexture");
 }
 
 
