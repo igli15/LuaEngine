@@ -9,6 +9,7 @@
 #include "../Engine/Scene.h"
 #include "TestEvent.h"
 #include "MainLevel.h"
+#include "../Engine/LuaProgram.h"
 
 //There is supposed to be only one MainGame Class.
 //Use this class to create scenes via SceneManager Class.;
@@ -20,6 +21,7 @@ MainGame::MainGame() : Game(sf::VideoMode::getDesktopMode().width, sf::VideoMode
 
 }
 
+//Load All The Required Resources Once Here
 void MainGame::LoadResources(Engine::ResourceManager &resourceManager)
 {
     Game::LoadResources(resourceManager);
@@ -32,11 +34,9 @@ void MainGame::Build()
 {
     Game::Build();   //Used to build the game
 
-    lua_State* lua = luaL_newstate();
-    luaL_openlibs(lua);
-    luaL_loadfile(lua,"../LuaScripts/HelloWorld.lua");
-    lua_call(lua,0,0);
-    lua_close(lua);
+    Engine::LuaProgram* luaProgram = new Engine::LuaProgram("../LuaScripts/HelloWorld.lua");
+
+    std::cout<<luaProgram->GetGlobalDouble("a")<<std::endl;
 
     std::cout<<"Hello World "<<std::endl;
     std::cout<<Game::Instance()->Width()<<std::endl;

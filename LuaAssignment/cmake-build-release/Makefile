@@ -339,6 +339,33 @@ Engine/IVector.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/IVector.cpp.s
 .PHONY : Engine/IVector.cpp.s
 
+Engine/LuaProgram.o: Engine/LuaProgram.cpp.o
+
+.PHONY : Engine/LuaProgram.o
+
+# target to build an object file
+Engine/LuaProgram.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/LuaProgram.cpp.o
+.PHONY : Engine/LuaProgram.cpp.o
+
+Engine/LuaProgram.i: Engine/LuaProgram.cpp.i
+
+.PHONY : Engine/LuaProgram.i
+
+# target to preprocess a source file
+Engine/LuaProgram.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/LuaProgram.cpp.i
+.PHONY : Engine/LuaProgram.cpp.i
+
+Engine/LuaProgram.s: Engine/LuaProgram.cpp.s
+
+.PHONY : Engine/LuaProgram.s
+
+# target to generate assembly for a file
+Engine/LuaProgram.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/LuaProgram.cpp.s
+.PHONY : Engine/LuaProgram.cpp.s
+
 Engine/Physics.o: Engine/Physics.cpp.o
 
 .PHONY : Engine/Physics.o
@@ -1047,6 +1074,9 @@ help:
 	@echo "... Engine/IVector.o"
 	@echo "... Engine/IVector.i"
 	@echo "... Engine/IVector.s"
+	@echo "... Engine/LuaProgram.o"
+	@echo "... Engine/LuaProgram.i"
+	@echo "... Engine/LuaProgram.s"
 	@echo "... Engine/Physics.o"
 	@echo "... Engine/Physics.i"
 	@echo "... Engine/Physics.s"

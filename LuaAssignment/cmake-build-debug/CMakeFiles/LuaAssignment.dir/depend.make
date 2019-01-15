@@ -348,6 +348,14 @@ CMakeFiles/LuaAssignment.dir/Engine/IVector.cpp.o: /usr/local/include/SFML/Syste
 CMakeFiles/LuaAssignment.dir/Engine/IVector.cpp.o: /usr/local/include/SFML/System/Vector3.hpp
 CMakeFiles/LuaAssignment.dir/Engine/IVector.cpp.o: /usr/local/include/SFML/System/Vector3.inl
 
+CMakeFiles/LuaAssignment.dir/Engine/LuaProgram.cpp.o: ../Engine/LuaProgram.cpp
+CMakeFiles/LuaAssignment.dir/Engine/LuaProgram.cpp.o: ../Engine/LuaProgram.h
+CMakeFiles/LuaAssignment.dir/Engine/LuaProgram.cpp.o: /usr/local/include/lua/lauxlib.h
+CMakeFiles/LuaAssignment.dir/Engine/LuaProgram.cpp.o: /usr/local/include/lua/lua.h
+CMakeFiles/LuaAssignment.dir/Engine/LuaProgram.cpp.o: /usr/local/include/lua/lua.hpp
+CMakeFiles/LuaAssignment.dir/Engine/LuaProgram.cpp.o: /usr/local/include/lua/luaconf.h
+CMakeFiles/LuaAssignment.dir/Engine/LuaProgram.cpp.o: /usr/local/include/lua/lualib.h
+
 CMakeFiles/LuaAssignment.dir/Engine/Physics.cpp.o: ../Engine/Collider.h
 CMakeFiles/LuaAssignment.dir/Engine/Physics.cpp.o: ../Engine/Component.h
 CMakeFiles/LuaAssignment.dir/Engine/Physics.cpp.o: ../Engine/IVector.h
@@ -1838,6 +1846,7 @@ CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../Engine/Entity.h
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../Engine/EventQueue.h
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../Engine/EventType.h
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../Engine/Game.h
+CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../Engine/LuaProgram.h
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../Engine/Physics.h
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../Engine/ResourceManager.h
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../Engine/Scene.h
@@ -1941,6 +1950,7 @@ CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: /usr/local/include/SFML/Window
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: /usr/local/include/SFML/Window/Window.hpp
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
+CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: /usr/local/include/lua/lua.hpp
 
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Engine/Collider.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Engine/Component.h

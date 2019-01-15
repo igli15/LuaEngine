@@ -134,6 +134,12 @@
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.cpp">
+			<Option target="LuaAssignment"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h">
+			<Option target="LuaAssignment"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>
