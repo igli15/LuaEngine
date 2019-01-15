@@ -35,8 +35,8 @@ void MainGame::Build()
     Game::Build();   //Used to build the game
 
     Engine::LuaProgram* luaProgram = new Engine::LuaProgram("../LuaScripts/HelloWorld.lua");
-
-    std::cout<<luaProgram->GetGlobalDouble("a")<<std::endl;
+    luaProgram->CallCurrentProgram();
+    std::cout<<luaProgram->GetGlobalInt("a")<<std::endl;
 
     std::cout<<"Hello World "<<std::endl;
     std::cout<<Game::Instance()->Width()<<std::endl;

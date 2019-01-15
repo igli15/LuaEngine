@@ -1,3 +1,3 @@
 print("HELLO FROM LUA")
 
-a = 5.232
+a = 5

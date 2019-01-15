@@ -7,14 +7,8 @@
 
 #include <iostream>
 #include <lua.hpp>
+#include <tuple>
 
-
-enum LuaVarType {
-
-    NUMBER,
-    FUNCTION,
-    STRING
-};
 namespace Engine {
 
     class LuaProgram {
@@ -25,6 +19,9 @@ namespace Engine {
         double GetGlobalDouble(std::string varName);
         int GetGlobalInt(std::string varName);
         std::string GetGlobalString(std::string varName);
+
+        void CallCurrentProgram();
+        //void CallFunction(std::string funcName,);
 
     private:
        lua_State* GenerateProgram(const std::string &filename);
