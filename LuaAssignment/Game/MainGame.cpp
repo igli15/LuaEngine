@@ -36,9 +36,15 @@ void MainGame::Build()
 
     Engine::LuaProgram* luaProgram = new Engine::LuaProgram("../LuaScripts/HelloWorld.lua");
     luaProgram->CallCurrentProgram();
-    std::cout<<luaProgram->GetGlobalInt("a")<<std::endl;
 
-    std::cout<<"Hello World "<<std::endl;
+    luaProgram->GetGlobalFunction("concat",2,1);
+    luaProgram->PushFunctionArgument<std::string>("te");
+    luaProgram->PushFunctionArgument<std::string>("st");
+    luaProgram->CallGlobalFunction("concat");
+    std::cout<<luaProgram->PopFunctionReturn<std::string>()<<std::endl;
+
+    std::cout<<luaProgram->GetGlobalBoolean("t")<<std::endl;
+    std::cout<< "Hello World "<< std::endl;
     std::cout<<Game::Instance()->Width()<<std::endl;
     std::cout<<Game::Instance()->Height()<<std::endl;
 
