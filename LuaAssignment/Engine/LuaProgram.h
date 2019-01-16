@@ -77,10 +77,13 @@ namespace Engine {
                 std::cout<<"there is no function called to access return values from!"<<std::endl;
                 throw;
             }
-            if(m_currentReturnNumber >= m_totalReturnNumber)
+            if(m_currentReturnNumber == m_totalReturnNumber)
             {
-                std::cout<<"you have already popped all returns for the current function"<<std::endl;
-                throw;
+                m_isFuncBeingCalled = false;
+                m_currentReturnNumber = 0;
+                m_currentArgumentPassed = 0;
+                m_totalReturnNumber = 0;
+                m_totalArgumentNumber = 0;
             }
             T returnType;
 
@@ -111,6 +114,101 @@ namespace Engine {
             }
 
             return returnType;
+        }
+
+        template<typename T, typename U>
+        void PushToTable(const std::string& tableName,T key,U value)
+        {
+            lua_getglobal(m_currentLuaState,tableName.c_str());
+
+            if constexpr (std::is_same<T, int>())
+            {
+                lua_pushinteger(m_currentLuaState,key);
+                if constexpr (std::is_same<T, int>())
+                {
+                    lua_pushinteger(m_currentLuaState,value);
+                }
+                else if constexpr (std::is_same<T, double>())
+                {
+                    lua_pushnumber(m_currentLuaState,value);
+                }
+                else if constexpr (std::is_same<T, std::string>())
+                {
+                    lua_pushstring(m_currentLuaState,static_cast<std::string>(value).c_str());
+                }
+                else if constexpr (std::is_same<T, bool>())
+                {
+                    lua_pushboolean(m_currentLuaState,value);
+                }
+            }
+            else if constexpr (std::is_same<T, double>())
+            {
+                lua_pushnumber(m_currentLuaState,key);
+                if constexpr (std::is_same<T, int>())
+                {
+                    lua_pushinteger(m_currentLuaState,value);
+                }
+                else if constexpr (std::is_same<T, double>())
+                {
+                    lua_pushnumber(m_currentLuaState,value);
+                }
+                else if constexpr (std::is_same<T, std::string>())
+                {
+                    lua_pushstring(m_currentLuaState,static_cast<std::string>(value).c_str());
+                }
+                else if constexpr (std::is_same<T, bool>())
+                {
+                    lua_pushboolean(m_currentLuaState,value);
+                }
+            }
+            else if constexpr (std::is_same<T, std::string>())
+            {
+                lua_pushstring(m_currentLuaState,static_cast<std::string>(key).c_str());
+                if constexpr (std::is_same<T, int>())
+                {
+                    lua_pushinteger(m_currentLuaState,value);
+                }
+                else if constexpr (std::is_same<T, double>())
+                {
+                    lua_pushnumber(m_currentLuaState,value);
+                }
+                else if constexpr (std::is_same<T, std::string>())
+                {
+                    lua_pushstring(m_currentLuaState,static_cast<std::string>(value).c_str());
+                }
+                else if constexpr (std::is_same<T, bool>())
+                {
+                    lua_pushboolean(m_currentLuaState,value);
+                }
+            }
+            else if constexpr  (std::is_same<T,bool>())
+            {
+                lua_pushboolean(m_currentLuaState,key);
+                if constexpr (std::is_same<T, int>())
+                {
+                    lua_pushinteger(m_currentLuaState,value);
+                }
+                else if constexpr (std::is_same<T, double>())
+                {
+                    lua_pushnumber(m_currentLuaState,value);
+                }
+                else if constexpr (std::is_same<T, std::string>())
+                {
+                    lua_pushstring(m_currentLuaState,value);
+                }
+                else if constexpr (std::is_same<T, bool>())
+                {
+                    lua_pushboolean(m_currentLuaState,value);
+                }
+            }
+            else
+            {
+                std::cout<<"This type is not supported to be passed as an argument"<<std::endl;
+                throw;
+            }
+
+            lua_settable(m_currentLuaState,-3);  // set all keys and values and pop them
+            lua_pop(m_currentLuaState,1);   //pop the table
         }
 
     private:
