@@ -113,6 +113,12 @@ void Engine::LuaProgram::SetGlobalString(std::string varName, std::string s)
     lua_setglobal(m_currentLuaState,varName.c_str());
 }
 
+void Engine::LuaProgram::SetGlobalBool(std::string varName,int b)
+{
+    lua_pushboolean(m_currentLuaState,b);
+    lua_setglobal(m_currentLuaState,varName.c_str());
+}
+
 void Engine::LuaProgram::GetGlobalFunction(std::string funcName, int NrOfArguments, int NrOfReturns)
 {
     if(m_isFuncBeingCalled == true)
@@ -144,4 +150,5 @@ void Engine::LuaProgram::CallGlobalFunction(std::string funcName)
     m_isFuncBeingCalled = true;
 
 }
+
 

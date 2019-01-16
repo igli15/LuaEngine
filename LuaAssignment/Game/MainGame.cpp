@@ -35,6 +35,8 @@ void MainGame::Build()
     Game::Build();   //Used to build the game
 
     Engine::LuaProgram* luaProgram = new Engine::LuaProgram("../LuaScripts/HelloWorld.lua");
+
+    luaProgram->SetGlobalBool("t",0);
     luaProgram->CallCurrentProgram();
 
     luaProgram->GetGlobalFunction("concat",2,1);

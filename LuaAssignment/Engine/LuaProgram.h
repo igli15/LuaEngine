@@ -29,7 +29,7 @@ namespace Engine {
         void SetGlobalDouble(std::string varName,double d);
         void SetGlobalInt(std::string varName,int i);
         void SetGlobalString(std::string varName,std::string s);
-        void SetGlobalBool(int b);
+        void SetGlobalBool(std::string varName,int b);
 
         //calls the lua file. used for initializing.
         void CallCurrentProgram();

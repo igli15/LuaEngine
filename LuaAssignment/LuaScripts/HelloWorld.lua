@@ -1,7 +1,9 @@
 print("HELLO FROM LUA")
 
 
-t = false
+if t == true then
+    print("its true")
+end
 
 function sum(a,b)
 
