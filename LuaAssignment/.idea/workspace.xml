@@ -14,10 +14,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f3d7eafb-701f-4880-88c3-db6dd240fdc8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/LuaProgram.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/LuaProgram.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/LuaProgram.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/LuaProgram.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/MainGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/MainGame.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LuaScripts/HelloWorld.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LuaScripts/HelloWorld.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/LuaAssignment" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LuaAssignment" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -168,9 +168,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="15675" />
-          <entry key="h" value="12703" />
-          <entry key="lua" value="346" />
+          <entry key="cpp" value="15776" />
+          <entry key="h" value="13206" />
+          <entry key="lua" value="387" />
           <entry key="txt" value="156" />
         </counts>
       </usages-collector>
@@ -178,8 +178,8 @@
         <counts>
           <entry key="CMakeLists.txt" value="156" />
           <entry key="Doxygen file" value="15" />
-          <entry key="Lua" value="180" />
-          <entry key="ObjectiveC" value="28363" />
+          <entry key="Lua" value="221" />
+          <entry key="ObjectiveC" value="28967" />
           <entry key="PLAIN_TEXT" value="166" />
         </counts>
       </usages-collector>
@@ -216,11 +216,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Game/MainGame.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+            <state relative-caret-position="309">
+              <caret line="41" column="80" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
               <folding>
                 <element signature="e#48#67#0" expanded="true" />
               </folding>
@@ -231,8 +231,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Engine/LuaProgram.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3540">
-              <caret line="118" column="53" selection-start-line="118" selection-start-column="53" selection-end-line="118" selection-end-column="53" />
+            <state relative-caret-position="-10">
+              <caret line="95" column="1" lean-forward="true" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
               <folding>
                 <element signature="e#48#71#0" expanded="true" />
               </folding>
@@ -240,13 +240,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Engine/LuaProgram.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="108" column="35" lean-forward="true" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+            <state relative-caret-position="393">
+              <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
               <folding>
                 <element signature="e#119#138#0" expanded="true" />
+                <element signature="e#7561#7585#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -255,8 +256,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LuaScripts/HelloWorld.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="90">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -332,10 +333,10 @@
         <option value="$PROJECT_DIR$/Game/Components/PlayerComponent.cpp" />
         <option value="$PROJECT_DIR$/Game/Hand.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Engine/LuaProgram.cpp" />
-        <option value="$PROJECT_DIR$/Game/MainGame.cpp" />
-        <option value="$PROJECT_DIR$/LuaScripts/HelloWorld.lua" />
         <option value="$PROJECT_DIR$/Engine/LuaProgram.h" />
+        <option value="$PROJECT_DIR$/Engine/LuaProgram.cpp" />
+        <option value="$PROJECT_DIR$/LuaScripts/HelloWorld.lua" />
+        <option value="$PROJECT_DIR$/Game/MainGame.cpp" />
       </list>
     </option>
   </component>
@@ -533,12 +534,12 @@
       <workItem from="1545872033445" duration="33406000" />
       <workItem from="1547646837784" duration="5040000" />
       <workItem from="1547654452990" duration="7810000" />
-      <workItem from="1547683319181" duration="246000" />
+      <workItem from="1547683319181" duration="1910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="427051000" />
+    <option name="totallyTimeSpent" value="428715000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -926,20 +927,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game/MainGame.cpp">
+    <entry file="file://$PROJECT_DIR$/Engine/LuaProgram.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+        <state relative-caret-position="393">
+          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
           <folding>
-            <element signature="e#48#67#0" expanded="true" />
+            <element signature="e#119#138#0" expanded="true" />
+            <element signature="e#7561#7585#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Engine/LuaProgram.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3540">
-          <caret line="118" column="53" selection-start-line="118" selection-start-column="53" selection-end-line="118" selection-end-column="53" />
+        <state relative-caret-position="-10">
+          <caret line="95" column="1" lean-forward="true" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
           <folding>
             <element signature="e#48#71#0" expanded="true" />
           </folding>
@@ -948,17 +950,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LuaScripts/HelloWorld.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="90">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/LuaProgram.h">
+    <entry file="file://$PROJECT_DIR$/Game/MainGame.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="108" column="35" lean-forward="true" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+        <state relative-caret-position="309">
+          <caret line="41" column="80" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
           <folding>
-            <element signature="e#119#138#0" expanded="true" />
+            <element signature="e#48#67#0" expanded="true" />
           </folding>
         </state>
       </provider>

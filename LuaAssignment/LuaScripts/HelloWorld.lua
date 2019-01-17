@@ -1,7 +1,7 @@
 print("HELLO FROM LUA")
 
 test = {
-    ["t"] = 3;
+    ["te"] = "st";
 }
 
 
@@ -14,10 +14,5 @@ end
 function concat(a,b)
 
 return a..b
-
-end
-
-function p()
-    print(test["t"]);
 
 end

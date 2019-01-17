@@ -29,7 +29,7 @@ namespace Engine {
         void SetGlobalDouble(std::string varName,double d);
         void SetGlobalInt(std::string varName,int i);
         void SetGlobalString(std::string varName,std::string s);
-        void SetGlobalBool(std::string varName,int b);
+        void SetGlobalBool(std::string varName,bool b);
 
         //calls the lua file. used for initializing.
         void CallCurrentProgram();
@@ -208,7 +208,110 @@ namespace Engine {
             }
 
             lua_settable(m_currentLuaState,-3);  // set all keys and values and pop them
+
             lua_pop(m_currentLuaState,1);   //pop the table
+        }
+
+        template <typename T,typename  U>
+        U GetValueFromTable(const std::string& tableName, T key)
+        {
+            lua_getglobal(m_currentLuaState,tableName.c_str());
+            U returnValue;
+
+            if constexpr (std::is_same<T, int>())
+            {
+                lua_pushinteger(m_currentLuaState,key);
+                lua_gettable(m_currentLuaState,-2); // -1 is the table , -2 is the key
+
+                if constexpr (std::is_same<U, int>())
+                {
+                    returnValue = lua_tointeger(m_currentLuaState,-1); //result was pushed on top
+                }
+                else if constexpr (std::is_same<U, double>())
+                {
+                    returnValue = lua_tonumber(m_currentLuaState,-1); //result was pushed on top
+                }
+                else if constexpr (std::is_same<U, std::string>())
+                {
+                    returnValue = lua_tostring(m_currentLuaState,-1); //result was pushed on top
+                }
+                else if constexpr (std::is_same<U, bool>())
+                {
+                    returnValue = lua_toboolean(m_currentLuaState,-1); //result was pushed on top
+                }
+            }
+            else if constexpr (std::is_same<T, double>())
+            {
+                lua_pushnumber(m_currentLuaState,key);
+                lua_gettable(m_currentLuaState,-2); // -1 is the table , -2 is the key
+
+                if constexpr (std::is_same<U, int>())
+                {
+                    returnValue = lua_tointeger(m_currentLuaState,-1); //result was pushed on top
+                }
+                else if constexpr (std::is_same<U, double>())
+                {
+                    returnValue = lua_tonumber(m_currentLuaState,-1); //result was pushed on top
+                }
+                else if constexpr (std::is_same<U, std::string>())
+                {
+                    returnValue = lua_tostring(m_currentLuaState,-1); //result was pushed on top
+                }
+                else if constexpr (std::is_same<U, bool>())
+                {
+                    returnValue = lua_toboolean(m_currentLuaState,-1); //result was pushed on top
+                }
+            }
+            else if constexpr (std::is_same<T, std::string>())
+            {
+                lua_pushstring(m_currentLuaState,key.c_str());
+                lua_gettable(m_currentLuaState,-2); // -1 is the table , -2 is the key
+
+                if constexpr (std::is_same<U, int>())
+                {
+                    returnValue = lua_tointeger(m_currentLuaState,-1); //result was pushed on top
+                }
+                else if constexpr (std::is_same<U, double>())
+                {
+                    returnValue = lua_tonumber(m_currentLuaState,-1); //result was pushed on top
+                }
+                else if constexpr (std::is_same<U, std::string>())
+                {
+                    returnValue = lua_tostring(m_currentLuaState,-1); //result was pushed on top
+                }
+                else if constexpr (std::is_same<U, bool>())
+                {
+                    returnValue = lua_toboolean(m_currentLuaState,-1); //result was pushed on top
+                }
+            }
+            else if constexpr  (std::is_same<T,bool>())
+            {
+                lua_pushboolean(m_currentLuaState,key);
+                lua_gettable(m_currentLuaState,-2); // -1 is the table , -2 is the key
+
+                if constexpr (std::is_same<U, int>())
+                {
+                    returnValue = lua_tointeger(m_currentLuaState,-1); //result was pushed on top
+                }
+                else if constexpr (std::is_same<U, double>())
+                {
+                    returnValue = lua_tonumber(m_currentLuaState,-1); //result was pushed on top
+                }
+                else if constexpr (std::is_same<U, std::string>())
+                {
+                    returnValue = lua_tostring(m_currentLuaState,-1); //result was pushed on top
+                }
+                else if constexpr (std::is_same<U, bool>())
+                {
+                    returnValue = lua_toboolean(m_currentLuaState,-1); //result was pushed on top
+                }
+            }
+            else
+            {
+                std::cout<<"This type is not supported to be passed as an argument"<<std::endl;
+                throw;
+            }
+            return  returnValue;
         }
 
     private:

@@ -113,7 +113,7 @@ void Engine::LuaProgram::SetGlobalString(std::string varName, std::string s)
     lua_setglobal(m_currentLuaState,varName.c_str());
 }
 
-void Engine::LuaProgram::SetGlobalBool(std::string varName,int b)
+void Engine::LuaProgram::SetGlobalBool(std::string varName,bool b)
 {
     lua_pushboolean(m_currentLuaState,b);
     lua_setglobal(m_currentLuaState,varName.c_str());

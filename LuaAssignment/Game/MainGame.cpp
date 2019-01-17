@@ -39,10 +39,9 @@ void MainGame::Build()
 
     luaProgram->CallCurrentProgram();
 
-    luaProgram->PushToTable<std::string,int>("test","t",20);
+    std::cout<<luaProgram->GetValueFromTable<std::string,std::string>("test","te")<<std::endl;
+   // luaProgram->PushToTable<std::string,int>("test","t",20);
 
-    luaProgram->GetGlobalFunction("p",0,0);
-    luaProgram->CallGlobalFunction("p");
 
     /*luaProgram->GetGlobalFunction("concat",2,1);
     luaProgram->PushFunctionArgument<std::string>("te");
