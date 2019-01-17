@@ -39,7 +39,7 @@ void MainGame::Build()
 
     luaProgram->CallCurrentProgram();
 
-    luaProgram->PushToTable<int,int>("test",1,20);
+    luaProgram->PushToTable<std::string,int>("test","t",20);
 
     luaProgram->GetGlobalFunction("p",0,0);
     luaProgram->CallGlobalFunction("p");

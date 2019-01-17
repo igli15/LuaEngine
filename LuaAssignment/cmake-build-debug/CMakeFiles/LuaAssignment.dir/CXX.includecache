@@ -58,6 +58,12 @@ EventQueue.h
 ResourceManager.h
 /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.h
 
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.cpp
+LuaProgram.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h
+string
+-
+
 /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h
 iostream
 -
@@ -988,6 +994,22 @@ SFML/Config.hpp
 
 /usr/local/include/SFML/Window/WindowStyle.hpp
 
+/usr/local/include/lua/lauxlib.h
+stddef.h
+-
+stdio.h
+-
+lua.h
+/usr/local/include/lua/lua.h
+
+/usr/local/include/lua/lua.h
+stdarg.h
+-
+stddef.h
+-
+luaconf.h
+/usr/local/include/lua/luaconf.h
+
 /usr/local/include/lua/lua.hpp
 lua.h
 /usr/local/include/lua/lua.h
@@ -995,4 +1017,18 @@ lualib.h
 /usr/local/include/lua/lualib.h
 lauxlib.h
 /usr/local/include/lua/lauxlib.h
+
+/usr/local/include/lua/luaconf.h
+limits.h
+-
+stddef.h
+-
+stdint.h
+-
+assert.h
+-
+
+/usr/local/include/lua/lualib.h
+lua.h
+/usr/local/include/lua/lua.h
 

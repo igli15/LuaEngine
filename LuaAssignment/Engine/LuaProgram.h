@@ -54,7 +54,7 @@ namespace Engine {
             else if constexpr (std::is_same<T,std::string>())
             {
                 m_currentArgumentPassed +=1;
-                lua_pushstring(m_currentLuaState, static_cast<std::string>(argument).c_str());
+                lua_pushstring(m_currentLuaState, argument.c_str());
             }
             else if constexpr (std::is_same<T,double>())
             {
@@ -124,19 +124,19 @@ namespace Engine {
             if constexpr (std::is_same<T, int>())
             {
                 lua_pushinteger(m_currentLuaState,key);
-                if constexpr (std::is_same<T, int>())
+                if constexpr (std::is_same<U, int>())
                 {
                     lua_pushinteger(m_currentLuaState,value);
                 }
-                else if constexpr (std::is_same<T, double>())
+                else if constexpr (std::is_same<U, double>())
                 {
                     lua_pushnumber(m_currentLuaState,value);
                 }
-                else if constexpr (std::is_same<T, std::string>())
+                else if constexpr (std::is_same<U, std::string>())
                 {
-                    lua_pushstring(m_currentLuaState,static_cast<std::string>(value).c_str());
+                    lua_pushstring(m_currentLuaState,value.c_str());
                 }
-                else if constexpr (std::is_same<T, bool>())
+                else if constexpr (std::is_same<U, bool>())
                 {
                     lua_pushboolean(m_currentLuaState,value);
                 }
@@ -144,39 +144,39 @@ namespace Engine {
             else if constexpr (std::is_same<T, double>())
             {
                 lua_pushnumber(m_currentLuaState,key);
-                if constexpr (std::is_same<T, int>())
+                if constexpr (std::is_same<U, int>())
                 {
                     lua_pushinteger(m_currentLuaState,value);
                 }
-                else if constexpr (std::is_same<T, double>())
+                else if constexpr (std::is_same<U, double>())
                 {
                     lua_pushnumber(m_currentLuaState,value);
                 }
-                else if constexpr (std::is_same<T, std::string>())
+                else if constexpr (std::is_same<U, std::string>())
                 {
-                    lua_pushstring(m_currentLuaState,static_cast<std::string>(value).c_str());
+                    lua_pushstring(m_currentLuaState,value.c_str());
                 }
-                else if constexpr (std::is_same<T, bool>())
+                else if constexpr (std::is_same<U, bool>())
                 {
                     lua_pushboolean(m_currentLuaState,value);
                 }
             }
             else if constexpr (std::is_same<T, std::string>())
             {
-                lua_pushstring(m_currentLuaState,static_cast<std::string>(key).c_str());
-                if constexpr (std::is_same<T, int>())
+                lua_pushstring(m_currentLuaState,key.c_str());
+                if constexpr (std::is_same<U, int>())
                 {
                     lua_pushinteger(m_currentLuaState,value);
                 }
-                else if constexpr (std::is_same<T, double>())
+                else if constexpr (std::is_same<U, double>())
                 {
                     lua_pushnumber(m_currentLuaState,value);
                 }
-                else if constexpr (std::is_same<T, std::string>())
+                else if constexpr (std::is_same<U, std::string>())
                 {
-                    lua_pushstring(m_currentLuaState,static_cast<std::string>(value).c_str());
+                    lua_pushstring(m_currentLuaState,value.c_str());
                 }
-                else if constexpr (std::is_same<T, bool>())
+                else if constexpr (std::is_same<U, bool>())
                 {
                     lua_pushboolean(m_currentLuaState,value);
                 }
@@ -184,19 +184,19 @@ namespace Engine {
             else if constexpr  (std::is_same<T,bool>())
             {
                 lua_pushboolean(m_currentLuaState,key);
-                if constexpr (std::is_same<T, int>())
+                if constexpr (std::is_same<U, int>())
                 {
                     lua_pushinteger(m_currentLuaState,value);
                 }
-                else if constexpr (std::is_same<T, double>())
+                else if constexpr (std::is_same<U, double>())
                 {
                     lua_pushnumber(m_currentLuaState,value);
                 }
-                else if constexpr (std::is_same<T, std::string>())
+                else if constexpr (std::is_same<U, std::string>())
                 {
-                    lua_pushstring(m_currentLuaState,value);
+                    lua_pushstring(m_currentLuaState,value.c_str());
                 }
-                else if constexpr (std::is_same<T, bool>())
+                else if constexpr (std::is_same<U, bool>())
                 {
                     lua_pushboolean(m_currentLuaState,value);
                 }

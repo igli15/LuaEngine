@@ -1,7 +1,7 @@
 print("HELLO FROM LUA")
 
 test = {
-    [1] = 3;
+    ["t"] = 3;
 }
 
 
@@ -18,6 +18,6 @@ return a..b
 end
 
 function p()
-    print(test[1]);
+    print(test["t"]);
 
 end
