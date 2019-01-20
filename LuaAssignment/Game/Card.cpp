@@ -25,6 +25,10 @@ void Card::Build()
     m_cardDescription = parentScene->Instantiate<Engine::Text>();
     m_cardCost = parentScene->Instantiate<Engine::Text>();
 
+    m_cardName->GetTextComponent()->SetColor(sf::Color::Black);
+    m_cardDescription->GetTextComponent()->SetColor(sf::Color::Black);
+    m_cardCost->GetTextComponent()->SetColor(sf::Color::White);
+
     AddChild(m_cardName);
     AddChild(m_cardDescription);
     AddChild(m_cardCost);
@@ -45,19 +49,10 @@ void Card::Start()
     Engine::Entity::Start();
     m_cardImage = parentScene->Instantiate<Engine::Sprite>();
 
-    AddChild(m_cardImage);
+   AddChild(m_cardImage);
 
 }
 
-Card::~Card()
-{
-    delete(m_cardDescription);
-    m_cardDescription = nullptr;
-    delete(m_cardImage);
-    m_cardImage = nullptr;
-    delete(m_cardName);
-    m_cardName = nullptr;
-}
 
 void Card::SetCardName(const std::string &name)
 {

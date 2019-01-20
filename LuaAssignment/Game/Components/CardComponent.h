@@ -27,6 +27,7 @@ public:
     void Start() override;
     void Update(float timeStep) override;
     void SetHandSlot(HandSlot* slot);
+    void PlayCard();
     void SetPlayer(PlayerComponent* playerComponent);
     void SetDamage(int damage);
     void SetCost(int cost);

@@ -8,6 +8,7 @@
 #include "../Engine/Entity.h"
 #include "../Engine/SpriteRenderer.h"
 #include "../Engine/Sprite.h"
+#include "Components/EnemyComponent.h"
 
 class Enemy : public Engine::Entity {
 
@@ -18,6 +19,7 @@ public:
 
 private:
 
+    EnemyComponent* m_enemyComponent;
     Engine::Sprite* m_enemyArtSprite;
     Engine::SpriteRenderer* m_spriteRenderer;
 

@@ -47,6 +47,12 @@ void Engine::Scene::UpdateScene(float timeStep)
 void Engine::Scene::DestroyEntity(Engine::Entity *objToDestroy)
 {
     objToDestroy->MarkEntityForDeletion();
+
+    for (int i = 0; i < objToDestroy->GetChildCount(); ++i) {
+
+        objToDestroy->GetChildAt(i)->MarkEntityForDeletion();
+
+    }
 }
 
 void Engine::Scene::DestroyAllEntities()

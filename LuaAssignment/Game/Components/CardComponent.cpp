@@ -6,6 +6,8 @@
 #include "CardComponent.h"
 #include "../../Engine/Entity.h"
 #include "../../Engine/Game.h"
+#include "../../Engine/Scene.h"
+#include "../Hand.h"
 
 void CardComponent::Start()
 {
@@ -46,6 +48,11 @@ void CardComponent::Update(float timeStep)
 
     if(m_selected && !sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
+        if(m_parent->GetWorldPosition().y <= 400)
+        {
+           PlayCard();
+        }
+
         m_parent->SetWorldPosition(m_slot->pos->x,m_slot->pos->y);
         m_selected = false;
         m_playerComponent->isHoldingCard = false;
@@ -75,5 +82,16 @@ void CardComponent::SetCost(int cost)
 void CardComponent::SetAbility(std::function<void()> ability)
 {
     m_ability = ability;
+}
+
+void CardComponent::PlayCard()
+{
+    if(m_ability != nullptr)
+        m_ability();
+
+    m_playerComponent->GetHand()->GetHandComponent()->DecrementCardNumber();
+    m_slot->EmptySlot();
+    m_parent->parentScene->DestroyEntity(m_parent);
+
 }
 

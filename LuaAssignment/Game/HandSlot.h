@@ -19,6 +19,7 @@ public:
     unsigned int index;
     Card* currentCard = nullptr;
     bool IsEmpty();
+    void EmptySlot();
 
 };
 

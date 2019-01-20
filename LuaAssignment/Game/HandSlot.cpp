@@ -26,3 +26,8 @@ HandSlot::~HandSlot()
     currentCard = nullptr;
 }
 
+void HandSlot::EmptySlot()
+{
+    currentCard = nullptr;
+}
+

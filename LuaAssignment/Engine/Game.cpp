@@ -66,11 +66,12 @@ void Engine::Game::Gameloop()
             m_sceneManager->ClearDestroyedScene();
 
             m_eventQueue->HandleEvents();
+
             if(m_sceneManager->GetCurrentScene() != nullptr)
             {
-
                 m_sceneManager->GetCurrentScene()->ClearDeadEntities();
                 m_sceneManager->GetCurrentScene()->UpdateScene(ticksPerMilliseconds); //Update the current scene
+
             }
 
             clock.restart();

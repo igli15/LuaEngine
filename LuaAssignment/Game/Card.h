@@ -30,7 +30,7 @@ public:
     void SetCardDescription(const std::string& description);
     void SetCardImage(const std::string& path);
 
-    ~Card() override;
+
 
 };
 

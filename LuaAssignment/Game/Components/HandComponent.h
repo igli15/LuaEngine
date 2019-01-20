@@ -19,6 +19,7 @@ public:
     void Start() override;
     void AddSlots(float slotNumber,float startXPos,float cardWidth,float cardHeight);
     void AddCard(Card* card);
+    void DecrementCardNumber();
     ~HandComponent() override;
 
     int GetCurrentCardNumber();

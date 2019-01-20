@@ -82,7 +82,9 @@ Engine::SpriteRenderer::~SpriteRenderer()
         m_parent->parentScene->m_spriteRenderVector.erase(iterator);
     }
 
-    delete m_texture;
+    //TODO SMTH MAY GO WRONG HERE
+    
+    // delete m_texture;
     m_texture = nullptr;
     m_sprite = nullptr;
 }

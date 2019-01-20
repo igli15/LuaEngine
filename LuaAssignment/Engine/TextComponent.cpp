@@ -78,7 +78,6 @@ Engine::TextComponent::~TextComponent()
     }
 
     delete m_text;
-    delete m_font;
     m_text = nullptr;
     m_font = nullptr;
 }

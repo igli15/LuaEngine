@@ -5,6 +5,7 @@
 #include "math.h"
 #include <algorithm>
 #include "Collider.h"
+#include "Scene.h"
 
 std::map<std::string,Engine::Entity*> Engine::Entity::TagDictionary;
 

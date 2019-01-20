@@ -8,10 +8,10 @@
 
 void Enemy::Build()
 {
+    m_enemyComponent = AddComponent<EnemyComponent>();
 
     m_spriteRenderer = AddComponent<Engine::SpriteRenderer>();
     m_spriteRenderer->ApplyTexture(Engine::Game::GetResourceManager()->GetTexture("EnemyBorder"));
-
 
     Entity::Build();
 }

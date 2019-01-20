@@ -58,4 +58,9 @@ unsigned int HandComponent::GetMaxCardCapacity()
     return m_maxCardCapacity;
 }
 
+void HandComponent::DecrementCardNumber()
+{
+    m_currentCardNumber -=1;
+}
+
 

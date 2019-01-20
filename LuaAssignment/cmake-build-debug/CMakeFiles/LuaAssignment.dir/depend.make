@@ -172,18 +172,26 @@ CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: ../Engine/Component.h
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: ../Engine/Entity.cpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: ../Engine/Entity.h
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: ../Engine/IVector.h
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: ../Engine/Scene.h
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: ../Engine/Text.h
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: ../Engine/TextComponent.h
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Config.hpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/BlendMode.hpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/Color.hpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/Drawable.hpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/Export.hpp
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/Image.hpp
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/PrimitiveType.hpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/Rect.hpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/Rect.inl
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/RenderStates.hpp
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/RenderTarget.hpp
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/RenderWindow.hpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/Sprite.hpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/Transform.hpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/Transformable.hpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/Vertex.hpp
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Graphics/View.hpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/System.hpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/System/Clock.hpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/System/Err.hpp
@@ -209,6 +217,13 @@ CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/System
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/System/Vector2.inl
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/System/Vector3.hpp
 CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/System/Vector3.inl
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Window/ContextSettings.hpp
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Window/Export.hpp
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Window/GlResource.hpp
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Window/VideoMode.hpp
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Window/Window.hpp
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
+CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
 CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.o: ../Engine/EventQueue.cpp
 CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.o: ../Engine/EventQueue.h
@@ -1221,11 +1236,18 @@ CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Engine/Game
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Engine/IVector.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Engine/Physics.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Engine/ResourceManager.h
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Engine/Scene.h
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Engine/Sprite.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Engine/SpriteRenderer.h
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Engine/Text.h
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Engine/TextComponent.h
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Card.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/CardTemplate.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Components/CardComponent.cpp
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Components/CardComponent.h
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Components/HandComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Components/PlayerComponent.h
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Hand.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/HandSlot.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
@@ -1315,6 +1337,8 @@ CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/inc
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/SFML/Window/Window.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/lua/lua.h
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/lua/luaconf.h
 
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Engine/Collider.h
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Engine/Component.h
@@ -1671,6 +1695,7 @@ CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o: ../Engine/Sprite.h
 CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o: ../Engine/SpriteRenderer.h
 CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o: ../Engine/Text.h
 CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o: ../Engine/TextComponent.h
+CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o: ../Game/Enemy.cpp
 CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o: ../Game/Enemy.h
 CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o: /usr/local/include/SFML/Audio.hpp
@@ -2087,6 +2112,7 @@ CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Engine/TextComponent.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/Card.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/CardTemplate.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/Components/CardComponent.h
+CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/Components/HandComponent.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/Enemy.h
