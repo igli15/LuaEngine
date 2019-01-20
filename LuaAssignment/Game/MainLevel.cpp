@@ -19,11 +19,16 @@
 void MainLevel::BuildScene()
 {
     Player* p = Instantiate<Player>();
-
+    PlayerComponent* playerComponent = p->GetComponent<PlayerComponent>();
     Enemy* enemy = Instantiate<Enemy>();
+    EnemyComponent* enemyComponent = enemy->GetComponent<EnemyComponent>();
+
+
+    enemyComponent->SetPlayerComponent(playerComponent);
+    playerComponent->SetEnemyComponent(enemyComponent);
 
     PlayerInfo* info = Instantiate<PlayerInfo>();
-    info->SetPlayerComponent(p->GetComponent<PlayerComponent>());
+    info->SetPlayerComponent(playerComponent);
 
 
 

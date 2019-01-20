@@ -7,6 +7,7 @@
 
 
 #include "../../Engine/Component.h"
+#include "EnemyComponent.h"
 
 class Hand;
 class Card;
@@ -18,15 +19,32 @@ private:
 
     Hand* m_hand;
     Deck* m_deck;
+    EnemyComponent* m_enemyComponent;
+
+    int m_currentMana = 10;
+    int m_maxMana = 10;
+
+    bool m_isTurn;
+    int m_health;
 
 public:
     void Start() override;
     void Update(float timeStep) override;
     bool isHoldingCard = false;
     void AddCardToHand(Card* card);
+    void OnTurnStart();
+    void SetEnemyComponent(EnemyComponent* e);
+    void EndTurn();
     void DrawCard();
+    void DealDamage(int damage);
+    void SetManaCount(int mana);
+    void SpendMana(int amount);
+    int GetCurrentManaCount();
+    int GetMaxManaCount();
+    int GetHealth();
     Hand* GetHand();
     Deck* GetDeck();
+    EnemyComponent* GetEnemy();
 };
 
 

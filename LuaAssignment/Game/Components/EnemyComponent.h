@@ -7,9 +7,24 @@
 
 #include "../../Engine/Component.h"
 
+class PlayerComponent;
+
 class EnemyComponent : public Engine::Component {
 
+public:
+    void Start() override ;
+    void Update(float timeStep) override;
+    void DealDamage(int damage);
+    void SetPlayerComponent(PlayerComponent* p);
+    int GetHealth();
+    void OnTurnStart();
 
+private:
+    int m_health;
+
+    bool m_IsTurn ;
+
+    PlayerComponent* m_playerComponent;
 };
 
 

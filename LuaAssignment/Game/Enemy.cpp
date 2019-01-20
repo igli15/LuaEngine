@@ -8,7 +8,13 @@
 
 void Enemy::Build()
 {
+    m_healthText = parentScene->Instantiate<Engine::Text>();
+    AddChild(m_healthText);
+    m_healthText->SetLocalPosition(150,20);
+
     m_enemyComponent = AddComponent<EnemyComponent>();
+
+    m_healthText->GetTextComponent()->SetCharacterSize(48);
 
     m_spriteRenderer = AddComponent<Engine::SpriteRenderer>();
     m_spriteRenderer->ApplyTexture(Engine::Game::GetResourceManager()->GetTexture("EnemyBorder"));
@@ -26,4 +32,11 @@ void Enemy::Start()
     AddChild(m_enemyArtSprite);
 
     SetWorldPosition(Engine::Game::Instance()->Width()/2 - 300 ,200);
+}
+
+void Enemy::Update(float timeStep)
+{
+    Entity::Update(timeStep);
+
+    m_healthText->SetText("Health: " + std::to_string(m_enemyComponent->GetHealth()));
 }

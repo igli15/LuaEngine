@@ -35,7 +35,8 @@ void PlayerInfo::Update(float timeStep)
     int cardNumberOnHand = m_playerComponent->GetHand()->GetHandComponent()->GetCurrentCardNumber();
     int cardsOnDeck = m_playerComponent->GetDeck()->GetDeckComponent()->GetNumberOfCardsInDeck();
     deckInfoText->SetText("CardNumber: " + std::to_string(cardNumberOnHand) +
-    "\nPlayerHealth: 30" + "\nCardsInDeck: " + std::to_string(cardsOnDeck));
+    "\nPlayerHealth: " + std::to_string(m_playerComponent->GetHealth()) + "\nCardsInDeck: " + std::to_string(cardsOnDeck)
+    + "\nMana: " + std::to_string(m_playerComponent->GetCurrentManaCount()) + "/" + std::to_string(m_playerComponent->GetMaxManaCount()));
 }
 
 void PlayerInfo::SetPlayerComponent(PlayerComponent *p)

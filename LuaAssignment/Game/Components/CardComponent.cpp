@@ -50,6 +50,7 @@ void CardComponent::Update(float timeStep)
     {
         if(m_parent->GetWorldPosition().y <= 400)
         {
+            if(m_cost <= m_playerComponent->GetCurrentManaCount())
            PlayCard();
         }
 
@@ -88,6 +89,9 @@ void CardComponent::PlayCard()
 {
     if(m_ability != nullptr)
         m_ability();
+
+    m_playerComponent->SpendMana(m_cost);
+    m_playerComponent->GetEnemy()->DealDamage(m_damage);
 
     m_playerComponent->GetHand()->GetHandComponent()->DecrementCardNumber();
     m_slot->EmptySlot();

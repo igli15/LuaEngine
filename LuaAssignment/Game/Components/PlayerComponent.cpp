@@ -14,6 +14,7 @@
 void PlayerComponent::Start()
 {
     Component::Start();
+    m_health = 30;
 
     m_hand = m_parent->parentScene->Instantiate<Hand>();
     m_deck = m_parent->parentScene->Instantiate<Deck>();
@@ -21,7 +22,7 @@ void PlayerComponent::Start()
 
     for (int i = 0; i < 20; ++i) {
         CardTemplate *t = new CardTemplate("LOL", "DESC", Engine::Game::GetResourceManager()->GetTexture("CardArtTest"),
-                                           10, 20, nullptr);
+                                           10, 5, nullptr);
         m_deck->GetDeckComponent()->AddCardTemplate(t);
     }
 
@@ -65,6 +66,69 @@ Hand *PlayerComponent::GetHand()
 Deck *PlayerComponent::GetDeck()
 {
     return  m_deck;
+}
+
+int PlayerComponent::GetHealth()
+{
+    return  m_health;
+}
+
+void PlayerComponent::DealDamage(int damage)
+{
+    m_health -= damage;
+}
+
+void PlayerComponent::SetEnemyComponent(EnemyComponent *e)
+{
+    m_enemyComponent = e;
+}
+
+void PlayerComponent::EndTurn()
+{
+    if(m_isTurn)
+    {
+        m_isTurn = false;
+        m_enemyComponent->OnTurnStart();
+    }
+}
+
+void PlayerComponent::OnTurnStart()
+{
+    m_isTurn = true;
+
+    DrawCard();
+
+    if(m_currentMana >= m_maxMana)
+    {
+        m_currentMana = m_maxMana;
+    }
+    else m_currentMana +=1;
+
+}
+
+void PlayerComponent::SetManaCount(int mana)
+{
+    m_currentMana = mana;
+}
+
+int PlayerComponent::GetCurrentManaCount()
+{
+    return m_currentMana;
+}
+
+int PlayerComponent::GetMaxManaCount()
+{
+    return m_maxMana;
+}
+
+EnemyComponent *PlayerComponent::GetEnemy()
+{
+    return m_enemyComponent;
+}
+
+void PlayerComponent::SpendMana(int amount)
+{
+    m_currentMana -= amount;
 }
 
 
