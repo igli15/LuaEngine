@@ -29,6 +29,8 @@ void MainGame::LoadResources(Engine::ResourceManager &resourceManager)
 
     resourceManager.LoadTexture("../Assets/CardArtTest.png","CardArtTest");
     resourceManager.LoadTexture("../Assets/CardTemplate.png","CardBackground");
+    resourceManager.LoadTexture("../Assets/EnemyBorder.png","EnemyBorder");
+    resourceManager.LoadTexture("../Assets/EnemyArt.png","EnemyArt");
 }
 
 void MainGame::Build()

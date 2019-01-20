@@ -33,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LuaAssignment.dir/Engine/ResourceManager.cpp.o"
   "CMakeFiles/LuaAssignment.dir/Engine/LuaProgram.cpp.o"
   "CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o"
+  "CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o"
+  "CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o"
   "CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.o"
   "LuaAssignment.pdb"
   "LuaAssignment"

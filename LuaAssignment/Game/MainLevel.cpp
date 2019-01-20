@@ -14,13 +14,18 @@
 #include "Hand.h"
 #include "Player.h"
 #include "PlayerInfo.h"
+#include "Enemy.h"
 
 void MainLevel::BuildScene()
 {
     Player* p = Instantiate<Player>();
 
+    Enemy* enemy = Instantiate<Enemy>();
+
     PlayerInfo* info = Instantiate<PlayerInfo>();
     info->SetPlayerComponent(p->GetComponent<PlayerComponent>());
+
+
 
 }
 
