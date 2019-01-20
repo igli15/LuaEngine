@@ -5,9 +5,15 @@
 #include "LuaProgram.h"
 #include <string>
 
+int (*Engine::LuaProgram::function)(lua_State* l) = nullptr;
+
 Engine::LuaProgram::LuaProgram(const std::string &filename)
 {
     m_currentLuaState = GenerateProgram(filename);
+    Test<int,int>([](int i) { std::cout<<"WORKS: "<< i <<std::endl; return 1;},2);
+
+    if(function != nullptr)
+    function(m_currentLuaState);
 }
 
 lua_State *Engine::LuaProgram::GenerateProgram(const std::string &filename)

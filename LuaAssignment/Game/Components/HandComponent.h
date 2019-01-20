@@ -8,6 +8,7 @@
 
 #include "../../Engine/Component.h"
 #include <vector>
+#include <lua.h>
 
 class Card;
 class HandSlot;
@@ -20,6 +21,7 @@ public:
     void AddCard(Card* card);
     ~HandComponent() override;
 
+    
 private:
     unsigned int m_maxCardCapacity = 8;
     std::vector<HandSlot*> m_cardSlots;

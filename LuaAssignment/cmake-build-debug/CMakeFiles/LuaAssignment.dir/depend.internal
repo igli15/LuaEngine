@@ -1512,6 +1512,8 @@ CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lua.h
+ /usr/local/include/lua/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
@@ -1625,6 +1627,8 @@ CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lua.h
+ /usr/local/include/lua/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
@@ -1755,6 +1759,8 @@ CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lua.h
+ /usr/local/include/lua/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
@@ -2065,6 +2071,8 @@ CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lua.h
+ /usr/local/include/lua/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
@@ -2153,6 +2161,8 @@ CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lua.h
+ /usr/local/include/lua/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/TestEvent.cpp

@@ -314,6 +314,21 @@ namespace Engine {
             return  returnValue;
         }
 
+        static int (*function)(lua_State* l) ;
+
+        //TODO take a look here.
+        template <typename  T,typename U>
+        void Test(T (*pfunction) (U argument),U a )
+        {
+            auto lambda = [](lua_State* l)
+                    {
+                        std::cout<<"Hello"<<std::endl;
+                        return 1;
+                    };
+
+            function = lambda;
+        }
+
     private:
        lua_State* GenerateProgram(const std::string &filename);
        lua_State* m_currentLuaState;
@@ -323,6 +338,7 @@ namespace Engine {
        int m_totalReturnNumber = 0;
        int m_currentReturnNumber = 0;
        bool m_isFuncBeingCalled = false;
+
 
     };
 }

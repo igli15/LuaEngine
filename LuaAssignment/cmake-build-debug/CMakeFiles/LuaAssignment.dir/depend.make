@@ -1511,6 +1511,8 @@ CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: /usr/local/inc
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: /usr/local/include/SFML/Window/Window.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: /usr/local/include/lua/lua.h
+CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: /usr/local/include/lua/luaconf.h
 
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/Collider.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Engine/Component.h
@@ -1624,6 +1626,8 @@ CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/i
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Window/Window.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/lua/lua.h
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/lua/luaconf.h
 
 CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.o: ../Engine/Collider.h
 CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.o: ../Engine/Component.h
@@ -1754,6 +1758,8 @@ CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: /usr/local/include/SFML/Window/Vid
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: /usr/local/include/SFML/Window/Window.hpp
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
+CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: /usr/local/include/lua/lua.h
+CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: /usr/local/include/lua/luaconf.h
 
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Engine/Collider.h
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Engine/Component.h
@@ -2064,6 +2070,8 @@ CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: /usr/local/include/SFML/Windo
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: /usr/local/include/SFML/Window/Window.hpp
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
+CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: /usr/local/include/lua/lua.h
+CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: /usr/local/include/lua/luaconf.h
 
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../Engine/Collider.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../Engine/Component.h
@@ -2152,6 +2160,8 @@ CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/SFML/Window/V
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/SFML/Window/Window.hpp
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
+CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/lua/lua.h
+CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/lua/luaconf.h
 
 CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o: ../Engine/EventType.h
 CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o: ../Game/TestEvent.cpp
