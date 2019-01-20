@@ -987,6 +987,33 @@ Game/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Player.cpp.s
 .PHONY : Game/Player.cpp.s
 
+Game/PlayerInfo.o: Game/PlayerInfo.cpp.o
+
+.PHONY : Game/PlayerInfo.o
+
+# target to build an object file
+Game/PlayerInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o
+.PHONY : Game/PlayerInfo.cpp.o
+
+Game/PlayerInfo.i: Game/PlayerInfo.cpp.i
+
+.PHONY : Game/PlayerInfo.i
+
+# target to preprocess a source file
+Game/PlayerInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.i
+.PHONY : Game/PlayerInfo.cpp.i
+
+Game/PlayerInfo.s: Game/PlayerInfo.cpp.s
+
+.PHONY : Game/PlayerInfo.s
+
+# target to generate assembly for a file
+Game/PlayerInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.s
+.PHONY : Game/PlayerInfo.cpp.s
+
 Game/TestEvent.o: Game/TestEvent.cpp.o
 
 .PHONY : Game/TestEvent.o
@@ -1146,6 +1173,9 @@ help:
 	@echo "... Game/Player.o"
 	@echo "... Game/Player.i"
 	@echo "... Game/Player.s"
+	@echo "... Game/PlayerInfo.o"
+	@echo "... Game/PlayerInfo.i"
+	@echo "... Game/PlayerInfo.s"
 	@echo "... Game/TestEvent.o"
 	@echo "... Game/TestEvent.i"
 	@echo "... Game/TestEvent.s"

@@ -25,6 +25,8 @@ public:
     bool isHoldingCard = false;
     void AddCardToHand(Card* card);
     void DrawCard();
+    Hand* GetHand();
+    Deck* GetDeck();
 };
 
 

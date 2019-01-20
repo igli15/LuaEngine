@@ -13,18 +13,15 @@
 #include "Card.h"
 #include "Hand.h"
 #include "Player.h"
+#include "PlayerInfo.h"
 
 void MainLevel::BuildScene()
 {
     Player* p = Instantiate<Player>();
 
+    PlayerInfo* info = Instantiate<PlayerInfo>();
+    info->SetPlayerComponent(p->GetComponent<PlayerComponent>());
 
-    Card* card = Instantiate<Card>();
-
-    Card* card2 = Instantiate<Card>();
-
-    p->GetComponent<PlayerComponent>()->AddCardToHand(card);
-    p->GetComponent<PlayerComponent>()->AddCardToHand(card2);
 }
 
 MainLevel::~MainLevel()

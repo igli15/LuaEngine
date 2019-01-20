@@ -275,6 +275,12 @@
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Player.h">
 			<Option target="LuaAssignment"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/PlayerInfo.cpp">
+			<Option target="LuaAssignment"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/PlayerInfo.h">
+			<Option target="LuaAssignment"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/TestEvent.cpp">
 			<Option target="LuaAssignment"/>
 		</Unit>

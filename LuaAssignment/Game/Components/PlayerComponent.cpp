@@ -17,17 +17,29 @@ void PlayerComponent::Start()
 
     m_hand = m_parent->parentScene->Instantiate<Hand>();
     m_deck = m_parent->parentScene->Instantiate<Deck>();
+    m_deck->GetDeckComponent()->SetPlayer(this);
 
-    CardTemplate* t = new CardTemplate("LOL","DESC",Engine::Game::GetResourceManager()->GetTexture("CardArtTest"),10,20, nullptr);
-    m_deck->GetDeckComponent()->AddCardTemplate(t);
+    for (int i = 0; i < 20; ++i) {
+        CardTemplate *t = new CardTemplate("LOL", "DESC", Engine::Game::GetResourceManager()->GetTexture("CardArtTest"),
+                                           10, 20, nullptr);
+        m_deck->GetDeckComponent()->AddCardTemplate(t);
+    }
 
-    DrawCard();
+    for (int j = 0; j < 5 ; ++j) {
+
+        DrawCard();
+    }
 
 }
 
 void PlayerComponent::Update(float timeStep)
 {
     Component::Update(timeStep);
+
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+    {
+        DrawCard();
+    }
 }
 
 
@@ -39,7 +51,20 @@ void PlayerComponent::AddCardToHand(Card *card)
 
 void PlayerComponent::DrawCard()
 {
-    AddCardToHand(m_deck->GetDeckComponent()->DrawCard());
+    Card* c = m_deck->GetDeckComponent()->DrawCard();
+
+    if(c != nullptr)
+    AddCardToHand(c);
+}
+
+Hand *PlayerComponent::GetHand()
+{
+    return m_hand;
+}
+
+Deck *PlayerComponent::GetDeck()
+{
+    return  m_deck;
 }
 
 

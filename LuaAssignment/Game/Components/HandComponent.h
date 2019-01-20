@@ -21,9 +21,13 @@ public:
     void AddCard(Card* card);
     ~HandComponent() override;
 
-    
+    int GetCurrentCardNumber();
+    unsigned int GetMaxCardCapacity();
+
+
 private:
-    unsigned int m_maxCardCapacity = 8;
+    unsigned int m_maxCardCapacity = 7;
+    int m_currentCardNumber = 0;
     std::vector<HandSlot*> m_cardSlots;
     HandSlot* FindEmptySlot();
 

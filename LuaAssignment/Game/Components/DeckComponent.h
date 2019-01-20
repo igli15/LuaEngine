@@ -11,18 +11,24 @@
 
 class Card;
 class CardTemplate;
+class PlayerComponent;
 
 class DeckComponent : public Engine::Component {
 
 
 private:
     std::vector<CardTemplate*> m_cardTemplates;
+    PlayerComponent* m_playerComponent;
 
 public:
 
     void Start() override;
+    void SetPlayer(PlayerComponent* p);
     void AddCardTemplate(CardTemplate* cardTemplate);
     void ShuffleDeck();
+
+    int GetNumberOfCardsInDeck();
+
     Card* DrawCard();
 };
 

@@ -15,9 +15,9 @@ void HandComponent::Start()
 
 void HandComponent::AddSlots(float slotNumber, float startXPos, float cardWidth, float cardHeight)
 {
-    for (unsigned int i = 0; i < slotNumber ; ++i)
+    for (unsigned int i = 0; i < slotNumber ; i++)
     {
-        HandSlot* slot = new HandSlot(i,Engine::IVector(startXPos + cardWidth * (i+1),Engine::Game::Instance()->Height() -  cardHeight - 50));
+        HandSlot* slot = new HandSlot(i,Engine::IVector((startXPos + cardWidth) * (i+1),Engine::Game::Instance()->Height() -  cardHeight - 50));
         m_cardSlots.push_back(slot);
     }
 }
@@ -33,6 +33,7 @@ HandComponent::~HandComponent()
 
 void HandComponent::AddCard(Card *card)
 {
+    m_currentCardNumber += 1;
     HandSlot* freeSlot = FindEmptySlot();
     freeSlot->currentCard = card;
     card->GetComponent<CardComponent>()->SetHandSlot(freeSlot);
@@ -45,6 +46,16 @@ HandSlot *HandComponent::FindEmptySlot()
     {
         if(m_cardSlots[i]->IsEmpty()) return  m_cardSlots[i];
     }
+}
+
+int HandComponent::GetCurrentCardNumber()
+{
+    return m_currentCardNumber;
+}
+
+unsigned int HandComponent::GetMaxCardCapacity()
+{
+    return m_maxCardCapacity;
 }
 
 

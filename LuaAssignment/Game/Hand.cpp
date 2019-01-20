@@ -10,10 +10,10 @@
 
 Hand::Hand()
 {
-    m_startX = 100;
-    m_cardWidth = 400;
+    m_startX = 20;
+    m_cardWidth = 350;
     m_cardHeight = 570;
-    m_slotNumber = 5;
+    m_slotNumber = 7;
 }
 
 void Hand::Build()
