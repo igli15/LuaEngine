@@ -322,6 +322,7 @@ namespace Engine {
         {
             auto lambda = [](lua_State* l)
                     {
+                        //pfunction();
                         std::cout<<"Hello"<<std::endl;
                         return 1;
                     };

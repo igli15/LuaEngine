@@ -112,16 +112,6 @@ Component.h
 Text.h
 /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Text.h
 
-/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Utils.cpp
-cstdlib
--
-iostream
--
-Utils.h
-/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Utils.h
-
-/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Utils.h
-
 /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Card.h
 ../Engine/Entity.h
 /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.h
@@ -154,23 +144,19 @@ PlayerComponent.h
 ../CardTemplate.h
 /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.h
 
-/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/EnemyComponent.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.h
+vector
+-
 ../../Engine/Component.h
 /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
 
-/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.cpp
-HandComponent.h
-/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.h
-../Card.h
-/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Card.h
-../HandSlot.h
-/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
-../../Engine/Game.h
-/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.h
-../../Engine/Utils.h
-/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Utils.h
-../../Engine/Scene.h
-/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/EnemyComponent.h
+../../Engine/Component.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
+iostream
+-
+vector
+-
 
 /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.h
 ../../Engine/Component.h
@@ -180,6 +166,26 @@ vector
 lua.h
 -
 
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.cpp
+PlayerComponent.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
+../Hand.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Hand.h
+../Deck.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Deck.h
+../Card.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Card.h
+CardComponent.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.h
+DeckComponent.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.h
+../../Engine/Scene.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.h
+../../Engine/Game.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.h
+CardComponent.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.h
+
 /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
 SFML/System/Clock.hpp
 -
@@ -187,6 +193,24 @@ SFML/System/Clock.hpp
 /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
 EnemyComponent.h
 /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/EnemyComponent.h
+
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Deck.h
+../Engine/Entity.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.h
+Components/DeckComponent.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.h
+
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Hand.h
+vector
+-
+Card.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Card.h
+../Engine/IVector.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h
+HandSlot.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
+Components/HandComponent.h
+/Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.h
 
 /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
 ../Engine/IVector.h

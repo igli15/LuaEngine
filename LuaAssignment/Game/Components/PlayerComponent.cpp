@@ -10,6 +10,7 @@
 #include "DeckComponent.h"
 #include "../../Engine/Scene.h"
 #include "../../Engine/Game.h"
+#include "CardComponent.h"
 
 void PlayerComponent::Start()
 {
@@ -97,7 +98,22 @@ void PlayerComponent::EndTurn()
 
 void PlayerComponent::OnTurnStart()
 {
+    if(m_freezeDuration != 0 ) m_freezeDuration -=1;
+    if(m_freezeDuration <= 0 )
+    {
+        m_freezeDuration = 0;
+        m_isFrozen = false;
+    }
+
+
     m_isTurn = true;
+    if(m_freezeDuration != 0)  m_isFrozen = true;
+    
+    /*
+    while(!sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+    {
+
+    }*/
 
     DrawCard();
 
@@ -109,7 +125,6 @@ void PlayerComponent::OnTurnStart()
 
     m_currentMana = m_manaCapacity;
 
-    if(m_freezeDuration != 0) EndTurn();
 }
 
 void PlayerComponent::SetManaCount(int mana)
@@ -151,6 +166,26 @@ PlayerComponent::~PlayerComponent()
 void PlayerComponent::Freeze(int freezeDuration)
 {
     m_freezeDuration = freezeDuration;
+}
+
+int PlayerComponent::GetFreezeDuration()
+{
+    return m_freezeDuration;
+}
+
+void PlayerComponent::PlayCard(CardComponent *c)
+{
+    if(!m_isFrozen && m_isTurn) {
+        if (c->GetAbility() != nullptr)
+            c->GetAbility();
+
+        SpendMana(c->GetCost());
+        m_enemyComponent->DealDamage(c->GetDamage());
+
+        m_hand->GetHandComponent()->DecrementCardNumber();
+        c->GetSlot()->EmptySlot();
+        m_parent->parentScene->DestroyEntity(c->Parent());
+    }
 }
 
 

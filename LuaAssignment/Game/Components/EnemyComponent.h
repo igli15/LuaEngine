@@ -7,6 +7,10 @@
 
 #include "../../Engine/Component.h"
 
+#include <iostream>
+#include <vector>
+
+
 class PlayerComponent;
 
 class EnemyComponent : public Engine::Component {
@@ -20,6 +24,7 @@ public:
     void PickRandomAbility();
 
     void FreezePlayer();
+
     void DamagePlayer();
     void DiscardPlayerCard();
 
@@ -32,6 +37,9 @@ private:
     bool m_IsTurn ;
 
     PlayerComponent* m_playerComponent;
+
+    std::vector<std::function<void()>> m_abilities;
+
 };
 
 

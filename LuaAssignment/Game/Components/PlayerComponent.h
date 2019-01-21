@@ -10,9 +10,11 @@
 #include "../../Engine/Component.h"
 #include "EnemyComponent.h"
 
+
 class Hand;
 class Card;
 class Deck;
+class CardComponent;
 
 class PlayerComponent : public Engine::Component {
 
@@ -23,7 +25,7 @@ private:
     EnemyComponent* m_enemyComponent;
 
     int m_freezeDuration = 0;
-
+    bool m_isFrozen = false;
     int m_currentMana = 0;
     int m_manaCapacity = 0;
     int m_maxMana = 10;
@@ -51,6 +53,8 @@ public:
     int GetManaCapacity();
     int GetMaxManaCount();
     int GetHealth();
+    int GetFreezeDuration();
+    void PlayCard(CardComponent* c);
     Hand* GetHand();
     Deck* GetDeck();
     EnemyComponent* GetEnemy();

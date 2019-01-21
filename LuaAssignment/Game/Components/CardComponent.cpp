@@ -51,7 +51,7 @@ void CardComponent::Update(float timeStep)
         if(m_parent->GetWorldPosition().y <= 400)
         {
             if(m_cost <= m_playerComponent->GetCurrentManaCount())
-           PlayCard();
+           m_playerComponent->PlayCard(this);
         }
 
         m_parent->SetWorldPosition(m_slot->pos->x,m_slot->pos->y);
@@ -85,7 +85,7 @@ void CardComponent::SetAbility(std::function<void()> ability)
     m_ability = ability;
 }
 
-void CardComponent::PlayCard()
+/*void CardComponent::PlayCard()
 {
     if(m_ability != nullptr)
         m_ability();
@@ -97,10 +97,24 @@ void CardComponent::PlayCard()
     m_slot->EmptySlot();
     m_parent->parentScene->DestroyEntity(m_parent);
 
-}
+}*/
 
 HandSlot *CardComponent::GetSlot()
 {
     return m_slot;
+}
+
+std::function<void()> CardComponent::GetAbility()
+{
+    return m_ability;
+}
+
+int CardComponent::GetCost()
+{
+    return m_cost;
+}
+
+int CardComponent::GetDamage() {
+    return m_damage;
 }
 

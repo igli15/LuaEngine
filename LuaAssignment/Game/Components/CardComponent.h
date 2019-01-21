@@ -32,6 +32,9 @@ public:
     void SetDamage(int damage);
     void SetCost(int cost);
     void SetAbility(std::function<void()> ability);
+    std::function<void()> GetAbility();
+    int GetCost();
+    int GetDamage();
 
     HandSlot* GetSlot();
 };

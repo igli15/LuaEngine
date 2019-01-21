@@ -9,12 +9,23 @@
 #include "../../Engine/Utils.h"
 #include "../Hand.h"
 #include "HandComponent.h"
+#include <functional>
+
+
 
 void EnemyComponent::Start()
 {
     Component::Start();
     m_health = 30;
 
+
+    std::function<void()> freezePlayer = std::bind(&EnemyComponent::FreezePlayer,this);
+    std::function<void()> damagePlayer = std::bind(&EnemyComponent::DamagePlayer,this);
+    std::function<void()> discardCard = std::bind(&EnemyComponent::DiscardPlayerCard,this);
+
+    m_abilities.push_back(freezePlayer);
+    m_abilities.push_back(damagePlayer);
+    m_abilities.push_back(discardCard);
 
 }
 
@@ -41,9 +52,12 @@ void EnemyComponent::SetPlayerComponent(PlayerComponent* p)
 void EnemyComponent::OnTurnStart()
 {
     m_IsTurn = true;
-    DiscardPlayerCard();
 
-    EndTurn();
+
+   int randomIndex = Engine::Utils::RandomRange(0,m_abilities.size() - 1);
+   m_abilities[randomIndex]();
+
+   EndTurn();
 
 }
 
@@ -56,14 +70,14 @@ void EnemyComponent::EndTurn()
     }
 }
 
-void EnemyComponent::FreezePlayer()
-{
-    m_playerComponent->Freeze(Engine::Utils::RandomRange(1,2));
-}
-
 void EnemyComponent::DamagePlayer()
 {
     m_playerComponent->DealDamage(Engine::Utils::RandomRange(1,5));
+}
+
+void EnemyComponent::FreezePlayer()
+{
+    m_playerComponent->Freeze(Engine::Utils::RandomRange(1,2));
 }
 
 void EnemyComponent::DiscardPlayerCard()
@@ -71,3 +85,5 @@ void EnemyComponent::DiscardPlayerCard()
     m_playerComponent->GetHand()->GetHandComponent()->DiscardRandomCard();
     m_playerComponent->GetHand()->GetHandComponent()->DiscardRandomCard();
 }
+
+
