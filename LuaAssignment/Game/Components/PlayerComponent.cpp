@@ -40,7 +40,7 @@ void PlayerComponent::Update(float timeStep)
 {
     Component::Update(timeStep);
 
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::E) && m_inputDelayClock->getElapsedTime().asSeconds() > 0.25f)
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && m_inputDelayClock->getElapsedTime().asSeconds() > 0.25f)
     {
         EndTurn();
         m_inputDelayClock->restart();
@@ -108,12 +108,6 @@ void PlayerComponent::OnTurnStart()
 
     m_isTurn = true;
     if(m_freezeDuration != 0)  m_isFrozen = true;
-    
-    /*
-    while(!sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-    {
-
-    }*/
 
     DrawCard();
 
@@ -187,7 +181,6 @@ void PlayerComponent::PlayCard(CardComponent *c)
         m_parent->parentScene->DestroyEntity(c->Parent());
     }
 }
-
 
 
 

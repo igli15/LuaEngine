@@ -21,6 +21,7 @@ public:
 private:
     Engine::TextComponent* deckInfoText;
     PlayerComponent* m_playerComponent;
+    Engine::Text* m_pressButtonText;
 
 };
 

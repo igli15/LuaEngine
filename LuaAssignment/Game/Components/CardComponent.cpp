@@ -85,20 +85,6 @@ void CardComponent::SetAbility(std::function<void()> ability)
     m_ability = ability;
 }
 
-/*void CardComponent::PlayCard()
-{
-    if(m_ability != nullptr)
-        m_ability();
-
-    m_playerComponent->SpendMana(m_cost);
-    m_playerComponent->GetEnemy()->DealDamage(m_damage);
-
-    m_playerComponent->GetHand()->GetHandComponent()->DecrementCardNumber();
-    m_slot->EmptySlot();
-    m_parent->parentScene->DestroyEntity(m_parent);
-
-}*/
-
 HandSlot *CardComponent::GetSlot()
 {
     return m_slot;

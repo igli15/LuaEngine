@@ -55,6 +55,7 @@ public:
     int GetHealth();
     int GetFreezeDuration();
     void PlayCard(CardComponent* c);
+
     Hand* GetHand();
     Deck* GetDeck();
     EnemyComponent* GetEnemy();

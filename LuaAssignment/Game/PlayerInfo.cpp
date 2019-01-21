@@ -17,6 +17,11 @@ void PlayerInfo::Build()
     float gameHeight =  Engine::Game::Instance()->Height();
     SetWorldPosition(gameWidth - 500, gameHeight - 800);
 
+    m_pressButtonText = parentScene->Instantiate<Engine::Text>();
+    m_pressButtonText->SetWorldPosition(gameWidth - 800 ,gameHeight/2 - 200);
+    m_pressButtonText->GetTextComponent()->SetCharacterSize(48);
+    m_pressButtonText->SetText("Press Space To End Turn");
+
     deckInfoText = AddComponent<Engine::TextComponent>();
 
 }
@@ -38,6 +43,7 @@ void PlayerInfo::Update(float timeStep)
     "\nPlayerHealth: " + std::to_string(m_playerComponent->GetHealth()) + "\nCardsInDeck: " + std::to_string(cardsOnDeck)
     + "\nMana: " + std::to_string(m_playerComponent->GetCurrentManaCount()) + "/" + std::to_string(m_playerComponent->GetManaCapacity())
     + "\nFreezeDuration: " + std::to_string(m_playerComponent->GetFreezeDuration()));
+
 }
 
 void PlayerInfo::SetPlayerComponent(PlayerComponent *p)
