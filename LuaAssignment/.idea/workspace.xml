@@ -13,20 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d7eafb-701f-4880-88c3-db6dd240fdc8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/CardComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/CardComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Components/EnemyComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/EnemyComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Components/EnemyComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/EnemyComponent.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Components/PlayerComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/PlayerComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Components/PlayerComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/PlayerComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Enemy.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/MainLevel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/MainLevel.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/PlayerInfo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/PlayerInfo.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LuaAssignment" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LuaAssignment" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -176,8 +168,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="19199" />
-          <entry key="h" value="16474" />
+          <entry key="cpp" value="19339" />
+          <entry key="h" value="16547" />
           <entry key="lua" value="387" />
           <entry key="txt" value="156" />
         </counts>
@@ -187,7 +179,7 @@
           <entry key="CMakeLists.txt" value="156" />
           <entry key="Doxygen file" value="15" />
           <entry key="Lua" value="221" />
-          <entry key="ObjectiveC" value="35658" />
+          <entry key="ObjectiveC" value="35871" />
           <entry key="PLAIN_TEXT" value="166" />
         </counts>
       </usages-collector>
@@ -254,7 +246,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Game/PlayerInfo.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="585">
@@ -272,11 +264,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Game/Components/PlayerComponent.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+            <state relative-caret-position="680">
+              <caret line="111" column="35" selection-start-line="111" selection-start-column="35" selection-end-line="111" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -284,8 +276,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Game/Components/EnemyComponent.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="480">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -293,8 +285,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Game/Components/EnemyComponent.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+            <state relative-caret-position="675">
+              <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
               <folding>
                 <element signature="e#48#75#0" expanded="true" />
               </folding>
@@ -305,8 +297,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Game/Components/PlayerComponent.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="667">
+              <caret line="43" column="23" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="23" />
               <folding>
                 <element signature="e#130#165#0" expanded="true" />
               </folding>
@@ -317,8 +309,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Game/MainLevel.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+            <state relative-caret-position="480">
+              <caret line="28" column="23" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -391,13 +383,13 @@
         <option value="$PROJECT_DIR$/Game/Enemy.h" />
         <option value="$PROJECT_DIR$/Game/Enemy.cpp" />
         <option value="$PROJECT_DIR$/Game/LevelManager.h" />
+        <option value="$PROJECT_DIR$/Game/Components/CardComponent.cpp" />
+        <option value="$PROJECT_DIR$/Game/MainLevel.cpp" />
         <option value="$PROJECT_DIR$/Game/Components/EnemyComponent.h" />
         <option value="$PROJECT_DIR$/Game/Components/EnemyComponent.cpp" />
-        <option value="$PROJECT_DIR$/Game/PlayerInfo.cpp" />
-        <option value="$PROJECT_DIR$/Game/Components/CardComponent.cpp" />
         <option value="$PROJECT_DIR$/Game/Components/PlayerComponent.h" />
-        <option value="$PROJECT_DIR$/Game/MainLevel.cpp" />
         <option value="$PROJECT_DIR$/Game/Components/PlayerComponent.cpp" />
+        <option value="$PROJECT_DIR$/Game/PlayerInfo.cpp" />
       </list>
     </option>
   </component>
@@ -598,12 +590,12 @@
       <workItem from="1547683319181" duration="5398000" />
       <workItem from="1547819439478" duration="18216000" />
       <workItem from="1547989523405" duration="4631000" />
-      <workItem from="1547999841132" duration="7869000" />
+      <workItem from="1547999841132" duration="9432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="462919000" />
+    <option name="totallyTimeSpent" value="464482000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -623,7 +615,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.50306123" side_tool="true" weight="0.15934066" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
-      <window_info active="true" anchor="bottom" auto_hide="true" id="Run" internal_type="SLIDING" order="2" type="SLIDING" visible="true" weight="0.3489796" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" internal_type="SLIDING" order="2" type="SLIDING" weight="0.3489796" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.498779" weight="0.39795917" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -935,23 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game/PlayerInfo.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="38" column="135" selection-start-line="38" selection-start-column="135" selection-end-line="38" selection-end-column="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Game/Components/EnemyComponent.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-          <folding>
-            <element signature="e#48#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Game/Components/HandComponent.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
@@ -971,32 +946,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Game/Components/EnemyComponent.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="480">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game/Components/PlayerComponent.h">
+    <entry file="file://$PROJECT_DIR$/Game/Components/EnemyComponent.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="675">
+          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
           <folding>
-            <element signature="e#130#165#0" expanded="true" />
+            <element signature="e#48#75#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Game/MainLevel.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+        <state relative-caret-position="480">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/Components/PlayerComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="43" column="23" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="23" />
+          <folding>
+            <element signature="e#130#165#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Game/Components/PlayerComponent.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        <state relative-caret-position="680">
+          <caret line="111" column="35" selection-start-line="111" selection-start-column="35" selection-end-line="111" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/PlayerInfo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="38" column="135" selection-start-line="38" selection-start-column="135" selection-end-line="38" selection-end-column="135" />
         </state>
       </provider>
     </entry>

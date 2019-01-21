@@ -18,6 +18,7 @@ public:
     void SetPlayerComponent(PlayerComponent* p);
     int GetHealth();
     void OnTurnStart();
+    void EndTurn();
 
 private:
     int m_health;

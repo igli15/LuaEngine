@@ -23,9 +23,10 @@ void MainLevel::BuildScene()
     Enemy* enemy = Instantiate<Enemy>();
     EnemyComponent* enemyComponent = enemy->GetComponent<EnemyComponent>();
 
-
     enemyComponent->SetPlayerComponent(playerComponent);
     playerComponent->SetEnemyComponent(enemyComponent);
+
+    playerComponent->OnTurnStart();
 
     PlayerInfo* info = Instantiate<PlayerInfo>();
     info->SetPlayerComponent(playerComponent);

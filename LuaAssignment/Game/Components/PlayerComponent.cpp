@@ -41,6 +41,10 @@ void PlayerComponent::Update(float timeStep)
     {
         DrawCard();
     }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::E))
+    {
+        EndTurn();
+    }
 }
 
 
@@ -98,12 +102,14 @@ void PlayerComponent::OnTurnStart()
 
     DrawCard();
 
-    if(m_currentMana >= m_maxMana)
-    {
-        m_currentMana = m_maxMana;
-    }
-    else m_currentMana +=1;
 
+    if(m_manaCapacity >= m_maxMana)
+    {
+        m_manaCapacity = m_maxMana;
+    }
+    else m_manaCapacity +=1;
+
+    m_currentMana = m_manaCapacity;
 }
 
 void PlayerComponent::SetManaCount(int mana)
@@ -129,6 +135,11 @@ EnemyComponent *PlayerComponent::GetEnemy()
 void PlayerComponent::SpendMana(int amount)
 {
     m_currentMana -= amount;
+}
+
+int PlayerComponent::GetManaCapacity()
+{
+    return m_manaCapacity;
 }
 
 

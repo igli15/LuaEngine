@@ -21,7 +21,8 @@ private:
     Deck* m_deck;
     EnemyComponent* m_enemyComponent;
 
-    int m_currentMana = 10;
+    int m_currentMana = 0;
+    int m_manaCapacity = 0;
     int m_maxMana = 10;
 
     bool m_isTurn;
@@ -40,6 +41,7 @@ public:
     void SetManaCount(int mana);
     void SpendMana(int amount);
     int GetCurrentManaCount();
+    int GetManaCapacity();
     int GetMaxManaCount();
     int GetHealth();
     Hand* GetHand();

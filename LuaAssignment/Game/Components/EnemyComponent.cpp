@@ -37,4 +37,16 @@ void EnemyComponent::SetPlayerComponent(PlayerComponent* p)
 void EnemyComponent::OnTurnStart()
 {
     m_IsTurn = true;
+
+    EndTurn();
+
+}
+
+void EnemyComponent::EndTurn()
+{
+    if(m_IsTurn)
+    {
+        m_IsTurn = false;
+        m_playerComponent->OnTurnStart();
+    }
 }
