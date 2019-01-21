@@ -27,11 +27,18 @@ public:
     unsigned int GetMaxCardCapacity();
 
 
+    static void SetHandInstance(HandComponent* handComponent);
+    static int luaDiscardRandomCard(lua_State* lua_state);
+
+
 private:
     unsigned int m_maxCardCapacity = 7;
     int m_currentCardNumber = 0;
     std::vector<HandSlot*> m_cardSlots;
     HandSlot* FindEmptySlot();
+
+
+    static HandComponent* handInstance;
 
 };
 

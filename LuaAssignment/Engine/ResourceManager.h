@@ -22,13 +22,13 @@ namespace Engine {
         std::map<std::string, sf::Music *> musicMap;
 
     public:
-        void LoadTexture(const std::string &path, const std::string &tag) ;
+        sf::Texture* LoadTexture(const std::string &path, const std::string &tag) ;
 
-        void LoadFont(const std::string &path, const std::string &tag) ;
+        sf::Font* LoadFont(const std::string &path, const std::string &tag) ;
 
-        void LoadSoundBuffer(const std::string &path, const std::string &tag) ;
+        sf::SoundBuffer* LoadSoundBuffer(const std::string &path, const std::string &tag) ;
 
-        void LoadMusic(const std::string &path, const std::string &tag) ;
+        sf::Music* LoadMusic(const std::string &path, const std::string &tag) ;
 
         sf::Texture *GetTexture(const std::string &tag) ;
 

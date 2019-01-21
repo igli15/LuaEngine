@@ -1108,6 +1108,7 @@ CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.h
@@ -1212,22 +1213,116 @@ CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lauxlib.h
+ /usr/local/include/lua/lua.h
+ /usr/local/include/lua/lua.hpp
+ /usr/local/include/lua/luaconf.h
+ /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventQueue.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.cpp
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.h
+ /usr/local/include/SFML/Audio.hpp
+ /usr/local/include/SFML/Audio/AlResource.hpp
+ /usr/local/include/SFML/Audio/Export.hpp
+ /usr/local/include/SFML/Audio/InputSoundFile.hpp
+ /usr/local/include/SFML/Audio/Listener.hpp
+ /usr/local/include/SFML/Audio/Music.hpp
+ /usr/local/include/SFML/Audio/OutputSoundFile.hpp
+ /usr/local/include/SFML/Audio/Sound.hpp
+ /usr/local/include/SFML/Audio/SoundBuffer.hpp
+ /usr/local/include/SFML/Audio/SoundBufferRecorder.hpp
+ /usr/local/include/SFML/Audio/SoundFileFactory.hpp
+ /usr/local/include/SFML/Audio/SoundFileFactory.inl
+ /usr/local/include/SFML/Audio/SoundFileReader.hpp
+ /usr/local/include/SFML/Audio/SoundFileWriter.hpp
+ /usr/local/include/SFML/Audio/SoundRecorder.hpp
+ /usr/local/include/SFML/Audio/SoundSource.hpp
+ /usr/local/include/SFML/Audio/SoundStream.hpp
  /usr/local/include/SFML/Config.hpp
+ /usr/local/include/SFML/Graphics.hpp
+ /usr/local/include/SFML/Graphics/BlendMode.hpp
+ /usr/local/include/SFML/Graphics/CircleShape.hpp
  /usr/local/include/SFML/Graphics/Color.hpp
+ /usr/local/include/SFML/Graphics/ConvexShape.hpp
+ /usr/local/include/SFML/Graphics/Drawable.hpp
  /usr/local/include/SFML/Graphics/Export.hpp
+ /usr/local/include/SFML/Graphics/Font.hpp
+ /usr/local/include/SFML/Graphics/Glsl.hpp
+ /usr/local/include/SFML/Graphics/Glsl.inl
+ /usr/local/include/SFML/Graphics/Glyph.hpp
  /usr/local/include/SFML/Graphics/Image.hpp
+ /usr/local/include/SFML/Graphics/PrimitiveType.hpp
  /usr/local/include/SFML/Graphics/Rect.hpp
  /usr/local/include/SFML/Graphics/Rect.inl
+ /usr/local/include/SFML/Graphics/RectangleShape.hpp
+ /usr/local/include/SFML/Graphics/RenderStates.hpp
+ /usr/local/include/SFML/Graphics/RenderTarget.hpp
+ /usr/local/include/SFML/Graphics/RenderTexture.hpp
+ /usr/local/include/SFML/Graphics/RenderWindow.hpp
+ /usr/local/include/SFML/Graphics/Shader.hpp
+ /usr/local/include/SFML/Graphics/Shape.hpp
+ /usr/local/include/SFML/Graphics/Sprite.hpp
+ /usr/local/include/SFML/Graphics/Text.hpp
  /usr/local/include/SFML/Graphics/Texture.hpp
+ /usr/local/include/SFML/Graphics/Transform.hpp
+ /usr/local/include/SFML/Graphics/Transformable.hpp
+ /usr/local/include/SFML/Graphics/Vertex.hpp
+ /usr/local/include/SFML/Graphics/VertexArray.hpp
+ /usr/local/include/SFML/Graphics/View.hpp
+ /usr/local/include/SFML/System.hpp
+ /usr/local/include/SFML/System/Clock.hpp
+ /usr/local/include/SFML/System/Err.hpp
  /usr/local/include/SFML/System/Export.hpp
+ /usr/local/include/SFML/System/FileInputStream.hpp
+ /usr/local/include/SFML/System/InputStream.hpp
+ /usr/local/include/SFML/System/Lock.hpp
+ /usr/local/include/SFML/System/MemoryInputStream.hpp
+ /usr/local/include/SFML/System/Mutex.hpp
  /usr/local/include/SFML/System/NonCopyable.hpp
+ /usr/local/include/SFML/System/Sleep.hpp
+ /usr/local/include/SFML/System/String.hpp
+ /usr/local/include/SFML/System/String.inl
+ /usr/local/include/SFML/System/Thread.hpp
+ /usr/local/include/SFML/System/Thread.inl
+ /usr/local/include/SFML/System/ThreadLocal.hpp
+ /usr/local/include/SFML/System/ThreadLocalPtr.hpp
+ /usr/local/include/SFML/System/ThreadLocalPtr.inl
+ /usr/local/include/SFML/System/Time.hpp
+ /usr/local/include/SFML/System/Utf.hpp
+ /usr/local/include/SFML/System/Utf.inl
  /usr/local/include/SFML/System/Vector2.hpp
  /usr/local/include/SFML/System/Vector2.inl
+ /usr/local/include/SFML/System/Vector3.hpp
+ /usr/local/include/SFML/System/Vector3.inl
+ /usr/local/include/SFML/Window.hpp
+ /usr/local/include/SFML/Window/Context.hpp
+ /usr/local/include/SFML/Window/ContextSettings.hpp
+ /usr/local/include/SFML/Window/Event.hpp
  /usr/local/include/SFML/Window/Export.hpp
  /usr/local/include/SFML/Window/GlResource.hpp
+ /usr/local/include/SFML/Window/Joystick.hpp
+ /usr/local/include/SFML/Window/Keyboard.hpp
+ /usr/local/include/SFML/Window/Mouse.hpp
+ /usr/local/include/SFML/Window/Sensor.hpp
+ /usr/local/include/SFML/Window/Touch.hpp
+ /usr/local/include/SFML/Window/VideoMode.hpp
+ /usr/local/include/SFML/Window/Window.hpp
+ /usr/local/include/SFML/Window/WindowHandle.hpp
+ /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lauxlib.h
+ /usr/local/include/lua/lua.h
+ /usr/local/include/lua/lua.hpp
+ /usr/local/include/lua/luaconf.h
+ /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
@@ -1236,6 +1331,7 @@ CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.h
@@ -1340,13 +1436,17 @@ CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
+ /usr/local/include/lua/lua.hpp
  /usr/local/include/lua/luaconf.h
+ /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Sprite.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SpriteRenderer.h
@@ -1433,13 +1533,17 @@ CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
+ /usr/local/include/lua/lua.hpp
  /usr/local/include/lua/luaconf.h
+ /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Sprite.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SpriteRenderer.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Text.h
@@ -1524,8 +1628,11 @@ CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
+ /usr/local/include/lua/lua.hpp
  /usr/local/include/lua/luaconf.h
+ /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
@@ -1534,6 +1641,7 @@ CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.h
@@ -1638,8 +1746,11 @@ CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
+ /usr/local/include/lua/lua.hpp
  /usr/local/include/lua/luaconf.h
+ /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
@@ -1648,6 +1759,7 @@ CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.h
@@ -1754,8 +1866,11 @@ CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
+ /usr/local/include/lua/lua.hpp
  /usr/local/include/lua/luaconf.h
+ /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
@@ -1890,6 +2005,7 @@ CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Sprite.h
@@ -1992,13 +2108,17 @@ CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
+ /usr/local/include/lua/lua.hpp
  /usr/local/include/lua/luaconf.h
+ /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Sprite.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SpriteRenderer.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Text.h
@@ -2080,6 +2200,11 @@ CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lauxlib.h
+ /usr/local/include/lua/lua.h
+ /usr/local/include/lua/lua.hpp
+ /usr/local/include/lua/luaconf.h
+ /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
@@ -2094,6 +2219,7 @@ CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SceneManager.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Text.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/TextComponent.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainGame.cpp
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainGame.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainLevel.h
@@ -2200,6 +2326,7 @@ CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.h
@@ -2308,13 +2435,17 @@ CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
+ /usr/local/include/lua/lua.hpp
  /usr/local/include/lua/luaconf.h
+ /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Sprite.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/SpriteRenderer.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Text.h
@@ -2399,8 +2530,11 @@ CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
+ /usr/local/include/lua/lua.hpp
  /usr/local/include/lua/luaconf.h
+ /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
@@ -2409,6 +2543,7 @@ CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/IVector.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/LuaProgram.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Physics.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Scene.h
@@ -2516,8 +2651,11 @@ CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+ /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
+ /usr/local/include/lua/lua.hpp
  /usr/local/include/lua/luaconf.h
+ /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/TestEvent.cpp

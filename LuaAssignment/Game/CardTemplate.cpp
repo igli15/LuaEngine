@@ -3,12 +3,31 @@
 //
 
 #include "CardTemplate.h"
+#include "Components/HandComponent.h"
+#include "../Engine/Game.h"
 
-CardTemplate::CardTemplate(const std::string &name, const std::string &description, sf::Texture* image,
-                           int cost, int damage, const std::function<void()>& ability)
-                           : m_name(name), m_description(description),m_image(image),m_cost(cost),m_damage(damage),m_ability(ability) {
+CardTemplate::CardTemplate()
+{
 
+    m_luaProgram = new Engine::LuaProgram("../LuaScripts/CardTest.lua");
+    m_luaProgram->CallCurrentProgram();
+    m_luaProgram->PushToTable<std::string, int(*)(lua_State*)>("callbacks","discardCard",HandComponent::luaDiscardRandomCard);
 
+    m_name = m_luaProgram->GetValueFromTable<std::string,std::string>("card","name");
+
+    m_path = m_luaProgram->GetValueFromTable<std::string,std::string>("card","filePath");
+
+    m_image = Engine::Game::Instance()->GetResourceManager()->LoadTexture(m_path,m_name);
+
+    m_description = m_luaProgram->GetValueFromTable<std::string,std::string>("card","description");
+    m_damage = m_luaProgram->GetValueFromTable<std::string,int>("card","damage");
+    m_cost = m_luaProgram->GetValueFromTable<std::string,int>("card","manaCost");
+
+    m_ability = [this]()
+    {
+        m_luaProgram->GetGlobalFunction("ability",0,0);
+        m_luaProgram->CallGlobalFunction("ability");
+    };
 }
 
 std::string CardTemplate::Name() const {

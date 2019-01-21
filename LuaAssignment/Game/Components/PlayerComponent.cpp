@@ -24,8 +24,7 @@ void PlayerComponent::Start()
     m_deck->GetDeckComponent()->SetPlayer(this);
 
     for (int i = 0; i < 20; ++i) {
-        CardTemplate *t = new CardTemplate("LOL", "DESC", Engine::Game::GetResourceManager()->GetTexture("CardArtTest"),
-                                           10, 5, nullptr);
+        CardTemplate *t = new CardTemplate();
         m_deck->GetDeckComponent()->AddCardTemplate(t);
     }
 
@@ -171,7 +170,7 @@ void PlayerComponent::PlayCard(CardComponent *c)
 {
     if(!m_isFrozen && m_isTurn) {
         if (c->GetAbility() != nullptr)
-            c->GetAbility();
+            c->GetAbility()();
 
         SpendMana(c->GetCost());
         m_enemyComponent->DealDamage(c->GetDamage());

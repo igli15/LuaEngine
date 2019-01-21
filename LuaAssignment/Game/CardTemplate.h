@@ -9,10 +9,12 @@
 #include <string>
 #include <functional>
 #include <SFML/Graphics/Texture.hpp>
+#include "../Engine/LuaProgram.h"
 
 class CardTemplate {
 
 protected:
+    std::string m_path;
     std::string m_name;
     std::string m_description;
     sf::Texture* m_image;
@@ -20,9 +22,10 @@ protected:
     float m_damage;
     std::function<void()> m_ability;
 
+    Engine::LuaProgram* m_luaProgram;
+
 public:
-    CardTemplate(const std::string& name,const std::string& description, sf::Texture* image ,
-                int cost,int damage,const std::function<void()>& ability);
+    CardTemplate();
 
     std::string Name() const;
     std::string Description() const;

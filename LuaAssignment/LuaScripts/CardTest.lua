@@ -14,10 +14,10 @@ end
 
 
 
-Card = {
+card = {
 
     ["name"] = "test";
-    ["filePath"] = "../LuaScripts/CardTest.lua";
+    ["filePath"] = "/Users/igli/Desktop/LuaEngine/LuaAssignment/Assets/CardArtTest.png";
     ["damage"] = 5;
     ["manaCost"] = 3;
     ["description"] = "Testing....";

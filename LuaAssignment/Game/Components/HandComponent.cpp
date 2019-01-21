@@ -9,9 +9,13 @@
 #include "../../Engine/Utils.h"
 #include "../../Engine/Scene.h"
 
+HandComponent* HandComponent::handInstance;
+
 void HandComponent::Start()
 {
     Component::Start();
+
+    SetHandInstance(this);
 }
 
 void HandComponent::AddSlots(float slotNumber, float startXPos, float cardWidth, float cardHeight)
@@ -88,6 +92,18 @@ void HandComponent::DiscardRandomCard()
         DecrementCardNumber();
     }
 
+}
+
+void HandComponent::SetHandInstance(HandComponent *handComponent)
+{
+    handInstance = handComponent;
+}
+
+int HandComponent::luaDiscardRandomCard(lua_State *lua_state)
+{
+    handInstance->DiscardRandomCard();
+    std::cout<<"DISCARD CARD"<<std::endl;
+    return 0;
 }
 
 

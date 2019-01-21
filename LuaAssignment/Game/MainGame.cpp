@@ -10,6 +10,7 @@
 #include "TestEvent.h"
 #include "MainLevel.h"
 #include "../Engine/LuaProgram.h"
+#include "Components/HandComponent.h"
 
 //There is supposed to be only one MainGame Class.
 //Use this class to create scenes via SceneManager Class.;
@@ -37,20 +38,22 @@ void MainGame::Build()
 {
     Game::Build();   //Used to build the game
 
-    Engine::LuaProgram* luaProgram = new Engine::LuaProgram("../LuaScripts/HelloWorld.lua");
+    //Engine::LuaProgram* luaProgram = new Engine::LuaProgram("../LuaScripts/CardTest.lua");
 
-    luaProgram->CallCurrentProgram();
-
-    std::cout<<luaProgram->GetValueFromTable<std::string,std::string>("test","te")<<std::endl;
+   // luaProgram->CallCurrentProgram();
+   //luaProgram->PushToTable<std::string, int(*)(lua_State*)>("callbacks","discardCard",HandComponent::luaDiscardRandomCard);
+    //std::cout<<luaProgram->GetValueFromTable<std::string,std::string>("test","te")<<std::endl;
    // luaProgram->PushToTable<std::string,int>("test","t",20);
 
 
-    /*luaProgram->GetGlobalFunction("concat",2,1);
+    /* luaProgram->GetGlobalFunction("concat",2,1);
     luaProgram->PushFunctionArgument<std::string>("te");
     luaProgram->PushFunctionArgument<std::string>("st");
     luaProgram->CallGlobalFunction("concat");
-    std::cout<<luaProgram->PopFunctionReturn<std::string>()<<std::endl;*/
+    std::cout<<luaProgram->PopFunctionReturn<std::string>()<<std::endl; */
 
+    /*luaProgram->GetGlobalFunction("ability",0,0);
+    luaProgram->CallGlobalFunction("ability");*/
 
     //std::cout<<luaProgram->GetGlobalBoolean("t")<<std::endl;
 

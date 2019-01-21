@@ -5,7 +5,7 @@
 #include "ResourceManager.h"
 #include <iostream>
 
-void Engine::ResourceManager::LoadTexture(const std::string &path, const std::string &tag)
+sf::Texture* Engine::ResourceManager::LoadTexture(const std::string &path, const std::string &tag)
 {
     sf::Texture* texture = new sf::Texture();
     if(!texture->loadFromFile(path))
@@ -13,47 +13,51 @@ void Engine::ResourceManager::LoadTexture(const std::string &path, const std::st
         //errorHandle
         std::cout<<"Error Loading Texture"<<std::endl;
         texture->loadFromFile("ErrorTexture");
-        return;
+        throw;
     }
 
     textureMap[tag] = texture;
+    return  texture;
 }
 
-void Engine::ResourceManager::LoadFont(const std::string &path, const std::string &tag)
+sf::Font* Engine::ResourceManager::LoadFont(const std::string &path, const std::string &tag)
 {
     sf::Font* font = new sf::Font();
 
     if(!font->loadFromFile(path))
     {
         //errorHandle
-        return;
+        throw;
     }
 
     fontMap[tag] = font;
+    return font;
 }
 
-void Engine::ResourceManager::LoadSoundBuffer(const std::string &path, const std::string &tag)
+sf::SoundBuffer* Engine::ResourceManager::LoadSoundBuffer(const std::string &path, const std::string &tag)
 {
     sf::SoundBuffer* buffer = new sf::SoundBuffer();
 
     if(!buffer->loadFromFile(path))
     {
-        return;
+        throw;
     }
 
     soundBufferMap[tag] = buffer;
+    return buffer;
 }
 
-void Engine::ResourceManager::LoadMusic(const std::string &path, const std::string &tag)
+sf::Music* Engine::ResourceManager::LoadMusic(const std::string &path, const std::string &tag)
 {
     sf::Music* music = new sf::Music();
 
     if(!music->openFromFile(path))
     {
-        return;
+        throw;
     }
 
     musicMap[tag] = music;
+    return music;
 }
 
 sf::Texture *Engine::ResourceManager::GetTexture(const std::string &tag)

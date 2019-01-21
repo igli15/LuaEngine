@@ -140,6 +140,11 @@ namespace Engine {
                 {
                     lua_pushboolean(m_currentLuaState,value);
                 }
+                else if constexpr (std::is_same<U,  int(*)(lua_State*)>())
+                {
+                    lua_pushcfunction(m_currentLuaState,value);
+                }
+
             }
             else if constexpr (std::is_same<T, double>())
             {
@@ -159,6 +164,10 @@ namespace Engine {
                 else if constexpr (std::is_same<U, bool>())
                 {
                     lua_pushboolean(m_currentLuaState,value);
+                }
+                else if constexpr (std::is_same<U, int(*)(lua_State*)>())
+                {
+                    lua_pushcfunction(m_currentLuaState,value);
                 }
             }
             else if constexpr (std::is_same<T, std::string>())
@@ -180,6 +189,10 @@ namespace Engine {
                 {
                     lua_pushboolean(m_currentLuaState,value);
                 }
+                else if constexpr (std::is_same<U, int(*)(lua_State*)>())
+                {
+                    lua_pushcfunction(m_currentLuaState,value);
+                }
             }
             else if constexpr  (std::is_same<T,bool>())
             {
@@ -199,6 +212,10 @@ namespace Engine {
                 else if constexpr (std::is_same<U, bool>())
                 {
                     lua_pushboolean(m_currentLuaState,value);
+                }
+                else if constexpr (std::is_same<U, int(*)(lua_State*)>())
+                {
+                    lua_pushcfunction(m_currentLuaState,value);
                 }
             }
             else
