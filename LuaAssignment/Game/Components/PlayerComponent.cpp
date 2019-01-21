@@ -14,6 +14,8 @@
 void PlayerComponent::Start()
 {
     Component::Start();
+    m_inputDelayClock = new sf::Clock();
+
     m_health = 30;
 
     m_hand = m_parent->parentScene->Instantiate<Hand>();
@@ -37,13 +39,10 @@ void PlayerComponent::Update(float timeStep)
 {
     Component::Update(timeStep);
 
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
-    {
-        DrawCard();
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::E))
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::E) && m_inputDelayClock->getElapsedTime().asSeconds() > 0.25f)
     {
         EndTurn();
+        m_inputDelayClock->restart();
     }
 }
 
@@ -140,6 +139,12 @@ void PlayerComponent::SpendMana(int amount)
 int PlayerComponent::GetManaCapacity()
 {
     return m_manaCapacity;
+}
+
+PlayerComponent::~PlayerComponent()
+{
+    delete m_inputDelayClock;
+    m_inputDelayClock = nullptr;
 }
 
 

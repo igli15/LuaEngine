@@ -1439,6 +1439,10 @@ CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Engine/Com
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/Components/EnemyComponent.cpp
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/Components/PlayerComponent.h
+CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/SFML/Config.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/SFML/System/Clock.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/SFML/System/Export.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/SFML/System/Time.hpp
 
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Engine/Collider.h
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Engine/Component.h

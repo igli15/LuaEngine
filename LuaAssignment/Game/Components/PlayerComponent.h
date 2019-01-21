@@ -6,6 +6,7 @@
 #define LUAASSIGNMENT_PLAYERCOMPONENT_H
 
 
+#include <SFML/System/Clock.hpp>
 #include "../../Engine/Component.h"
 #include "EnemyComponent.h"
 
@@ -28,7 +29,10 @@ private:
     bool m_isTurn;
     int m_health;
 
+    sf::Clock* m_inputDelayClock;
+
 public:
+    ~PlayerComponent() override;
     void Start() override;
     void Update(float timeStep) override;
     bool isHoldingCard = false;
