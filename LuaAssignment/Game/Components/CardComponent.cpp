@@ -99,3 +99,8 @@ void CardComponent::PlayCard()
 
 }
 
+HandSlot *CardComponent::GetSlot()
+{
+    return m_slot;
+}
+

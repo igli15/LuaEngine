@@ -17,6 +17,12 @@ public:
     void DealDamage(int damage);
     void SetPlayerComponent(PlayerComponent* p);
     int GetHealth();
+    void PickRandomAbility();
+
+    void FreezePlayer();
+    void DamagePlayer();
+    void DiscardPlayerCard();
+
     void OnTurnStart();
     void EndTurn();
 

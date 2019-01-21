@@ -101,7 +101,6 @@ void PlayerComponent::OnTurnStart()
 
     DrawCard();
 
-
     if(m_manaCapacity >= m_maxMana)
     {
         m_manaCapacity = m_maxMana;
@@ -109,6 +108,8 @@ void PlayerComponent::OnTurnStart()
     else m_manaCapacity +=1;
 
     m_currentMana = m_manaCapacity;
+
+    if(m_freezeDuration != 0) EndTurn();
 }
 
 void PlayerComponent::SetManaCount(int mana)
@@ -146,6 +147,12 @@ PlayerComponent::~PlayerComponent()
     delete m_inputDelayClock;
     m_inputDelayClock = nullptr;
 }
+
+void PlayerComponent::Freeze(int freezeDuration)
+{
+    m_freezeDuration = freezeDuration;
+}
+
 
 
 

@@ -6,7 +6,8 @@
 #include "../Card.h"
 #include "../HandSlot.h"
 #include "../../Engine/Game.h"
-
+#include "../../Engine/Utils.h"
+#include "../../Engine/Scene.h"
 
 void HandComponent::Start()
 {
@@ -61,6 +62,32 @@ unsigned int HandComponent::GetMaxCardCapacity()
 void HandComponent::DecrementCardNumber()
 {
     m_currentCardNumber -=1;
+}
+
+void HandComponent::DiscardRandomCard()
+{
+    if(m_currentCardNumber == 0) {
+        return;
+    }
+
+    int index = Engine::Utils::RandomRange(0,m_currentCardNumber - 1);
+
+    std::vector<HandSlot*> v;
+
+    for (int i = 0; i < m_cardSlots.size(); ++i)
+    {
+        if(!m_cardSlots[i]->IsEmpty())
+        {
+            v.push_back(m_cardSlots[i]);
+        }
+    }
+
+    if(!v.empty()) {
+        m_parent->parentScene->DestroyEntity(v[index]->currentCard);
+        v[index]->EmptySlot();
+        DecrementCardNumber();
+    }
+
 }
 
 

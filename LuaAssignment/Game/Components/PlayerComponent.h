@@ -22,6 +22,8 @@ private:
     Deck* m_deck;
     EnemyComponent* m_enemyComponent;
 
+    int m_freezeDuration = 0;
+
     int m_currentMana = 0;
     int m_manaCapacity = 0;
     int m_maxMana = 10;
@@ -40,6 +42,7 @@ public:
     void OnTurnStart();
     void SetEnemyComponent(EnemyComponent* e);
     void EndTurn();
+    void Freeze(int amountOfTurns);
     void DrawCard();
     void DealDamage(int damage);
     void SetManaCount(int mana);
