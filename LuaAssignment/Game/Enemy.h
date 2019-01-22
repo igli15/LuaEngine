@@ -26,6 +26,8 @@ private:
     Engine::Sprite* m_enemyArtSprite;
     Engine::SpriteRenderer* m_spriteRenderer;
 
+    Engine::Text* m_enemyInfo;
+
 
 };
 

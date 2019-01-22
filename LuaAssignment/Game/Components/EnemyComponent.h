@@ -31,6 +31,10 @@ public:
     void OnTurnStart();
     void EndTurn();
 
+    void Freeze();
+
+    bool IsFrozen();
+
 private:
     int m_health;
 
@@ -40,6 +44,7 @@ private:
 
     std::vector<std::function<void()>> m_abilities;
 
+    bool m_isFrozen = 0;
 };
 
 

@@ -9,7 +9,7 @@
 #include <SFML/System/Clock.hpp>
 #include "../../Engine/Component.h"
 #include "EnemyComponent.h"
-
+#include "../../LuaSrc/lua.h"
 
 class Hand;
 class Card;
@@ -35,6 +35,8 @@ private:
 
     sf::Clock* m_inputDelayClock;
 
+    static PlayerComponent* instance;
+
 public:
     ~PlayerComponent() override;
     void Start() override;
@@ -55,10 +57,15 @@ public:
     int GetHealth();
     int GetFreezeDuration();
     void PlayCard(CardComponent* c);
+    void FreezeOpponent();
 
     Hand* GetHand();
     Deck* GetDeck();
     EnemyComponent* GetEnemy();
+
+    static void SetInstance(PlayerComponent* p);
+    static int luaDrawCard(lua_State* l);
+    static int luaFreezeOpponent(lua_State* l);
 };
 
 

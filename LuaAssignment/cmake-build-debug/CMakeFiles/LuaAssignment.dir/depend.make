@@ -1124,6 +1124,8 @@ CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: ../Game/Components/EnemyComponent.
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: ../Game/HandSlot.h
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: ../Game/MainGame.h
+CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: ../LuaSrc/lua.h
+CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: ../LuaSrc/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -1215,7 +1217,6 @@ CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: /usr/local/include/SFML/Window/Win
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: /usr/local/include/lua/lauxlib.h
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: /usr/local/include/lua/lua.h
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: /usr/local/include/lua/lua.hpp
-CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: /usr/local/include/lua/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: /usr/local/include/lua/lualib.h
 
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Engine/Collider.h
@@ -1228,7 +1229,10 @@ CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Engine/Physics.h
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Engine/ResourceManager.h
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/CardTemplate.cpp
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/CardTemplate.h
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/Components/HandComponent.h
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/Components/PlayerComponent.h
+CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../LuaSrc/lua.h
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -1347,6 +1351,8 @@ CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Compon
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Hand.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/HandSlot.h
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../LuaSrc/lua.h
+CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../LuaSrc/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -1438,7 +1444,6 @@ CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/inc
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/lua/lauxlib.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/lua/lua.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/lua/lua.hpp
-CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/lua/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: /usr/local/include/lua/lualib.h
 
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Engine/Collider.h
@@ -1461,6 +1466,8 @@ CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Game/Compon
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Game/Hand.h
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Game/HandSlot.h
+CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../LuaSrc/lua.h
+CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../LuaSrc/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: /usr/local/include/SFML/Config.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: /usr/local/include/SFML/Graphics.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: /usr/local/include/SFML/Graphics/BlendMode.hpp
@@ -1535,7 +1542,6 @@ CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: /usr/local/inc
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: /usr/local/include/lua/lauxlib.h
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: /usr/local/include/lua/lua.h
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: /usr/local/include/lua/lua.hpp
-CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: /usr/local/include/lua/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: /usr/local/include/lua/lualib.h
 
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Engine/Collider.h
@@ -1556,6 +1562,8 @@ CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/Compo
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/Hand.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/HandSlot.h
+CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../LuaSrc/lua.h
+CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../LuaSrc/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/SFML/Config.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/SFML/Graphics.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/SFML/Graphics/BlendMode.hpp
@@ -1630,7 +1638,6 @@ CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/in
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/lua/lauxlib.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/lua/lua.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/lua/lua.hpp
-CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/lua/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/lua/lualib.h
 
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Engine/Collider.h
@@ -1657,6 +1664,7 @@ CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Game/Compon
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Game/Components/HandComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Game/HandSlot.h
+CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../LuaSrc/lua.h
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -1777,6 +1785,8 @@ CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Game/Comp
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Game/Deck.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Game/Hand.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../Game/HandSlot.h
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../LuaSrc/lua.h
+CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: ../LuaSrc/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -1868,7 +1878,6 @@ CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/i
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/lua/lauxlib.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/lua/lua.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/lua/lua.hpp
-CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/lua/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o: /usr/local/include/lua/lualib.h
 
 CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.o: ../Engine/Collider.h
@@ -2019,6 +2028,7 @@ CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../Game/Components/PlayerComponent
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../Game/Hand.cpp
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../Game/Hand.h
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../Game/HandSlot.h
+CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../LuaSrc/lua.h
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -2128,6 +2138,8 @@ CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Game/Components/EnemyCompon
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Game/HandSlot.cpp
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Game/HandSlot.h
+CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../LuaSrc/lua.h
+CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../LuaSrc/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: /usr/local/include/SFML/Config.hpp
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: /usr/local/include/SFML/Graphics.hpp
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: /usr/local/include/SFML/Graphics/BlendMode.hpp
@@ -2202,7 +2214,6 @@ CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: /usr/local/include/SFML/Window
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: /usr/local/include/lua/lauxlib.h
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: /usr/local/include/lua/lua.h
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: /usr/local/include/lua/lua.hpp
-CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: /usr/local/include/lua/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: /usr/local/include/lua/lualib.h
 
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o: ../Engine/Collider.h
@@ -2346,6 +2357,7 @@ CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/MainLevel.cpp
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/MainLevel.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/Player.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/PlayerInfo.h
+CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../LuaSrc/lua.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -2458,6 +2470,8 @@ CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../Game/Hand.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../Game/HandSlot.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../Game/Player.cpp
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../Game/Player.h
+CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../LuaSrc/lua.h
+CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../LuaSrc/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/SFML/Config.hpp
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/SFML/Graphics.hpp
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/SFML/Graphics/BlendMode.hpp
@@ -2532,7 +2546,6 @@ CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/SFML/Window/W
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/lua/lauxlib.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/lua/lua.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/lua/lua.hpp
-CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/lua/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: /usr/local/include/lua/lualib.h
 
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../Engine/Collider.h
@@ -2562,6 +2575,8 @@ CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../Game/Hand.h
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../Game/HandSlot.h
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../Game/PlayerInfo.cpp
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../Game/PlayerInfo.h
+CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../LuaSrc/lua.h
+CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../LuaSrc/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -2653,7 +2668,6 @@ CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: /usr/local/include/SFML/Wind
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: /usr/local/include/lua/lauxlib.h
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: /usr/local/include/lua/lua.h
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: /usr/local/include/lua/lua.hpp
-CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: /usr/local/include/lua/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: /usr/local/include/lua/lualib.h
 
 CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o: ../Engine/EventType.h

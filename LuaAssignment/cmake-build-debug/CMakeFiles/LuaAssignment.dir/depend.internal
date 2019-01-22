@@ -1125,6 +1125,8 @@ CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainGame.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/luaconf.h
  /usr/local/include/SFML/Audio.hpp
  /usr/local/include/SFML/Audio/AlResource.hpp
  /usr/local/include/SFML/Audio/Export.hpp
@@ -1216,7 +1218,6 @@ CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o
  /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
  /usr/local/include/lua/lua.hpp
- /usr/local/include/lua/luaconf.h
  /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
@@ -1229,7 +1230,10 @@ CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.cpp
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/EnemyComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.h
  /usr/local/include/SFML/Audio.hpp
  /usr/local/include/SFML/Audio/AlResource.hpp
  /usr/local/include/SFML/Audio/Export.hpp
@@ -1348,6 +1352,8 @@ CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Hand.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/luaconf.h
  /usr/local/include/SFML/Audio.hpp
  /usr/local/include/SFML/Audio/AlResource.hpp
  /usr/local/include/SFML/Audio/Export.hpp
@@ -1439,7 +1445,6 @@ CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o
  /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
  /usr/local/include/lua/lua.hpp
- /usr/local/include/lua/luaconf.h
  /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
@@ -1462,6 +1467,8 @@ CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Hand.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/luaconf.h
  /usr/local/include/SFML/Config.hpp
  /usr/local/include/SFML/Graphics.hpp
  /usr/local/include/SFML/Graphics/BlendMode.hpp
@@ -1536,7 +1543,6 @@ CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o
  /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
  /usr/local/include/lua/lua.hpp
- /usr/local/include/lua/luaconf.h
  /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
@@ -1557,6 +1563,8 @@ CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Hand.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/luaconf.h
  /usr/local/include/SFML/Config.hpp
  /usr/local/include/SFML/Graphics.hpp
  /usr/local/include/SFML/Graphics/BlendMode.hpp
@@ -1631,7 +1639,6 @@ CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o
  /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
  /usr/local/include/lua/lua.hpp
- /usr/local/include/lua/luaconf.h
  /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
@@ -1658,6 +1665,7 @@ CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.h
  /usr/local/include/SFML/Audio.hpp
  /usr/local/include/SFML/Audio/AlResource.hpp
  /usr/local/include/SFML/Audio/Export.hpp
@@ -1778,6 +1786,8 @@ CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Deck.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Hand.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/luaconf.h
  /usr/local/include/SFML/Audio.hpp
  /usr/local/include/SFML/Audio/AlResource.hpp
  /usr/local/include/SFML/Audio/Export.hpp
@@ -1869,7 +1879,6 @@ CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o
  /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
  /usr/local/include/lua/lua.hpp
- /usr/local/include/lua/luaconf.h
  /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
@@ -2020,6 +2029,7 @@ CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Hand.cpp
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Hand.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.h
  /usr/local/include/SFML/Audio.hpp
  /usr/local/include/SFML/Audio/AlResource.hpp
  /usr/local/include/SFML/Audio/Export.hpp
@@ -2129,6 +2139,8 @@ CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.cpp
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/luaconf.h
  /usr/local/include/SFML/Config.hpp
  /usr/local/include/SFML/Graphics.hpp
  /usr/local/include/SFML/Graphics/BlendMode.hpp
@@ -2203,7 +2215,6 @@ CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o
  /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
  /usr/local/include/lua/lua.hpp
- /usr/local/include/lua/luaconf.h
  /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
@@ -2347,6 +2358,7 @@ CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/MainLevel.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Player.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/PlayerInfo.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.h
  /usr/local/include/SFML/Audio.hpp
  /usr/local/include/SFML/Audio/AlResource.hpp
  /usr/local/include/SFML/Audio/Export.hpp
@@ -2459,6 +2471,8 @@ CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Player.cpp
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Player.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/luaconf.h
  /usr/local/include/SFML/Config.hpp
  /usr/local/include/SFML/Graphics.hpp
  /usr/local/include/SFML/Graphics/BlendMode.hpp
@@ -2533,7 +2547,6 @@ CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o
  /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
  /usr/local/include/lua/lua.hpp
- /usr/local/include/lua/luaconf.h
  /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
@@ -2563,6 +2576,8 @@ CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/PlayerInfo.cpp
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/PlayerInfo.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/luaconf.h
  /usr/local/include/SFML/Audio.hpp
  /usr/local/include/SFML/Audio/AlResource.hpp
  /usr/local/include/SFML/Audio/Export.hpp
@@ -2654,7 +2669,6 @@ CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o
  /usr/local/include/lua/lauxlib.h
  /usr/local/include/lua/lua.h
  /usr/local/include/lua/lua.hpp
- /usr/local/include/lua/luaconf.h
  /usr/local/include/lua/lualib.h
 CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h

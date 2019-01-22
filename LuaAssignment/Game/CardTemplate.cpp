@@ -5,6 +5,7 @@
 #include "CardTemplate.h"
 #include "Components/HandComponent.h"
 #include "../Engine/Game.h"
+#include "Components/PlayerComponent.h"
 
 CardTemplate::CardTemplate()
 {
@@ -12,6 +13,8 @@ CardTemplate::CardTemplate()
     m_luaProgram = new Engine::LuaProgram("../LuaScripts/CardTest.lua");
     m_luaProgram->CallCurrentProgram();
     m_luaProgram->PushToTable<std::string, int(*)(lua_State*)>("callbacks","discardCard",HandComponent::luaDiscardRandomCard);
+    m_luaProgram->PushToTable<std::string, int(*)(lua_State*)>("callbacks","drawCard",PlayerComponent::luaDrawCard);
+    m_luaProgram->PushToTable<std::string, int(*)(lua_State*)>("callbacks","freezeOpponent",PlayerComponent::luaFreezeOpponent);
 
     m_name = m_luaProgram->GetValueFromTable<std::string,std::string>("card","name");
 

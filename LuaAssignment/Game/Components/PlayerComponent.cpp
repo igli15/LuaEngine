@@ -12,6 +12,8 @@
 #include "../../Engine/Game.h"
 #include "CardComponent.h"
 
+PlayerComponent* PlayerComponent::instance;
+
 void PlayerComponent::Start()
 {
     Component::Start();
@@ -33,6 +35,7 @@ void PlayerComponent::Start()
         DrawCard();
     }
 
+    SetInstance(this);
 }
 
 void PlayerComponent::Update(float timeStep)
@@ -169,8 +172,6 @@ int PlayerComponent::GetFreezeDuration()
 void PlayerComponent::PlayCard(CardComponent *c)
 {
     if(!m_isFrozen && m_isTurn) {
-        if (c->GetAbility() != nullptr)
-            c->GetAbility()();
 
         SpendMana(c->GetCost());
         m_enemyComponent->DealDamage(c->GetDamage());
@@ -178,7 +179,32 @@ void PlayerComponent::PlayCard(CardComponent *c)
         m_hand->GetHandComponent()->DecrementCardNumber();
         c->GetSlot()->EmptySlot();
         m_parent->parentScene->DestroyEntity(c->Parent());
+
+        if (c->GetAbility() != nullptr)
+            c->GetAbility()();
     }
+}
+
+void PlayerComponent::SetInstance(PlayerComponent* p)
+{
+    instance = p;
+}
+
+int PlayerComponent::luaDrawCard(lua_State *l)
+{
+    instance->DrawCard();
+    return 0;
+}
+
+void PlayerComponent::FreezeOpponent()
+{
+    m_enemyComponent->Freeze();
+}
+
+int PlayerComponent::luaFreezeOpponent(lua_State *l)
+{
+    instance->FreezeOpponent();
+    return 0;
 }
 
 

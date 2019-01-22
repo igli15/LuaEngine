@@ -53,9 +53,11 @@ void EnemyComponent::OnTurnStart()
 {
     m_IsTurn = true;
 
-
-   int randomIndex = Engine::Utils::RandomRange(0,m_abilities.size() - 1);
-   m_abilities[randomIndex]();
+    if(!m_isFrozen)
+    {
+        int randomIndex = Engine::Utils::RandomRange(0, m_abilities.size() - 1);
+        m_abilities[randomIndex]();
+    }
 
    EndTurn();
 
@@ -65,6 +67,8 @@ void EnemyComponent::EndTurn()
 {
     if(m_IsTurn)
     {
+        if(m_isFrozen) m_isFrozen = false;
+
         m_IsTurn = false;
         m_playerComponent->OnTurnStart();
     }
@@ -84,6 +88,16 @@ void EnemyComponent::DiscardPlayerCard()
 {
     m_playerComponent->GetHand()->GetHandComponent()->DiscardRandomCard();
     m_playerComponent->GetHand()->GetHandComponent()->DiscardRandomCard();
+}
+
+void EnemyComponent::Freeze()
+{
+    m_isFrozen = true;
+}
+
+bool EnemyComponent::IsFrozen()
+{
+    return m_isFrozen;
 }
 
 
