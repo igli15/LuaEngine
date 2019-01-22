@@ -74,19 +74,22 @@ void HandComponent::DiscardRandomCard()
         return;
     }
 
-    int index = Engine::Utils::RandomRange(0,m_currentCardNumber - 1);
+    std::vector<HandSlot *> v;
 
-    std::vector<HandSlot*> v;
+    int index = 0;
+    do {
+         index = Engine::Utils::RandomRange(0, m_currentCardNumber - 1);
 
-    for (int i = 0; i < m_cardSlots.size(); ++i)
-    {
-        if(!m_cardSlots[i]->IsEmpty())
-        {
-            v.push_back(m_cardSlots[i]);
+        for (int i = 0; i < m_cardSlots.size(); ++i) {
+            if (!m_cardSlots[i]->IsEmpty()) {
+                v.push_back(m_cardSlots[i]);
+            }
         }
     }
+    while (v[index]->currentCard->GetComponent<CardComponent>()->isSelected());
 
-    if(!v.empty()) {
+    if(!v.empty() )
+    {
         m_parent->parentScene->DestroyEntity(v[index]->currentCard);
         v[index]->EmptySlot();
         DecrementCardNumber();
@@ -102,7 +105,32 @@ void HandComponent::SetHandInstance(HandComponent *handComponent)
 int HandComponent::luaDiscardRandomCard(lua_State *lua_state)
 {
     handInstance->DiscardRandomCard();
-    std::cout<<"DISCARD CARD"<<std::endl;
+
+    return 0;
+}
+
+void HandComponent::DecreaseCostOfACard(int amount)
+{
+    std::vector<HandSlot*> v;
+
+    for (int i = 0; i < m_cardSlots.size(); ++i)
+    {
+        if(!m_cardSlots[i]->IsEmpty())
+        {
+            v.push_back(m_cardSlots[i]);
+        }
+    }
+
+    int index = Engine::Utils::RandomRange(0,v.size() - 1);
+
+    v[index]->currentCard->GetComponent<CardComponent>()->DecreaseCost(amount);
+    v[index]->currentCard->GetComponent<CardComponent>()->OnCostChanged();
+}
+
+int HandComponent::luaDecreaseCostOfACard(lua_State *lua_state)
+{
+    int amount = luaL_checkinteger(lua_state,-1);
+    handInstance->DecreaseCostOfACard(amount);
     return 0;
 }
 

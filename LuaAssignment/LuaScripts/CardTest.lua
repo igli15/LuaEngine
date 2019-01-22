@@ -3,14 +3,14 @@ callbacks  = {
     ["discardCard"] = nil;
     ["drawCard"] = nil;
     ["freezeOpponent"] = nil;
-    ["dealDamage"] = nil;
+
     ["increaseDamageOfACard"] = nil;
     ["decreaseCostOfACard"] = nil
 }
 
 function ability()
 
-    callbacks["freezeOpponent"]()
+    callbacks["decreaseCostOfACard"](1)
 
 end
 

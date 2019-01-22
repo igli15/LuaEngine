@@ -23,6 +23,7 @@ private:
     int m_cost;
     std::function<void()> m_ability;
 
+
 public:
     void Start() override;
     void Update(float timeStep) override;
@@ -35,6 +36,12 @@ public:
     std::function<void()> GetAbility();
     int GetCost();
     int GetDamage();
+    bool isSelected();
+    void DecreaseCost(int amount);
+    void IncreaseDamage(int amount);
+
+    void OnCostChanged();
+    void OnDamageChanged();
 
     HandSlot* GetSlot();
 };

@@ -51,7 +51,7 @@ void CardComponent::Update(float timeStep)
         if(m_parent->GetWorldPosition().y <= 400)
         {
             if(m_cost <= m_playerComponent->GetCurrentManaCount())
-           m_playerComponent->PlayCard(this);
+             m_playerComponent->PlayCard(this);
         }
 
         m_parent->SetWorldPosition(m_slot->pos->x,m_slot->pos->y);
@@ -102,5 +102,25 @@ int CardComponent::GetCost()
 
 int CardComponent::GetDamage() {
     return m_damage;
+}
+
+void CardComponent::DecreaseCost(int amount)
+{
+    m_cost -= amount;
+}
+
+void CardComponent::IncreaseDamage(int amount)
+{
+    m_damage += amount;
+}
+
+bool CardComponent::isSelected()
+{
+    return m_selected;
+}
+
+void CardComponent::OnCostChanged()
+{
+    static_cast<Card*>(m_parent)->SetCardCostText(std::to_string(m_cost));
 }
 

@@ -21,6 +21,7 @@ public:
     void AddCard(Card* card);
     void DecrementCardNumber();
     void DiscardRandomCard();
+    void DecreaseCostOfACard(int amount);
     ~HandComponent() override;
 
     int GetCurrentCardNumber();
@@ -29,9 +30,10 @@ public:
 
     static void SetHandInstance(HandComponent* handComponent);
     static int luaDiscardRandomCard(lua_State* lua_state);
-
+    static int luaDecreaseCostOfACard(lua_State *lua_state);
 
 private:
+
     unsigned int m_maxCardCapacity = 7;
     int m_currentCardNumber = 0;
     std::vector<HandSlot*> m_cardSlots;

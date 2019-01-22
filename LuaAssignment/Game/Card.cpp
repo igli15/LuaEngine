@@ -81,5 +81,10 @@ void Card::ApplyTemplate(const CardTemplate& cardTemplate)
     m_cardComponent->SetAbility(cardTemplate.Ability());
 }
 
+void Card::SetCardCostText(const std::string &newCost)
+{
+    m_cardCost->SetText(newCost);
+}
+
 
 

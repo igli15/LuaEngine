@@ -15,6 +15,7 @@ CardTemplate::CardTemplate()
     m_luaProgram->PushToTable<std::string, int(*)(lua_State*)>("callbacks","discardCard",HandComponent::luaDiscardRandomCard);
     m_luaProgram->PushToTable<std::string, int(*)(lua_State*)>("callbacks","drawCard",PlayerComponent::luaDrawCard);
     m_luaProgram->PushToTable<std::string, int(*)(lua_State*)>("callbacks","freezeOpponent",PlayerComponent::luaFreezeOpponent);
+    m_luaProgram->PushToTable<std::string, int(*)(lua_State *) > ("callbacks", "decreaseCostOfACard", HandComponent::luaDecreaseCostOfACard);
 
     m_name = m_luaProgram->GetValueFromTable<std::string,std::string>("card","name");
 
