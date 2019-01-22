@@ -9,6 +9,7 @@
 #include "../../Engine/Utils.h"
 #include "../../Engine/Scene.h"
 
+
 HandComponent* HandComponent::handInstance;
 
 void HandComponent::Start()
@@ -121,16 +122,19 @@ void HandComponent::DecreaseCostOfACard(int amount)
         }
     }
 
-    int index = Engine::Utils::RandomRange(0,v.size() - 1);
+    if(!v.empty()) {
+        int index = Engine::Utils::RandomRange(0, v.size() - 1);
 
-    v[index]->currentCard->GetComponent<CardComponent>()->DecreaseCost(amount);
-    v[index]->currentCard->GetComponent<CardComponent>()->OnCostChanged();
+        v[index]->currentCard->GetComponent<CardComponent>()->DecreaseCost(amount);
+        v[index]->currentCard->GetComponent<CardComponent>()->OnCostChanged();
+    }
 }
 
 int HandComponent::luaDecreaseCostOfACard(lua_State *lua_state)
 {
     int amount = luaL_checkinteger(lua_state,-1);
     handInstance->DecreaseCostOfACard(amount);
+    lua_pop(lua_state,1);
     return 0;
 }
 

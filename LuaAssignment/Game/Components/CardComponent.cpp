@@ -107,6 +107,8 @@ int CardComponent::GetDamage() {
 void CardComponent::DecreaseCost(int amount)
 {
     m_cost -= amount;
+
+    if(m_cost<= 0) m_cost = 0 ;
 }
 
 void CardComponent::IncreaseDamage(int amount)

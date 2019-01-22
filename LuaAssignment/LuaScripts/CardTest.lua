@@ -24,7 +24,7 @@ card = {
     ["filePath"] = path .. "CardArtTest.png";
     ["damage"] = damage;
     ["manaCost"] = 3;
-    ["description"] = (damage > 0 and "Deal " .. damage .. " Damage" or "") .."\n" ..description;
+    ["description"] = (damage > 0 and "Deal " .. damage .. " Damage" or "") .."\n" .. description;
     ["ability"] = ability;
 }
 

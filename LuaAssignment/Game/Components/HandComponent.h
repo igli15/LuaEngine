@@ -8,7 +8,11 @@
 
 #include "../../Engine/Component.h"
 #include <vector>
+extern "C"
+{
 #include <lua.h>
+}
+
 
 class Card;
 class HandSlot;
