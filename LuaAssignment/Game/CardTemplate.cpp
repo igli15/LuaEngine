@@ -11,6 +11,7 @@ CardTemplate::CardTemplate()
 {
 
     m_luaProgram = new Engine::LuaProgram("../LuaScripts/CardTest.lua");
+
     m_luaProgram->CallCurrentProgram();
     m_luaProgram->PushToTable<std::string, int(*)(lua_State*)>("callbacks","discardCard",HandComponent::luaDiscardRandomCard);
     m_luaProgram->PushToTable<std::string, int(*)(lua_State*)>("callbacks","drawCard",PlayerComponent::luaDrawCard);

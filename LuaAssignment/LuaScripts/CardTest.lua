@@ -3,8 +3,6 @@ callbacks  = {
     ["discardCard"] = nil;
     ["drawCard"] = nil;
     ["freezeOpponent"] = nil;
-
-    ["increaseDamageOfACard"] = nil;
     ["decreaseCostOfACard"] = nil
 }
 
@@ -16,12 +14,17 @@ end
 
 path = "/Users/igli/Desktop/LuaEngine/LuaAssignment/Assets/"
 
+damage = 5;
+
+description = "Heey";
+
 card = {
 
     ["name"] = "test";
     ["filePath"] = path .. "CardArtTest.png";
-    ["damage"] = 5;
+    ["damage"] = damage;
     ["manaCost"] = 3;
-    ["description"] = "Testing....";
+    ["description"] = (damage > 0 and "Deal " .. damage .. " Damage" or "") .."\n" ..description;
     ["ability"] = ability;
 }
+

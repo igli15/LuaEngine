@@ -24,6 +24,7 @@ void Card::Build()
     m_cardName = parentScene->Instantiate<Engine::Text>();
     m_cardDescription = parentScene->Instantiate<Engine::Text>();
     m_cardCost = parentScene->Instantiate<Engine::Text>();
+    m_cardCost->GetTextComponent()->SetCharacterSize(48);
 
     m_cardName->GetTextComponent()->SetColor(sf::Color::Black);
     m_cardDescription->GetTextComponent()->SetColor(sf::Color::Black);
@@ -35,7 +36,7 @@ void Card::Build()
 
     m_cardName->SetLocalPosition(60,95);
     m_cardDescription->SetLocalPosition(30,135);
-    m_cardCost->SetLocalPosition(20,20);
+    m_cardCost->SetLocalPosition(17,17);
 
     m_cardName->SetText("Card Name");
     m_cardDescription->SetText("Card Description");
