@@ -43,18 +43,17 @@ void PlayerComponent::Update(float timeStep)
 {
     Component::Update(timeStep);
 
-    std::cout<<m_enemyComponent->Parent()<<std::endl;
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && m_inputDelayClock->getElapsedTime().asSeconds() > 0.25f && m_enemyComponent->Parent()!=
-                                                                                                                             nullptr)
+    if(m_health <= 0)
+    {
+        m_parent->parentScene->DestroyEntity(m_parent);
+    }
+
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && m_inputDelayClock->getElapsedTime().asSeconds() > 0.25f && m_enemyComponent!= nullptr)
     {
         EndTurn();
         m_inputDelayClock->restart();
     }
 
-    if(m_health <= 0)
-    {
-        m_parent->parentScene->DestroyEntity(m_parent);
-    }
 }
 
 
@@ -99,7 +98,7 @@ void PlayerComponent::SetEnemyComponent(EnemyComponent *e)
 
 void PlayerComponent::EndTurn()
 {
-    if(m_isTurn && m_enemyComponent->Parent() != nullptr)
+    if(m_enemyComponent != nullptr && m_isTurn)
     {
         m_isTurn = false;
         m_enemyComponent->OnTurnStart();
@@ -222,6 +221,11 @@ int PlayerComponent::luaFreezeOpponent(lua_State *l)
 {
     instance->FreezeOpponent();
     return 0;
+}
+
+void PlayerComponent::ClearEnemy()
+{
+    m_enemyComponent = nullptr;
 }
 
 

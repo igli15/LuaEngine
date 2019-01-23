@@ -105,6 +105,7 @@ bool EnemyComponent::IsFrozen()
 
 EnemyComponent::~EnemyComponent()
 {
+    m_playerComponent->ClearEnemy();
     m_playerComponent = nullptr;
 }
 

@@ -17,7 +17,6 @@ void DeckComponent::Start()
 {
     Component::Start();
 
-
 }
 
 void DeckComponent::AddCardTemplate(CardTemplate *cardTemplate)
@@ -30,6 +29,7 @@ Card* DeckComponent::DrawCard()
     if(m_cardTemplates.empty())
     {
         std::cout<<"no cards left in the deck"<<std::endl;
+        m_playerComponent->DealDamage(2);
         return  nullptr;
     }
 
@@ -38,8 +38,6 @@ Card* DeckComponent::DrawCard()
 
     if(m_playerComponent->GetHand()->GetHandComponent()->GetCurrentCardNumber() >= m_playerComponent->GetHand()->GetHandComponent()->GetMaxCardCapacity())
     {
-        delete cardTemplate;
-        cardTemplate = nullptr;
         std::cout<<"mill card here"<<std::endl;
         return nullptr;
     }

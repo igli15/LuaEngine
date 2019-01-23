@@ -15,20 +15,15 @@
     <list default="true" id="f3d7eafb-701f-4880-88c3-db6dd240fdc8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Scene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Scene.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/CardTemplate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/CardTemplate.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/CardTemplate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/CardTemplate.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Components/DeckComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/DeckComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Components/EnemyComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/EnemyComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/EnemyComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/EnemyComponent.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Components/PlayerComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/PlayerComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/MainGame.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/MainGame.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/MainLevel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/MainLevel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/MainLevel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/MainLevel.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/PlayerInfo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/PlayerInfo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Components/PlayerComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/PlayerComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Player.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LuaScripts/CardTest.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LuaScripts/CardTest.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/LuaAssignment" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LuaAssignment" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -179,9 +174,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="26616" />
-          <entry key="h" value="19500" />
-          <entry key="lua" value="1745" />
+          <entry key="cpp" value="26759" />
+          <entry key="h" value="19519" />
+          <entry key="lua" value="1755" />
           <entry key="txt" value="156" />
         </counts>
       </usages-collector>
@@ -189,8 +184,8 @@
         <counts>
           <entry key="CMakeLists.txt" value="156" />
           <entry key="Doxygen file" value="15" />
-          <entry key="Lua" value="1579" />
-          <entry key="ObjectiveC" value="46101" />
+          <entry key="Lua" value="1589" />
+          <entry key="ObjectiveC" value="46263" />
           <entry key="PLAIN_TEXT" value="166" />
         </counts>
       </usages-collector>
@@ -202,12 +197,12 @@
           <entry key="__string" value="1" />
           <entry key="algorithm" value="1" />
           <entry key="cmake" value="4" />
-          <entry key="cpp" value="270" />
-          <entry key="functional" value="3" />
-          <entry key="h" value="161" />
+          <entry key="cpp" value="277" />
+          <entry key="functional" value="4" />
+          <entry key="h" value="164" />
           <entry key="hpp" value="1" />
           <entry key="inl" value="1" />
-          <entry key="lua" value="8" />
+          <entry key="lua" value="9" />
           <entry key="png" value="1" />
           <entry key="streambuf" value="1" />
           <entry key="string" value="2" />
@@ -221,8 +216,8 @@
         <counts>
           <entry key="CMakeLists.txt" value="7" />
           <entry key="Image" value="1" />
-          <entry key="Lua" value="6" />
-          <entry key="ObjectiveC" value="450" />
+          <entry key="Lua" value="7" />
+          <entry key="ObjectiveC" value="461" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -234,52 +229,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Game/CardTemplate.cpp">
+        <entry file="file://$PROJECT_DIR$/Game/Components/DeckComponent.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1554">
-              <caret line="117" column="19" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
+            <state relative-caret-position="-274">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
-                <element signature="e#48#73#0" expanded="true" />
+                <element signature="e#48#65#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Game/Components/PlayerComponent.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="101" column="45" selection-start-line="101" selection-start-column="45" selection-end-line="101" selection-end-column="45" />
-              <folding>
-                <element signature="e#48#76#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Scene.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Game.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="73" column="71" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Game/Enemy.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -296,7 +252,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Engine/Entity.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3029">
+            <state relative-caret-position="179">
               <caret line="106" selection-start-line="106" selection-end-line="106" />
               <folding>
                 <element signature="e#1#20#0" expanded="true" />
@@ -306,33 +262,72 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Game/Components/EnemyComponent.cpp">
+        <entry file="file://$PROJECT_DIR$/LuaScripts/CardTest.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="270">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Engine/Scene.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Engine/Entity.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-796">
+              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Game/Components/PlayerComponent.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="227" column="31" selection-start-line="227" selection-start-column="31" selection-end-line="227" selection-end-column="31" />
               <folding>
-                <element signature="e#48#67#0" expanded="true" />
+                <element signature="e#48#76#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/functional">
+        <entry file="file://$PROJECT_DIR$/Game/Components/PlayerComponent.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="1910" selection-start-line="1910" selection-end-line="1910" />
+            <state relative-caret-position="635">
+              <caret line="60" column="19" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="19" />
+              <folding>
+                <element signature="e#130#162#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Game/Components/EnemyComponent.h">
+        <entry file="file://$PROJECT_DIR$/Game/Player.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="540">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Game/Components/EnemyComponent.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
               <folding>
-                <element signature="e#127#162#0" expanded="true" />
+                <element signature="e#48#67#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -361,6 +356,7 @@
       <find>m_parent</find>
       <find>std::cout</find>
       <find>m_path</find>
+      <find>cardTemplate</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -375,7 +371,6 @@
         <option value="$PROJECT_DIR$/Engine/Sprite.h" />
         <option value="$PROJECT_DIR$/Engine/Scene.h" />
         <option value="$PROJECT_DIR$/Game/Player.cpp" />
-        <option value="$PROJECT_DIR$/Game/Player.h" />
         <option value="$PROJECT_DIR$/Game/Hand.h" />
         <option value="$PROJECT_DIR$/Game/Deck.h" />
         <option value="$PROJECT_DIR$/Game/Deck.cpp" />
@@ -388,7 +383,6 @@
         <option value="$PROJECT_DIR$/Game/Hand.cpp" />
         <option value="$PROJECT_DIR$/Engine/Text.cpp" />
         <option value="$PROJECT_DIR$/Game/Components/DeckComponent.h" />
-        <option value="$PROJECT_DIR$/Engine/Entity.cpp" />
         <option value="$PROJECT_DIR$/Engine/TextComponent.cpp" />
         <option value="$PROJECT_DIR$/Engine/SpriteRenderer.cpp" />
         <option value="$PROJECT_DIR$/Game/HandSlot.h" />
@@ -400,7 +394,6 @@
         <option value="$PROJECT_DIR$/Engine/ResourceManager.h" />
         <option value="$PROJECT_DIR$/Engine/ResourceManager.cpp" />
         <option value="$PROJECT_DIR$/Game/Enemy.h" />
-        <option value="$PROJECT_DIR$/Game/Components/PlayerComponent.h" />
         <option value="$PROJECT_DIR$/Game/Components/CardComponent.h" />
         <option value="$PROJECT_DIR$/Game/Card.h" />
         <option value="$PROJECT_DIR$/Game/Card.cpp" />
@@ -413,16 +406,19 @@
         <option value="$PROJECT_DIR$/Game/MainLevel.h" />
         <option value="$PROJECT_DIR$/Game/PlayerInfo.cpp" />
         <option value="$PROJECT_DIR$/Game/MainLevel.cpp" />
-        <option value="$PROJECT_DIR$/Game/Components/DeckComponent.cpp" />
         <option value="$PROJECT_DIR$/Game/CardTemplate.h" />
-        <option value="$PROJECT_DIR$/Game/CardTemplate.cpp" />
-        <option value="$PROJECT_DIR$/LuaScripts/CardTest.lua" />
         <option value="$PROJECT_DIR$/Game/Components/EnemyComponent.h" />
         <option value="$PROJECT_DIR$/Game/Enemy.cpp" />
-        <option value="$PROJECT_DIR$/Game/Components/EnemyComponent.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Scene.cpp" />
+        <option value="$PROJECT_DIR$/Game/CardTemplate.cpp" />
         <option value="$PROJECT_DIR$/Engine/Game.cpp" />
+        <option value="$PROJECT_DIR$/LuaScripts/CardTest.lua" />
+        <option value="$PROJECT_DIR$/Game/Components/DeckComponent.cpp" />
+        <option value="$PROJECT_DIR$/Engine/Scene.cpp" />
+        <option value="$PROJECT_DIR$/Engine/Entity.cpp" />
+        <option value="$PROJECT_DIR$/Game/Player.h" />
+        <option value="$PROJECT_DIR$/Game/Components/PlayerComponent.h" />
         <option value="$PROJECT_DIR$/Game/Components/PlayerComponent.cpp" />
+        <option value="$PROJECT_DIR$/Game/Components/EnemyComponent.cpp" />
       </list>
     </option>
   </component>
@@ -581,12 +577,12 @@
       <workItem from="1547989523405" duration="4631000" />
       <workItem from="1547999841132" duration="12386000" />
       <workItem from="1548171518854" duration="23969000" />
-      <workItem from="1548249697383" duration="14455000" />
+      <workItem from="1548249697383" duration="16253000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="534385000" />
+    <option name="totallyTimeSpent" value="536183000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -607,7 +603,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
       <window_info anchor="bottom" auto_hide="true" id="Run" internal_type="SLIDING" order="2" type="SLIDING" weight="0.3489796" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.498779" visible="true" weight="0.39795917" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.498779" weight="0.3989796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4993895" weight="0.32857144" />
@@ -715,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Entity.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="81" column="24" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Component.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -790,23 +779,6 @@
           <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding>
             <element signature="e#126#161#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Game/Player.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Game/Components/PlayerComponent.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-          <folding>
-            <element signature="e#130#162#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -944,33 +916,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game/Components/DeckComponent.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#48#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/CardArtTest.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/LuaScripts/CardTest.lua">
+    <entry file="file://$PROJECT_DIR$/Game/CardTemplate.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="24" column="74" lean-forward="true" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
+        <state relative-caret-position="419">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+          <folding>
+            <element signature="e#48#73#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Entity.cpp">
+    <entry file="file://$PROJECT_DIR$/Engine/Game.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3029">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="455">
+          <caret line="72" column="112" selection-start-line="72" selection-start-column="112" selection-end-line="72" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/Enemy.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -984,41 +953,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game/Enemy.cpp">
+    <entry file="file://$PROJECT_DIR$/LuaScripts/CardTest.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/functional">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="1910" selection-start-line="1910" selection-end-line="1910" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Game/CardTemplate.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1554">
-          <caret line="117" column="19" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
-          <folding>
-            <element signature="e#48#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Scene.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Game.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="73" column="71" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
+        <state relative-caret-position="270">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -1029,22 +967,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game/Components/EnemyComponent.cpp">
+    <entry file="file://$PROJECT_DIR$/Game/Components/DeckComponent.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-274">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#48#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/Entity.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
           <folding>
-            <element signature="e#48#67#0" expanded="true" />
+            <element signature="e#1#20#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/Scene.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/functional">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="1910" selection-start-line="1910" selection-end-line="1910" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/Player.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Game/Components/PlayerComponent.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="101" column="45" selection-start-line="101" selection-start-column="45" selection-end-line="101" selection-end-column="45" />
+        <state relative-caret-position="630">
+          <caret line="227" column="31" selection-start-line="227" selection-start-column="31" selection-end-line="227" selection-end-column="31" />
           <folding>
             <element signature="e#48#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/Components/PlayerComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="60" column="19" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="19" />
+          <folding>
+            <element signature="e#130#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/Entity.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-796">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game/Components/EnemyComponent.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
+          <folding>
+            <element signature="e#48#67#0" expanded="true" />
           </folding>
         </state>
       </provider>

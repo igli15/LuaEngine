@@ -80,8 +80,8 @@ void Engine::Scene::ClearDeadEntities()
             if (m_entities[i]->IsDead())
             {
                 Entity* entity = m_entities[i];
-                m_entities.erase(std::find(m_entities.begin(), m_entities.end(), entity));
                 delete entity;
+                m_entities.erase(std::find(m_entities.begin(), m_entities.end(), entity));
             }
         }
     }

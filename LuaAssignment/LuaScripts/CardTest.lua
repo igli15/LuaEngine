@@ -31,6 +31,15 @@ function InitCards()
     cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,1,damage,ability)
     cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,4,damage,ability)
     cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,5,damage,ability)
+    cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,5,damage,ability)
+    cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,5,damage,ability)
+    cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,5,damage,ability)
+    cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,5,damage,ability)
+    cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,5,damage,ability)
+    cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,5,damage,ability)
+    cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,5,damage,ability)
+
+
 
 end
 

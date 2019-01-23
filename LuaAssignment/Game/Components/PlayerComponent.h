@@ -58,6 +58,7 @@ public:
     int GetFreezeDuration();
     void PlayCard(CardComponent* c);
     void FreezeOpponent();
+    void ClearEnemy();
 
     Hand* GetHand();
     Deck* GetDeck();

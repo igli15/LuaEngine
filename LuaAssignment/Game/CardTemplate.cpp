@@ -131,7 +131,6 @@ CardTemplate::~CardTemplate()
    delete m_image;
    m_image = nullptr;
 
-   m_path = "";
 }
 
 CardTemplate::CardTemplate(const CardTemplate &t) {
