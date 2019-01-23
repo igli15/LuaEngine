@@ -1121,6 +1121,7 @@ CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Card.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/EnemyComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.h
@@ -1222,6 +1223,7 @@ CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Collider.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Component.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Entity.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventQueue.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/EventType.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/Game.h
@@ -1230,9 +1232,11 @@ CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Engine/ResourceManager.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.cpp
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/EnemyComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Deck.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/LuaSrc/lua.h
  /usr/local/include/SFML/Audio.hpp
  /usr/local/include/SFML/Audio/AlResource.hpp
@@ -1347,6 +1351,7 @@ CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.cpp
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/EnemyComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
@@ -1557,6 +1562,7 @@ CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Card.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/EnemyComponent.cpp
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/EnemyComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.h
@@ -1660,6 +1666,7 @@ CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Card.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/EnemyComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.cpp
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.h
@@ -2023,6 +2030,7 @@ CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Card.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/EnemyComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
@@ -2135,6 +2143,7 @@ CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Card.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/EnemyComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/HandSlot.cpp
@@ -2348,6 +2357,7 @@ CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Card.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/EnemyComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h
@@ -2464,6 +2474,7 @@ CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Card.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/CardTemplate.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/CardComponent.h
+ /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/DeckComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/EnemyComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/HandComponent.h
  /Users/igli/Desktop/LuaEngine/LuaAssignment/Game/Components/PlayerComponent.h

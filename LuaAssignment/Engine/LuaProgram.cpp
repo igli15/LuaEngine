@@ -157,4 +157,11 @@ void Engine::LuaProgram::CallGlobalFunction(std::string funcName)
 
 }
 
+void Engine::LuaProgram::CallFunctionInTable(std::string tableName, std::string fieldName)
+{
+    lua_getglobal(m_currentLuaState,tableName.c_str());
+    lua_getfield(m_currentLuaState,-1,fieldName.c_str());
+    lua_pcall(m_currentLuaState,0,0,0);
+}
+
 

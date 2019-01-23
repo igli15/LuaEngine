@@ -26,14 +26,10 @@ void PlayerComponent::Start()
     m_deck->GetDeckComponent()->SetPlayer(this);
 
     for (int i = 0; i < 20; ++i) {
-        CardTemplate *t = new CardTemplate();
-        m_deck->GetDeckComponent()->AddCardTemplate(t);
+       // CardTemplate *t = new CardTemplate();
+       // m_deck->GetDeckComponent()->AddCardTemplate(t);
     }
 
-    for (int j = 0; j < 5 ; ++j) {
-
-        DrawCard();
-    }
 
     SetInstance(this);
 }
@@ -181,7 +177,14 @@ void PlayerComponent::PlayCard(CardComponent *c)
         m_parent->parentScene->DestroyEntity(c->Parent());
 
         if (c->GetAbility() != nullptr)
+        {
             c->GetAbility()();
+            std::cout<<"CALLING ABILITY"<<std::endl;
+        }
+        else
+        {
+            std::cout<<"Ability is null"<<std::endl ;
+        }
     }
 }
 

@@ -48,7 +48,7 @@ void CardComponent::Update(float timeStep)
 
     if(m_selected && !sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
-        if(m_parent->GetWorldPosition().y <= 400)
+        if(m_parent->GetWorldPosition().y <= 600)
         {
             if(m_cost <= m_playerComponent->GetCurrentManaCount())
              m_playerComponent->PlayCard(this);

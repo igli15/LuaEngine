@@ -8,15 +8,27 @@ callbacks  = {
 
 function ability()
 
-    callbacks["decreaseCostOfACard"](1)
-
+   callbacks["freezeOpponent"]();
+    print("LUA ABILITY CALLED")
 end
 
 path = "/Users/igli/Desktop/LuaEngine/LuaAssignment/Assets/"
 
-damage = 5;
+damage = 5
 
-description = "Heey";
+description = "Heey"
+
+function InitCards()
+
+
+    cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,3,damage,ability)
+    cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,3,damage,ability)
+    cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,3,damage,ability)
+    cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,3,damage,ability)
+    cardTemplate.newCard(path.."CardArtTest.png" ,"Test",description,3,damage,ability)
+
+end
+
 
 card = {
 

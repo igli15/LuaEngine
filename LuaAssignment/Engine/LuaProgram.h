@@ -31,6 +31,14 @@ namespace Engine {
         void SetGlobalString(std::string varName,std::string s);
         void SetGlobalBool(std::string varName,bool b);
 
+        void SetNewLibrary(const std::string& name,const struct luaL_Reg library[] )
+        {
+            luaL_newlib(m_currentLuaState,library);
+            lua_setglobal(m_currentLuaState,name.c_str());
+        }
+
+        void CallFunctionInTable(std::string tableNamen,std::string fieldName);
+
         //calls the lua file. used for initializing.
         void CallCurrentProgram();
 
