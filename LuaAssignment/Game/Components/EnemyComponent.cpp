@@ -7,6 +7,7 @@
 
 #include "PlayerComponent.h"
 #include "../../Engine/Utils.h"
+#include "../../Engine/Scene.h"
 #include "../Hand.h"
 #include "HandComponent.h"
 #include <functional>
@@ -32,6 +33,8 @@ void EnemyComponent::Start()
 void EnemyComponent::Update(float timeStep)
 {
     Component::Update(timeStep);
+
+    if(m_health <=0)  m_parent->parentScene->DestroyEntity(m_parent);
 }
 
 void EnemyComponent::DealDamage(int damage)
@@ -98,6 +101,11 @@ void EnemyComponent::Freeze()
 bool EnemyComponent::IsFrozen()
 {
     return m_isFrozen;
+}
+
+EnemyComponent::~EnemyComponent()
+{
+    m_playerComponent = nullptr;
 }
 
 

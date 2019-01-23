@@ -39,6 +39,7 @@ Card* DeckComponent::DrawCard()
     if(m_playerComponent->GetHand()->GetHandComponent()->GetCurrentCardNumber() >= m_playerComponent->GetHand()->GetHandComponent()->GetMaxCardCapacity())
     {
         delete cardTemplate;
+        cardTemplate = nullptr;
         std::cout<<"mill card here"<<std::endl;
         return nullptr;
     }
@@ -63,6 +64,7 @@ void DeckComponent::SetPlayer(PlayerComponent *p)
 
 int DeckComponent::GetNumberOfCardsInDeck()
 {
+    if(this != nullptr)
     return m_cardTemplates.size();
 }
 

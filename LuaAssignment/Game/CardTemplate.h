@@ -23,10 +23,14 @@ protected:
     int m_damage = 0;
     std::function<void()> m_ability;
 
-    Engine::LuaProgram* m_luaProgram;
+    //Engine::LuaProgram* m_luaProgram;
 
 public:
     CardTemplate();
+    ~CardTemplate();
+
+    CardTemplate(const CardTemplate &t);
+    CardTemplate& operator = (const CardTemplate &t);
 
     std::string Name() const;
     std::string Description() const;

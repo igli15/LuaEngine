@@ -11,36 +11,7 @@
 
 CardTemplate::CardTemplate()
 {
-    m_path = "";
-    m_name = "";
-    m_description = "";
-    m_cost = 0;
-    m_damage = 0;
-    m_image = nullptr;
-   /* m_luaProgram = new Engine::LuaProgram("../LuaScripts/CardTest.lua");
-    m_luaProgram->SetNewLibrary("cardTemplate",cardLib);
-    m_luaProgram->CallCurrentProgram();*/
 
-   /* m_luaProgram->PushToTable<std::string, int(*)(lua_State*)>("callbacks","discardCard",HandComponent::luaDiscardRandomCard);
-    m_luaProgram->PushToTable<std::string, int(*)(lua_State*)>("callbacks","drawCard",PlayerComponent::luaDrawCard);
-    m_luaProgram->PushToTable<std::string, int(*)(lua_State*)>("callbacks","freezeOpponent",PlayerComponent::luaFreezeOpponent);
-    m_luaProgram->PushToTable<std::string, int(*)(lua_State *) > ("callbacks", "decreaseCostOfACard", HandComponent::luaDecreaseCostOfACard);
-
-    m_name = m_luaProgram->GetValueFromTable<std::string,std::string>("card","name");
-
-    m_path = m_luaProgram->GetValueFromTable<std::string,std::string>("card","filePath");
-
-    m_image = Engine::Game::Instance()->GetResourceManager()->LoadTexture(m_path,m_name);
-
-    m_description = m_luaProgram->GetValueFromTable<std::string,std::string>("card","description");
-    m_damage = m_luaProgram->GetValueFromTable<std::string,int>("card","damage");
-    m_cost = m_luaProgram->GetValueFromTable<std::string,int>("card","manaCost");*/
-
-   /* m_ability = [this]()
-    {
-        m_luaProgram->GetGlobalFunction("ability",0,0);
-        m_luaProgram->CallGlobalFunction("ability");
-    };*/
 }
 
 std::string CardTemplate::Name() const {
@@ -117,9 +88,9 @@ int CardTemplate::NewCardTemplate(lua_State *lua_state)
     {
         lua_rawgeti(lua_state,LUA_REGISTRYINDEX,m_refIndex);
         lua_pcall(lua_state,0,0,0);
-        //std::cout<<"CALLED"<<std::endl;
-    };
+        luaL_unref(lua_state,LUA_REGISTRYINDEX,m_refIndex);
 
+    };
 
     sf::Texture* image = Engine::Game::Instance()->GetResourceManager()->LoadTexture(path,name);
 
@@ -153,4 +124,21 @@ void CardTemplate::AddCardTemplateToDeck()
 void CardTemplate::SetAbility(std::function<void()> a)
 {
     m_ability = a;
+}
+
+CardTemplate::~CardTemplate()
+{
+   delete m_image;
+   m_image = nullptr;
+
+   m_path = "";
+}
+
+CardTemplate::CardTemplate(const CardTemplate &t) {
+
+}
+
+CardTemplate &CardTemplate::operator=(const CardTemplate &t) {
+
+
 }

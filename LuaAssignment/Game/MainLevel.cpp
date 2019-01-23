@@ -36,8 +36,11 @@ void MainLevel::BuildScene()
     enemyComponent->SetPlayerComponent(playerComponent);
     playerComponent->SetEnemyComponent(enemyComponent);
 
+
     PlayerInfo* info = Instantiate<PlayerInfo>();
     info->SetPlayerComponent(playerComponent);
+
+    p->AddChild(info);
 
     Engine::LuaProgram* m_luaProgram = new Engine::LuaProgram("../LuaScripts/CardTest.lua");
     m_luaProgram->SetNewLibrary("cardTemplate",cardLib);
@@ -52,6 +55,11 @@ void MainLevel::BuildScene()
     m_luaProgram->CallGlobalFunction("InitCards");
 
 playerComponent->OnTurnStart();
+
+    for (int i = 0; i < 6 ; ++i)
+    {
+        playerComponent->DrawCard();
+    }
 
 
 }

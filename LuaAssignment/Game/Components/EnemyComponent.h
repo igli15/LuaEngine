@@ -25,6 +25,8 @@ public:
 
     void FreezePlayer();
 
+    ~EnemyComponent();
+
     void DamagePlayer();
     void DiscardPlayerCard();
 

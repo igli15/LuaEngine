@@ -1554,9 +1554,11 @@ CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Engine/Com
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Engine/Entity.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Engine/IVector.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Engine/LuaProgram.h
+CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Engine/Scene.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Engine/Sprite.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Engine/SpriteRenderer.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Engine/Text.h
+CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Engine/TextComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Engine/Utils.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/Card.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/CardTemplate.h

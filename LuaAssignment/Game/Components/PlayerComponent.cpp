@@ -23,12 +23,17 @@ void PlayerComponent::Start()
 
     m_hand = m_parent->parentScene->Instantiate<Hand>();
     m_deck = m_parent->parentScene->Instantiate<Deck>();
+
+    m_parent->AddChild(m_hand);
+    m_parent->AddChild(m_deck);
+
     m_deck->GetDeckComponent()->SetPlayer(this);
 
     for (int i = 0; i < 20; ++i) {
        // CardTemplate *t = new CardTemplate();
        // m_deck->GetDeckComponent()->AddCardTemplate(t);
     }
+
 
 
     SetInstance(this);
@@ -38,10 +43,17 @@ void PlayerComponent::Update(float timeStep)
 {
     Component::Update(timeStep);
 
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && m_inputDelayClock->getElapsedTime().asSeconds() > 0.25f)
+    std::cout<<m_enemyComponent->Parent()<<std::endl;
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && m_inputDelayClock->getElapsedTime().asSeconds() > 0.25f && m_enemyComponent->Parent()!=
+                                                                                                                             nullptr)
     {
         EndTurn();
         m_inputDelayClock->restart();
+    }
+
+    if(m_health <= 0)
+    {
+        m_parent->parentScene->DestroyEntity(m_parent);
     }
 }
 
@@ -87,7 +99,7 @@ void PlayerComponent::SetEnemyComponent(EnemyComponent *e)
 
 void PlayerComponent::EndTurn()
 {
-    if(m_isTurn)
+    if(m_isTurn && m_enemyComponent->Parent() != nullptr)
     {
         m_isTurn = false;
         m_enemyComponent->OnTurnStart();
@@ -153,6 +165,8 @@ PlayerComponent::~PlayerComponent()
 {
     delete m_inputDelayClock;
     m_inputDelayClock = nullptr;
+
+    m_enemyComponent = nullptr;
 }
 
 void PlayerComponent::Freeze(int freezeDuration)
