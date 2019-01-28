@@ -180,7 +180,7 @@ int PlayerComponent::GetFreezeDuration()
 
 void PlayerComponent::PlayCard(CardComponent *c)
 {
-    if(!m_isFrozen && m_isTurn) {
+    if(!m_isFrozen && m_isTurn && m_enemyComponent != nullptr) {
 
         SpendMana(c->GetCost());
         m_enemyComponent->DealDamage(c->GetDamage());

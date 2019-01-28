@@ -37,7 +37,7 @@ namespace Engine {
             lua_setglobal(m_currentLuaState,name.c_str());
         }
 
-        void CallFunctionInTable(std::string tableNamen,std::string fieldName);
+        void CallFunctionInTable(std::string tableName,std::string fieldName);
 
         //calls the lua file. used for initializing.
         void CallCurrentProgram();

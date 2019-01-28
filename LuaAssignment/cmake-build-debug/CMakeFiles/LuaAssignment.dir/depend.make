@@ -2362,6 +2362,7 @@ CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/Components/DeckCompon
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/Components/HandComponent.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/Components/PlayerComponent.h
+CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/Deck.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/Enemy.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/Hand.h
 CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o: ../Game/HandSlot.h

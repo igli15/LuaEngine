@@ -9,13 +9,14 @@
 #include "../Engine/Text.h"
 #include "../Engine/Game.h"
 #include "../Engine/SpriteRenderer.h"
-#include "../Engine/IVector.h";
+#include "../Engine/IVector.h"
 #include "Card.h"
 #include "Hand.h"
 #include "Player.h"
 #include "PlayerInfo.h"
 #include "Enemy.h"
 #include "CardTemplate.h"
+#include "Deck.h"
 
 
 static const struct luaL_Reg cardLib[]
@@ -54,7 +55,8 @@ void MainLevel::BuildScene()
     m_luaProgram->GetGlobalFunction("InitCards",0,0);
     m_luaProgram->CallGlobalFunction("InitCards");
 
-playerComponent->OnTurnStart();
+    playerComponent->GetDeck()->GetDeckComponent()->ShuffleDeck();
+    playerComponent->OnTurnStart();
 
     for (int i = 0; i < 6 ; ++i)
     {
