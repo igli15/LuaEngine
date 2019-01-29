@@ -14,18 +14,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f3d7eafb-701f-4880-88c3-db6dd240fdc8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Card.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Card.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/EnemyComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/EnemyComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/HandComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/HandComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/PlayerComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Components/PlayerComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/MainGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/MainGame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/MainLevel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/MainLevel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/MainLevel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/MainLevel.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LuaScripts/CardTest.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LuaScripts/CardTest.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LuaAssignment.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LuaAssignment" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LuaAssignment" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -178,7 +167,7 @@
         <counts>
           <entry key="cpp" value="27464" />
           <entry key="h" value="19606" />
-          <entry key="lua" value="2788" />
+          <entry key="lua" value="2789" />
           <entry key="txt" value="156" />
         </counts>
       </usages-collector>
@@ -186,7 +175,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="156" />
           <entry key="Doxygen file" value="15" />
-          <entry key="Lua" value="2622" />
+          <entry key="Lua" value="2623" />
           <entry key="ObjectiveC" value="47055" />
           <entry key="PLAIN_TEXT" value="166" />
         </counts>
@@ -233,8 +222,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LuaScripts/CardTest.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+            <state relative-caret-position="666">
+              <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -593,12 +582,12 @@
       <workItem from="1548350766192" duration="6827000" />
       <workItem from="1548669049963" duration="909000" />
       <workItem from="1548670557594" duration="4267000" />
-      <workItem from="1548700068022" duration="8079000" />
+      <workItem from="1548700068022" duration="8833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="558709000" />
+    <option name="totallyTimeSpent" value="559463000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -613,7 +602,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49693877" visible="true" weight="0.12332112" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49693877" visible="true" weight="0.12332112" />
       <window_info id="Structure" order="1" sideWeight="0.50306123" side_tool="true" weight="0.15934066" />
       <window_info id="Favorites" order="2" sideWeight="0.50306123" side_tool="true" weight="0.15934066" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1021,8 +1010,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LuaScripts/CardTest.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        <state relative-caret-position="666">
+          <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
         </state>
       </provider>
     </entry>
