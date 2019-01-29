@@ -113,10 +113,9 @@ int HandComponent::luaDiscardRandomCard(lua_State *lua_state)
 void HandComponent::DecreaseCostOfACard(int amount)
 {
     std::vector<HandSlot*> v;
-
     for (int i = 0; i < m_cardSlots.size(); ++i)
     {
-        if(!m_cardSlots[i]->IsEmpty())
+        if(!m_cardSlots[i]->IsEmpty() && !m_cardSlots[i]->currentCard->GetComponent<CardComponent>()->isSelected())
         {
             v.push_back(m_cardSlots[i]);
         }

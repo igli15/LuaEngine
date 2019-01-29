@@ -10,6 +10,7 @@
 #include "../Engine/Game.h"
 #include "../Engine/SpriteRenderer.h"
 #include "../Engine/IVector.h"
+#include "../Engine/SceneManager.h"
 #include "Card.h"
 #include "Hand.h"
 #include "Player.h"
@@ -66,6 +67,16 @@ void MainLevel::BuildScene()
 
 }
 
+void MainLevel::UpdateScene(float timeStep)
+{
+    Scene::UpdateScene(timeStep);
+
+   /* if(sf::Keyboard::isKeyPressed(sf::Keyboard::R))
+    {
+        Engine::Game::Instance()->GetSceneManager()->CreateScene<MainLevel>("MainLevel");
+    }*/
+}
+
 MainLevel::~MainLevel()
 {
 
@@ -75,4 +86,5 @@ MainLevel::MainLevel()
 {
 
 }
+
 

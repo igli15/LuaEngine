@@ -14,6 +14,7 @@ public:
     MainLevel();
     ~MainLevel() override;
     void BuildScene() override;
+    void UpdateScene(float timeStep) override;
 
 };
 

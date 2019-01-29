@@ -34,8 +34,8 @@ void Card::Build()
     AddChild(m_cardDescription);
     AddChild(m_cardCost);
 
-    m_cardName->SetLocalPosition(60,95);
-    m_cardDescription->SetLocalPosition(30,135);
+    m_cardName->SetLocalPosition(50,95);
+    m_cardDescription->SetLocalPosition(30,130);
     m_cardCost->SetLocalPosition(17,17);
 
     m_cardName->SetText("Card Name");

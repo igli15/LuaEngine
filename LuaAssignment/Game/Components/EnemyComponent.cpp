@@ -8,6 +8,7 @@
 #include "PlayerComponent.h"
 #include "../../Engine/Utils.h"
 #include "../../Engine/Scene.h"
+#include "../../Engine/Game.h"
 #include "../Hand.h"
 #include "HandComponent.h"
 #include <functional>
@@ -34,7 +35,14 @@ void EnemyComponent::Update(float timeStep)
 {
     Component::Update(timeStep);
 
-    if(m_health <=0)  m_parent->parentScene->DestroyEntity(m_parent);
+    if(m_health <=0)
+    {
+        Engine::Text* t = m_parent->parentScene->Instantiate<Engine::Text>();
+        t->SetText("You Win");
+        t->GetTextComponent()->SetCharacterSize(200);
+        t->SetWorldPosition(Engine::Game::Instance()->Width()/2 - 500,Engine::Game::Instance()->Height()/2 - 200);
+        m_parent->parentScene->DestroyEntity(m_parent);
+    }
 }
 
 void EnemyComponent::DealDamage(int damage)

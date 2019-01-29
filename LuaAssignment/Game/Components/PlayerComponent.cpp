@@ -45,7 +45,12 @@ void PlayerComponent::Update(float timeStep)
 
     if(m_health <= 0)
     {
+        Engine::Text* t = m_parent->parentScene->Instantiate<Engine::Text>();
+        t->SetText("You Lose");
+        t->GetTextComponent()->SetCharacterSize(200);
+        t->SetWorldPosition(Engine::Game::Instance()->Width()/2 - 500,Engine::Game::Instance()->Height()/2 - 200);
         m_parent->parentScene->DestroyEntity(m_parent);
+
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && m_inputDelayClock->getElapsedTime().asSeconds() > 0.25f && m_enemyComponent!= nullptr)

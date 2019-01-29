@@ -32,6 +32,7 @@ void MainGame::LoadResources(Engine::ResourceManager &resourceManager)
     resourceManager.LoadTexture("../Assets/CardTemplate.png","CardBackground");
     resourceManager.LoadTexture("../Assets/EnemyBorder.png","EnemyBorder");
     resourceManager.LoadTexture("../Assets/EnemyArt.png","EnemyArt");
+    resourceManager.LoadFont("../Assets/NormalFont.ttf","TitleFont");
 }
 
 void MainGame::Build()
