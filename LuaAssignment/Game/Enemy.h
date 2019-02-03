@@ -19,9 +19,12 @@ public:
     void Start() override;
     void Update(float timeStep) override;
 
+    void SetAbilityText(const std::string& ability);
+
 private:
 
     Engine::Text* m_healthText;
+    Engine::Text* m_abilityText;
     EnemyComponent* m_enemyComponent;
     Engine::Sprite* m_enemyArtSprite;
     Engine::SpriteRenderer* m_spriteRenderer;

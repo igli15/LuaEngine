@@ -39,9 +39,9 @@ void MainGame::Build()
 {
     Game::Build();   //Used to build the game
 
-    //Engine::LuaProgram* luaProgram = new Engine::LuaProgram("../LuaScripts/CardTest.lua");
+   // Engine::LuaProgram* luaProgram = new Engine::LuaProgram("../LuaScripts/CardTest.lua");
 
-   // luaProgram->CallCurrentProgram();
+    //luaProgram->CallCurrentProgram();
    //luaProgram->PushToTable<std::string, int(*)(lua_State*)>("callbacks","discardCard",HandComponent::luaDiscardRandomCard);
     //std::cout<<luaProgram->GetValueFromTable<std::string,std::string>("test","te")<<std::endl;
    // luaProgram->PushToTable<std::string,int>("test","t",20);

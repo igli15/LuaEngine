@@ -11,6 +11,7 @@
 #include "../../Engine/Scene.h"
 #include "../../Engine/Game.h"
 #include "CardComponent.h"
+#include "EnemyComponent.h"
 
 PlayerComponent* PlayerComponent::instance;
 

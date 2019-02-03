@@ -6,6 +6,8 @@ callbacks  = {
     ["decreaseCostOfACard"] = nil
 }
 
+function sss () end
+
 function ability ()
 
 end
@@ -14,7 +16,7 @@ path = "/Users/igli/Desktop/LuaEngine/LuaAssignment/Assets/"
 
 function InitCards()
 
-    cardTemplate.newCard(path.."1.png" ,"Charlie","Deal 3 Damage\nDrawACard",6,3,function() callbacks["drawCard"](); end)
+    cardTemplate.newCard(path.."1.png" ,"Charlie","Deal 3 Damage\nDrawACard",6,3,function() callbacks["drawCard"](); sss(); end)
     cardTemplate.newCard(path.."2.png" ,"Grubbytia","Deal 2 Damage",2,2,ability)
     cardTemplate.newCard(path.."3.png" ,"Drogtia","Deal 6 Damage",7,6,ability)
     cardTemplate.newCard(path.."4.png" ,"Malereed","Deal 2 Damage \n FreezeEnemy",4,2,function() callbacks["freezeOpponent"](); end)

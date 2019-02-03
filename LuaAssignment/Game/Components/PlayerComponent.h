@@ -8,13 +8,14 @@
 
 #include <SFML/System/Clock.hpp>
 #include "../../Engine/Component.h"
-#include "EnemyComponent.h"
+
 #include "../../LuaSrc/lua.h"
 
 class Hand;
 class Card;
 class Deck;
 class CardComponent;
+class EnemyComponent;
 
 class PlayerComponent : public Engine::Component {
 

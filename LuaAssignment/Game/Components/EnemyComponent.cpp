@@ -11,6 +11,8 @@
 #include "../../Engine/Game.h"
 #include "../Hand.h"
 #include "HandComponent.h"
+#include "../../Engine/LuaProgram.h"
+#include "../Enemy.h"
 #include <functional>
 
 
@@ -18,16 +20,20 @@
 void EnemyComponent::Start()
 {
     Component::Start();
-    m_health = 30;
+
+    Engine::LuaProgram* lua = new Engine::LuaProgram("../LuaScripts/Enemy.lua");
+    lua->CallCurrentProgram();
+
+    m_health = lua->GetValueFromTable<std::string,int>("enemy","health");
 
 
     std::function<void()> freezePlayer = std::bind(&EnemyComponent::FreezePlayer,this);
     std::function<void()> damagePlayer = std::bind(&EnemyComponent::DamagePlayer,this);
     std::function<void()> discardCard = std::bind(&EnemyComponent::DiscardPlayerCard,this);
 
-    m_abilities.push_back(freezePlayer);
-    m_abilities.push_back(damagePlayer);
-    m_abilities.push_back(discardCard);
+    m_abilities["freeze"] = freezePlayer;
+    m_abilities["damage"] = damagePlayer;
+    m_abilities["discard"] = discardCard;
 
 }
 
@@ -67,7 +73,23 @@ void EnemyComponent::OnTurnStart()
     if(!m_isFrozen)
     {
         int randomIndex = Engine::Utils::RandomRange(0, m_abilities.size() - 1);
-        m_abilities[randomIndex]();
+        std::cout<<randomIndex<<std::endl;
+        if(randomIndex == 0 )
+        {
+            m_abilities["freeze"]();
+            dynamic_cast<Enemy*>(m_parent)->SetAbilityText("Freeze");
+        }
+        else if (randomIndex == 1)
+        {
+            m_abilities["damage"]();
+            dynamic_cast<Enemy*>(m_parent)->SetAbilityText("Damage");
+        }
+        else if (randomIndex == 2)
+        {
+            m_abilities["discard"]();
+            dynamic_cast<Enemy*>(m_parent)->SetAbilityText("Discard Card");
+        }
+
     }
 
    EndTurn();

@@ -10,11 +10,16 @@ void Enemy::Build()
 {
     m_healthText = parentScene->Instantiate<Engine::Text>();
     m_enemyInfo = parentScene->Instantiate<Engine::Text>();
+    m_abilityText = parentScene->Instantiate<Engine::Text>();
 
     AddChild(m_healthText);
     AddChild(m_enemyInfo);
+    AddChild(m_abilityText);
 
     m_healthText->SetLocalPosition(150,20);
+
+    m_abilityText->SetLocalPosition(35,135);
+    m_abilityText->SetText("");
 
     m_enemyInfo->SetLocalPosition(150,60);
 
@@ -54,4 +59,9 @@ void Enemy::Update(float timeStep)
         m_enemyInfo->SetText("");
     }
 
+}
+
+void Enemy::SetAbilityText(const std::string &ability)
+{
+    m_abilityText->SetText(ability);
 }

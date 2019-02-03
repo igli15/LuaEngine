@@ -1121,7 +1121,6 @@ CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: ../Game/Card.h
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: ../Game/CardTemplate.h
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: ../Game/Components/CardComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: ../Game/Components/DeckComponent.h
-CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: ../Game/HandSlot.h
 CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o: ../Game/MainGame.h
@@ -1232,7 +1231,6 @@ CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Engine/ResourceManager.
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/CardTemplate.cpp
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/CardTemplate.h
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/Components/DeckComponent.h
-CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/Components/HandComponent.h
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o: ../Game/Deck.h
@@ -1351,7 +1349,6 @@ CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/CardTe
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Components/CardComponent.cpp
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Components/CardComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Components/DeckComponent.h
-CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Components/HandComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o: ../Game/Hand.h
@@ -1466,7 +1463,6 @@ CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Game/CardTe
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Game/Components/CardComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Game/Components/DeckComponent.cpp
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Game/Components/DeckComponent.h
-CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Game/Components/HandComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o: ../Game/Hand.h
@@ -1573,10 +1569,10 @@ CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/Compo
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/Components/HandComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/Components/PlayerComponent.h
+CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/Enemy.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/Hand.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../Game/HandSlot.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../LuaSrc/lua.h
-CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: ../LuaSrc/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -1668,6 +1664,7 @@ CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/in
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/lua/lauxlib.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/lua/lua.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/lua/lua.hpp
+CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/lua/luaconf.h
 CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o: /usr/local/include/lua/lualib.h
 
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Engine/Collider.h
@@ -1690,7 +1687,6 @@ CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Game/Card.h
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Game/CardTemplate.h
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Game/Components/CardComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Game/Components/DeckComponent.h
-CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Game/Components/HandComponent.cpp
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Game/Components/HandComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o: ../Game/Components/PlayerComponent.h
@@ -2036,6 +2032,8 @@ CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o: /usr/local/include/SFML/Window/Vi
 CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o: /usr/local/include/SFML/Window/Window.hpp
 CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
+CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o: /usr/local/include/lua/lua.h
+CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o: /usr/local/include/lua/luaconf.h
 
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../Engine/Collider.h
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../Engine/Component.h
@@ -2054,7 +2052,6 @@ CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../Game/Card.h
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../Game/CardTemplate.h
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../Game/Components/CardComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../Game/Components/DeckComponent.h
-CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../Game/Components/HandComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o: ../Game/Hand.cpp
@@ -2167,7 +2164,6 @@ CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Game/Card.h
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Game/CardTemplate.h
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Game/Components/CardComponent.h
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Game/Components/DeckComponent.h
-CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Game/HandSlot.cpp
 CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o: ../Game/HandSlot.h
@@ -2500,7 +2496,6 @@ CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../Game/Card.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../Game/CardTemplate.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../Game/Components/CardComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../Game/Components/DeckComponent.h
-CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../Game/Components/HandComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o: ../Game/Hand.h
@@ -2604,7 +2599,6 @@ CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../Game/Card.h
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../Game/CardTemplate.h
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../Game/Components/CardComponent.h
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../Game/Components/DeckComponent.h
-CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../Game/Components/EnemyComponent.h
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../Game/Components/HandComponent.h
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../Game/Components/PlayerComponent.h
 CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o: ../Game/Deck.h

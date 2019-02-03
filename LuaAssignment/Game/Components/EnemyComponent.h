@@ -6,10 +6,14 @@
 #define LUAASSIGNMENT_ENEMYCOMPONENT_H
 
 #include "../../Engine/Component.h"
+extern "C"
+{
+#include <lua.h>
+}
 
 #include <iostream>
 #include <vector>
-
+#include <map>
 
 class PlayerComponent;
 
@@ -44,7 +48,8 @@ private:
 
     PlayerComponent* m_playerComponent;
 
-    std::vector<std::function<void()>> m_abilities;
+    //std::vector<std::function<void()>> m_abilities;
+    std::map<std::string,std::function<void()>> m_abilities;
 
     bool m_isFrozen = 0;
 };
