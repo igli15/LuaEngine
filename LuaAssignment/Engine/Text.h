@@ -19,9 +19,11 @@ private:
 public:
     Text();
     void Build() override;
-    void ScaleEntity(const float& scaleX,const float & scaleY) override;
-    void SetPosition(float x,float y) override;
-
+    void Start() override;
+    void ScaleEntityLocal(const float &scaleX, const float &scaleY) override;
+    void SetLocalPosition(float x, float y) override;
+    void SetText(const std::string& text);
+    TextComponent* GetTextComponent();
     };
 
 }

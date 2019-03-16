@@ -8,17 +8,15 @@
 #include "SpriteRenderer.h"
 #include <iostream>
 
-Engine::Scene::Scene(const std::string &name)
+Engine::Scene::Scene()
 {
-    m_name = name;
+
 }
 
 std::string Engine::Scene::GetName()
 {
     return m_name;
 }
-
-
 
 void Engine::Scene::RenderAllEntities(sf::RenderWindow& window)
 {
@@ -27,15 +25,6 @@ void Engine::Scene::RenderAllEntities(sf::RenderWindow& window)
     for (int i = m_spriteRenderVector.size() -1 ; i >= 0; i--)
     {
         m_spriteRenderVector[i]->RenderSprite(window);
-    }
-}
-
-
-void Engine::Scene::StartScene()
-{
-    for(int i = m_entities.size() - 1; i >= 0; i-- )
-    {
-        m_entities[i]->Start();
     }
 }
 
@@ -59,6 +48,11 @@ void Engine::Scene::DestroyEntity(Engine::Entity *objToDestroy)
 {
     objToDestroy->MarkEntityForDeletion();
 
+    for (int i = 0; i < objToDestroy->GetChildCount(); ++i) {
+
+        objToDestroy->GetChildAt(i)->MarkEntityForDeletion();
+
+    }
 }
 
 void Engine::Scene::DestroyAllEntities()
@@ -86,8 +80,8 @@ void Engine::Scene::ClearDeadEntities()
             if (m_entities[i]->IsDead())
             {
                 Entity* entity = m_entities[i];
-                m_entities.erase(std::find(m_entities.begin(), m_entities.end(), entity));
                 delete entity;
+                m_entities.erase(std::find(m_entities.begin(), m_entities.end(), entity));
             }
         }
     }
@@ -99,6 +93,11 @@ void Engine::Scene::RenderAllText(sf::RenderWindow& window)
     {
         m_textRenderVector[i]->DrawText(window);
     }
+}
+
+void Engine::Scene::SetName(const std::string &name)
+{
+    m_name = name;
 }
 
 

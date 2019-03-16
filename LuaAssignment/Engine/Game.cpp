@@ -8,7 +8,9 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <iostream>
 #include "SceneManager.h"
-//#include "../Game/MainMenu.h"
+
+#include "EventQueue.h"
+
 
 
 Engine::SceneManager* Engine::Game::m_sceneManager;
@@ -17,12 +19,17 @@ Engine::Game* Engine::Game::instance;
 
 Engine::Physics* Engine::Game::m_physics;
 
+Engine::EventQueue* Engine::Game::m_eventQueue;
+
+Engine::ResourceManager* Engine::Game::m_resourceManager;
+
 Engine::Game::Game(unsigned int width, unsigned int height,std::string gameTitle)
 {
     instance = this;
     m_width = width;
     m_height = height;
     m_title = gameTitle;
+
 }
 
 
@@ -30,7 +37,9 @@ void Engine::Game::Build()
 {
     m_screenBits = sf::VideoMode::getDesktopMode().bitsPerPixel;
     m_physics = GetPhysics();
+
     m_sceneManager = GetSceneManager();
+    m_eventQueue = GetEventQueue();
     m_window = new sf::RenderWindow(sf::VideoMode(m_width,m_height,m_screenBits),m_title);
    // (m_sceneManager->CreateScene<MainMenu>("MainMenu"));
 }
@@ -55,6 +64,8 @@ void Engine::Game::Gameloop()
             physicsIsUpdated = true;
 
             m_sceneManager->ClearDestroyedScene();
+
+            m_eventQueue->HandleEvents();
 
             if(m_sceneManager->GetCurrentScene() != nullptr)
             {
@@ -123,6 +134,32 @@ unsigned int Engine::Game::Width()
 unsigned int Engine::Game::Height()
 {
     return m_height;
+}
+
+Engine::EventQueue *Engine::Game::GetEventQueue()
+{
+    if(m_eventQueue == nullptr) return new EventQueue();
+    return m_eventQueue;
+}
+
+sf::RenderWindow *Engine::Game::GetWindow()
+{
+    return m_window;
+}
+
+Engine::ResourceManager *Engine::Game::GetResourceManager()
+{
+    if(m_resourceManager == nullptr) return new ResourceManager();
+
+
+    return m_resourceManager;
+}
+
+void Engine::Game::LoadResources(Engine::ResourceManager &manager)
+{
+    m_resourceManager = &manager;
+    manager.LoadTexture("../Assets/ErrorTexture.png","ErrorTexture");
+    manager.LoadFont("../Assets/DefaultFont.ttf","DefaultFont");
 }
 
 

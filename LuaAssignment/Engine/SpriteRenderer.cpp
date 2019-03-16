@@ -11,7 +11,17 @@ void Engine::SpriteRenderer::RenderSprite(sf::RenderWindow &window)
 {
     if(m_sprite != nullptr)
     {
-        window.draw(*m_sprite);
+        sf::RenderStates spriteRenderStates(m_sprite->getTransform());
+
+        spriteRenderStates.transform *= m_parent->getTransform();
+
+        if(m_parent->GetParentEntity() != nullptr)
+        {
+            spriteRenderStates.transform *= m_parent->GetParentEntity()->getTransform();
+        }
+
+
+        window.draw(*m_sprite,spriteRenderStates);
     }
 
 }
@@ -46,7 +56,7 @@ void Engine::SpriteRenderer::CreateSprite(const std::string& filename)
     m_texture->loadFromFile(filename);
     m_sprite = new sf::Sprite();
     m_sprite->setTexture(*m_texture);
-    m_sprite->setOrigin(m_sprite->getGlobalBounds().width/2,m_sprite->getGlobalBounds().height/2);
+    //m_sprite->setOrigin(m_sprite->getLocalBounds().width/2,m_sprite->getLocalBounds().height/2);
 }
 
 sf::Sprite *Engine::SpriteRenderer::GetSprite()
@@ -59,7 +69,6 @@ void Engine::SpriteRenderer::Start()
 {
     Component::Start();
     m_parent->parentScene->m_spriteRenderVector.push_back(this);
-    //std::cout<<"Added"<<std::endl;
 }
 
 Engine::SpriteRenderer::~SpriteRenderer()
@@ -73,13 +82,47 @@ Engine::SpriteRenderer::~SpriteRenderer()
         m_parent->parentScene->m_spriteRenderVector.erase(iterator);
     }
 
-    delete m_texture;
+    //TODO SMTH MAY GO WRONG HERE
+    
+    // delete m_texture;
     m_texture = nullptr;
     m_sprite = nullptr;
 }
 
 Engine::SpriteRenderer::SpriteRenderer()
 {
+
+}
+
+sf::Sprite *Engine::SpriteRenderer::ApplyTexture(sf::Texture *texture)
+{
+    if(m_sprite == nullptr)
+    {
+        m_texture = texture;
+        m_sprite = new sf::Sprite();
+        m_sprite->setTexture(*m_texture);
+
+        m_parent->ApplySprite(m_sprite);
+        m_parent->SetWidth(m_sprite->getGlobalBounds().width);
+        m_parent->SetHeight(m_sprite->getGlobalBounds().height);
+        return m_sprite;
+    }
+    else
+    {
+        delete m_sprite;
+        m_sprite = nullptr;
+        delete m_texture;
+        m_texture = nullptr;
+
+        m_texture = texture;
+        m_sprite = new sf::Sprite();
+        m_sprite->setTexture(*m_texture);
+
+        m_parent->ApplySprite(m_sprite);
+        m_parent->SetWidth(m_sprite->getGlobalBounds().width);
+        m_parent->SetHeight(m_sprite->getGlobalBounds().height);
+        return m_sprite;
+    }
 }
 
 

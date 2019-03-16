@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/igli/Desktop/LuaAssignment
+CMAKE_SOURCE_DIR = /Users/igli/Desktop/LuaEngine/LuaAssignment
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/igli/Desktop/LuaAssignment/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/igli/Desktop/LuaAssignment/cmake-build-debug/CMakeFiles /Users/igli/Desktop/LuaAssignment/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles /Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/igli/Desktop/LuaAssignment/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/igli/Desktop/LuaEngine/LuaAssignment/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -231,6 +231,60 @@ Engine/Entity.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/Entity.cpp.s
 .PHONY : Engine/Entity.cpp.s
 
+Engine/EventQueue.o: Engine/EventQueue.cpp.o
+
+.PHONY : Engine/EventQueue.o
+
+# target to build an object file
+Engine/EventQueue.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.o
+.PHONY : Engine/EventQueue.cpp.o
+
+Engine/EventQueue.i: Engine/EventQueue.cpp.i
+
+.PHONY : Engine/EventQueue.i
+
+# target to preprocess a source file
+Engine/EventQueue.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.i
+.PHONY : Engine/EventQueue.cpp.i
+
+Engine/EventQueue.s: Engine/EventQueue.cpp.s
+
+.PHONY : Engine/EventQueue.s
+
+# target to generate assembly for a file
+Engine/EventQueue.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/EventQueue.cpp.s
+.PHONY : Engine/EventQueue.cpp.s
+
+Engine/EventType.o: Engine/EventType.cpp.o
+
+.PHONY : Engine/EventType.o
+
+# target to build an object file
+Engine/EventType.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.o
+.PHONY : Engine/EventType.cpp.o
+
+Engine/EventType.i: Engine/EventType.cpp.i
+
+.PHONY : Engine/EventType.i
+
+# target to preprocess a source file
+Engine/EventType.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.i
+.PHONY : Engine/EventType.cpp.i
+
+Engine/EventType.s: Engine/EventType.cpp.s
+
+.PHONY : Engine/EventType.s
+
+# target to generate assembly for a file
+Engine/EventType.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/EventType.cpp.s
+.PHONY : Engine/EventType.cpp.s
+
 Engine/Game.o: Engine/Game.cpp.o
 
 .PHONY : Engine/Game.o
@@ -285,6 +339,33 @@ Engine/IVector.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/IVector.cpp.s
 .PHONY : Engine/IVector.cpp.s
 
+Engine/LuaProgram.o: Engine/LuaProgram.cpp.o
+
+.PHONY : Engine/LuaProgram.o
+
+# target to build an object file
+Engine/LuaProgram.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/LuaProgram.cpp.o
+.PHONY : Engine/LuaProgram.cpp.o
+
+Engine/LuaProgram.i: Engine/LuaProgram.cpp.i
+
+.PHONY : Engine/LuaProgram.i
+
+# target to preprocess a source file
+Engine/LuaProgram.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/LuaProgram.cpp.i
+.PHONY : Engine/LuaProgram.cpp.i
+
+Engine/LuaProgram.s: Engine/LuaProgram.cpp.s
+
+.PHONY : Engine/LuaProgram.s
+
+# target to generate assembly for a file
+Engine/LuaProgram.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/LuaProgram.cpp.s
+.PHONY : Engine/LuaProgram.cpp.s
+
 Engine/Physics.o: Engine/Physics.cpp.o
 
 .PHONY : Engine/Physics.o
@@ -311,6 +392,33 @@ Engine/Physics.s: Engine/Physics.cpp.s
 Engine/Physics.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/Physics.cpp.s
 .PHONY : Engine/Physics.cpp.s
+
+Engine/ResourceManager.o: Engine/ResourceManager.cpp.o
+
+.PHONY : Engine/ResourceManager.o
+
+# target to build an object file
+Engine/ResourceManager.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/ResourceManager.cpp.o
+.PHONY : Engine/ResourceManager.cpp.o
+
+Engine/ResourceManager.i: Engine/ResourceManager.cpp.i
+
+.PHONY : Engine/ResourceManager.i
+
+# target to preprocess a source file
+Engine/ResourceManager.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/ResourceManager.cpp.i
+.PHONY : Engine/ResourceManager.cpp.i
+
+Engine/ResourceManager.s: Engine/ResourceManager.cpp.s
+
+.PHONY : Engine/ResourceManager.s
+
+# target to generate assembly for a file
+Engine/ResourceManager.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/ResourceManager.cpp.s
+.PHONY : Engine/ResourceManager.cpp.s
 
 Engine/Rigidbody.o: Engine/Rigidbody.cpp.o
 
@@ -392,6 +500,33 @@ Engine/SceneManager.s: Engine/SceneManager.cpp.s
 Engine/SceneManager.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/SceneManager.cpp.s
 .PHONY : Engine/SceneManager.cpp.s
+
+Engine/Sprite.o: Engine/Sprite.cpp.o
+
+.PHONY : Engine/Sprite.o
+
+# target to build an object file
+Engine/Sprite.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/Sprite.cpp.o
+.PHONY : Engine/Sprite.cpp.o
+
+Engine/Sprite.i: Engine/Sprite.cpp.i
+
+.PHONY : Engine/Sprite.i
+
+# target to preprocess a source file
+Engine/Sprite.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/Sprite.cpp.i
+.PHONY : Engine/Sprite.cpp.i
+
+Engine/Sprite.s: Engine/Sprite.cpp.s
+
+.PHONY : Engine/Sprite.s
+
+# target to generate assembly for a file
+Engine/Sprite.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/Sprite.cpp.s
+.PHONY : Engine/Sprite.cpp.s
 
 Engine/SpriteRenderer.o: Engine/SpriteRenderer.cpp.o
 
@@ -528,6 +663,303 @@ Engine/main.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Engine/main.cpp.s
 .PHONY : Engine/main.cpp.s
 
+Game/Card.o: Game/Card.cpp.o
+
+.PHONY : Game/Card.o
+
+# target to build an object file
+Game/Card.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Card.cpp.o
+.PHONY : Game/Card.cpp.o
+
+Game/Card.i: Game/Card.cpp.i
+
+.PHONY : Game/Card.i
+
+# target to preprocess a source file
+Game/Card.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Card.cpp.i
+.PHONY : Game/Card.cpp.i
+
+Game/Card.s: Game/Card.cpp.s
+
+.PHONY : Game/Card.s
+
+# target to generate assembly for a file
+Game/Card.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Card.cpp.s
+.PHONY : Game/Card.cpp.s
+
+Game/CardTemplate.o: Game/CardTemplate.cpp.o
+
+.PHONY : Game/CardTemplate.o
+
+# target to build an object file
+Game/CardTemplate.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.o
+.PHONY : Game/CardTemplate.cpp.o
+
+Game/CardTemplate.i: Game/CardTemplate.cpp.i
+
+.PHONY : Game/CardTemplate.i
+
+# target to preprocess a source file
+Game/CardTemplate.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.i
+.PHONY : Game/CardTemplate.cpp.i
+
+Game/CardTemplate.s: Game/CardTemplate.cpp.s
+
+.PHONY : Game/CardTemplate.s
+
+# target to generate assembly for a file
+Game/CardTemplate.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/CardTemplate.cpp.s
+.PHONY : Game/CardTemplate.cpp.s
+
+Game/Components/CardComponent.o: Game/Components/CardComponent.cpp.o
+
+.PHONY : Game/Components/CardComponent.o
+
+# target to build an object file
+Game/Components/CardComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.o
+.PHONY : Game/Components/CardComponent.cpp.o
+
+Game/Components/CardComponent.i: Game/Components/CardComponent.cpp.i
+
+.PHONY : Game/Components/CardComponent.i
+
+# target to preprocess a source file
+Game/Components/CardComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.i
+.PHONY : Game/Components/CardComponent.cpp.i
+
+Game/Components/CardComponent.s: Game/Components/CardComponent.cpp.s
+
+.PHONY : Game/Components/CardComponent.s
+
+# target to generate assembly for a file
+Game/Components/CardComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/CardComponent.cpp.s
+.PHONY : Game/Components/CardComponent.cpp.s
+
+Game/Components/DeckComponent.o: Game/Components/DeckComponent.cpp.o
+
+.PHONY : Game/Components/DeckComponent.o
+
+# target to build an object file
+Game/Components/DeckComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.o
+.PHONY : Game/Components/DeckComponent.cpp.o
+
+Game/Components/DeckComponent.i: Game/Components/DeckComponent.cpp.i
+
+.PHONY : Game/Components/DeckComponent.i
+
+# target to preprocess a source file
+Game/Components/DeckComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.i
+.PHONY : Game/Components/DeckComponent.cpp.i
+
+Game/Components/DeckComponent.s: Game/Components/DeckComponent.cpp.s
+
+.PHONY : Game/Components/DeckComponent.s
+
+# target to generate assembly for a file
+Game/Components/DeckComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/DeckComponent.cpp.s
+.PHONY : Game/Components/DeckComponent.cpp.s
+
+Game/Components/EnemyComponent.o: Game/Components/EnemyComponent.cpp.o
+
+.PHONY : Game/Components/EnemyComponent.o
+
+# target to build an object file
+Game/Components/EnemyComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.o
+.PHONY : Game/Components/EnemyComponent.cpp.o
+
+Game/Components/EnemyComponent.i: Game/Components/EnemyComponent.cpp.i
+
+.PHONY : Game/Components/EnemyComponent.i
+
+# target to preprocess a source file
+Game/Components/EnemyComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.i
+.PHONY : Game/Components/EnemyComponent.cpp.i
+
+Game/Components/EnemyComponent.s: Game/Components/EnemyComponent.cpp.s
+
+.PHONY : Game/Components/EnemyComponent.s
+
+# target to generate assembly for a file
+Game/Components/EnemyComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/EnemyComponent.cpp.s
+.PHONY : Game/Components/EnemyComponent.cpp.s
+
+Game/Components/HandComponent.o: Game/Components/HandComponent.cpp.o
+
+.PHONY : Game/Components/HandComponent.o
+
+# target to build an object file
+Game/Components/HandComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.o
+.PHONY : Game/Components/HandComponent.cpp.o
+
+Game/Components/HandComponent.i: Game/Components/HandComponent.cpp.i
+
+.PHONY : Game/Components/HandComponent.i
+
+# target to preprocess a source file
+Game/Components/HandComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.i
+.PHONY : Game/Components/HandComponent.cpp.i
+
+Game/Components/HandComponent.s: Game/Components/HandComponent.cpp.s
+
+.PHONY : Game/Components/HandComponent.s
+
+# target to generate assembly for a file
+Game/Components/HandComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/HandComponent.cpp.s
+.PHONY : Game/Components/HandComponent.cpp.s
+
+Game/Components/PlayerComponent.o: Game/Components/PlayerComponent.cpp.o
+
+.PHONY : Game/Components/PlayerComponent.o
+
+# target to build an object file
+Game/Components/PlayerComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.o
+.PHONY : Game/Components/PlayerComponent.cpp.o
+
+Game/Components/PlayerComponent.i: Game/Components/PlayerComponent.cpp.i
+
+.PHONY : Game/Components/PlayerComponent.i
+
+# target to preprocess a source file
+Game/Components/PlayerComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.i
+.PHONY : Game/Components/PlayerComponent.cpp.i
+
+Game/Components/PlayerComponent.s: Game/Components/PlayerComponent.cpp.s
+
+.PHONY : Game/Components/PlayerComponent.s
+
+# target to generate assembly for a file
+Game/Components/PlayerComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Components/PlayerComponent.cpp.s
+.PHONY : Game/Components/PlayerComponent.cpp.s
+
+Game/Deck.o: Game/Deck.cpp.o
+
+.PHONY : Game/Deck.o
+
+# target to build an object file
+Game/Deck.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.o
+.PHONY : Game/Deck.cpp.o
+
+Game/Deck.i: Game/Deck.cpp.i
+
+.PHONY : Game/Deck.i
+
+# target to preprocess a source file
+Game/Deck.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.i
+.PHONY : Game/Deck.cpp.i
+
+Game/Deck.s: Game/Deck.cpp.s
+
+.PHONY : Game/Deck.s
+
+# target to generate assembly for a file
+Game/Deck.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Deck.cpp.s
+.PHONY : Game/Deck.cpp.s
+
+Game/Enemy.o: Game/Enemy.cpp.o
+
+.PHONY : Game/Enemy.o
+
+# target to build an object file
+Game/Enemy.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.o
+.PHONY : Game/Enemy.cpp.o
+
+Game/Enemy.i: Game/Enemy.cpp.i
+
+.PHONY : Game/Enemy.i
+
+# target to preprocess a source file
+Game/Enemy.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.i
+.PHONY : Game/Enemy.cpp.i
+
+Game/Enemy.s: Game/Enemy.cpp.s
+
+.PHONY : Game/Enemy.s
+
+# target to generate assembly for a file
+Game/Enemy.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Enemy.cpp.s
+.PHONY : Game/Enemy.cpp.s
+
+Game/Hand.o: Game/Hand.cpp.o
+
+.PHONY : Game/Hand.o
+
+# target to build an object file
+Game/Hand.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.o
+.PHONY : Game/Hand.cpp.o
+
+Game/Hand.i: Game/Hand.cpp.i
+
+.PHONY : Game/Hand.i
+
+# target to preprocess a source file
+Game/Hand.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.i
+.PHONY : Game/Hand.cpp.i
+
+Game/Hand.s: Game/Hand.cpp.s
+
+.PHONY : Game/Hand.s
+
+# target to generate assembly for a file
+Game/Hand.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Hand.cpp.s
+.PHONY : Game/Hand.cpp.s
+
+Game/HandSlot.o: Game/HandSlot.cpp.o
+
+.PHONY : Game/HandSlot.o
+
+# target to build an object file
+Game/HandSlot.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.o
+.PHONY : Game/HandSlot.cpp.o
+
+Game/HandSlot.i: Game/HandSlot.cpp.i
+
+.PHONY : Game/HandSlot.i
+
+# target to preprocess a source file
+Game/HandSlot.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.i
+.PHONY : Game/HandSlot.cpp.i
+
+Game/HandSlot.s: Game/HandSlot.cpp.s
+
+.PHONY : Game/HandSlot.s
+
+# target to generate assembly for a file
+Game/HandSlot.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/HandSlot.cpp.s
+.PHONY : Game/HandSlot.cpp.s
+
 Game/MainGame.o: Game/MainGame.cpp.o
 
 .PHONY : Game/MainGame.o
@@ -554,6 +986,114 @@ Game/MainGame.s: Game/MainGame.cpp.s
 Game/MainGame.cpp.s:
 	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/MainGame.cpp.s
 .PHONY : Game/MainGame.cpp.s
+
+Game/MainLevel.o: Game/MainLevel.cpp.o
+
+.PHONY : Game/MainLevel.o
+
+# target to build an object file
+Game/MainLevel.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.o
+.PHONY : Game/MainLevel.cpp.o
+
+Game/MainLevel.i: Game/MainLevel.cpp.i
+
+.PHONY : Game/MainLevel.i
+
+# target to preprocess a source file
+Game/MainLevel.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.i
+.PHONY : Game/MainLevel.cpp.i
+
+Game/MainLevel.s: Game/MainLevel.cpp.s
+
+.PHONY : Game/MainLevel.s
+
+# target to generate assembly for a file
+Game/MainLevel.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/MainLevel.cpp.s
+.PHONY : Game/MainLevel.cpp.s
+
+Game/Player.o: Game/Player.cpp.o
+
+.PHONY : Game/Player.o
+
+# target to build an object file
+Game/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Player.cpp.o
+.PHONY : Game/Player.cpp.o
+
+Game/Player.i: Game/Player.cpp.i
+
+.PHONY : Game/Player.i
+
+# target to preprocess a source file
+Game/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Player.cpp.i
+.PHONY : Game/Player.cpp.i
+
+Game/Player.s: Game/Player.cpp.s
+
+.PHONY : Game/Player.s
+
+# target to generate assembly for a file
+Game/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/Player.cpp.s
+.PHONY : Game/Player.cpp.s
+
+Game/PlayerInfo.o: Game/PlayerInfo.cpp.o
+
+.PHONY : Game/PlayerInfo.o
+
+# target to build an object file
+Game/PlayerInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.o
+.PHONY : Game/PlayerInfo.cpp.o
+
+Game/PlayerInfo.i: Game/PlayerInfo.cpp.i
+
+.PHONY : Game/PlayerInfo.i
+
+# target to preprocess a source file
+Game/PlayerInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.i
+.PHONY : Game/PlayerInfo.cpp.i
+
+Game/PlayerInfo.s: Game/PlayerInfo.cpp.s
+
+.PHONY : Game/PlayerInfo.s
+
+# target to generate assembly for a file
+Game/PlayerInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/PlayerInfo.cpp.s
+.PHONY : Game/PlayerInfo.cpp.s
+
+Game/TestEvent.o: Game/TestEvent.cpp.o
+
+.PHONY : Game/TestEvent.o
+
+# target to build an object file
+Game/TestEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.o
+.PHONY : Game/TestEvent.cpp.o
+
+Game/TestEvent.i: Game/TestEvent.cpp.i
+
+.PHONY : Game/TestEvent.i
+
+# target to preprocess a source file
+Game/TestEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.i
+.PHONY : Game/TestEvent.cpp.i
+
+Game/TestEvent.s: Game/TestEvent.cpp.s
+
+.PHONY : Game/TestEvent.s
+
+# target to generate assembly for a file
+Game/TestEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaAssignment.dir/build.make CMakeFiles/LuaAssignment.dir/Game/TestEvent.cpp.s
+.PHONY : Game/TestEvent.cpp.s
 
 TestComponent.o: TestComponent.cpp.o
 
@@ -603,15 +1143,27 @@ help:
 	@echo "... Engine/Entity.o"
 	@echo "... Engine/Entity.i"
 	@echo "... Engine/Entity.s"
+	@echo "... Engine/EventQueue.o"
+	@echo "... Engine/EventQueue.i"
+	@echo "... Engine/EventQueue.s"
+	@echo "... Engine/EventType.o"
+	@echo "... Engine/EventType.i"
+	@echo "... Engine/EventType.s"
 	@echo "... Engine/Game.o"
 	@echo "... Engine/Game.i"
 	@echo "... Engine/Game.s"
 	@echo "... Engine/IVector.o"
 	@echo "... Engine/IVector.i"
 	@echo "... Engine/IVector.s"
+	@echo "... Engine/LuaProgram.o"
+	@echo "... Engine/LuaProgram.i"
+	@echo "... Engine/LuaProgram.s"
 	@echo "... Engine/Physics.o"
 	@echo "... Engine/Physics.i"
 	@echo "... Engine/Physics.s"
+	@echo "... Engine/ResourceManager.o"
+	@echo "... Engine/ResourceManager.i"
+	@echo "... Engine/ResourceManager.s"
 	@echo "... Engine/Rigidbody.o"
 	@echo "... Engine/Rigidbody.i"
 	@echo "... Engine/Rigidbody.s"
@@ -621,6 +1173,9 @@ help:
 	@echo "... Engine/SceneManager.o"
 	@echo "... Engine/SceneManager.i"
 	@echo "... Engine/SceneManager.s"
+	@echo "... Engine/Sprite.o"
+	@echo "... Engine/Sprite.i"
+	@echo "... Engine/Sprite.s"
 	@echo "... Engine/SpriteRenderer.o"
 	@echo "... Engine/SpriteRenderer.i"
 	@echo "... Engine/SpriteRenderer.s"
@@ -636,9 +1191,54 @@ help:
 	@echo "... Engine/main.o"
 	@echo "... Engine/main.i"
 	@echo "... Engine/main.s"
+	@echo "... Game/Card.o"
+	@echo "... Game/Card.i"
+	@echo "... Game/Card.s"
+	@echo "... Game/CardTemplate.o"
+	@echo "... Game/CardTemplate.i"
+	@echo "... Game/CardTemplate.s"
+	@echo "... Game/Components/CardComponent.o"
+	@echo "... Game/Components/CardComponent.i"
+	@echo "... Game/Components/CardComponent.s"
+	@echo "... Game/Components/DeckComponent.o"
+	@echo "... Game/Components/DeckComponent.i"
+	@echo "... Game/Components/DeckComponent.s"
+	@echo "... Game/Components/EnemyComponent.o"
+	@echo "... Game/Components/EnemyComponent.i"
+	@echo "... Game/Components/EnemyComponent.s"
+	@echo "... Game/Components/HandComponent.o"
+	@echo "... Game/Components/HandComponent.i"
+	@echo "... Game/Components/HandComponent.s"
+	@echo "... Game/Components/PlayerComponent.o"
+	@echo "... Game/Components/PlayerComponent.i"
+	@echo "... Game/Components/PlayerComponent.s"
+	@echo "... Game/Deck.o"
+	@echo "... Game/Deck.i"
+	@echo "... Game/Deck.s"
+	@echo "... Game/Enemy.o"
+	@echo "... Game/Enemy.i"
+	@echo "... Game/Enemy.s"
+	@echo "... Game/Hand.o"
+	@echo "... Game/Hand.i"
+	@echo "... Game/Hand.s"
+	@echo "... Game/HandSlot.o"
+	@echo "... Game/HandSlot.i"
+	@echo "... Game/HandSlot.s"
 	@echo "... Game/MainGame.o"
 	@echo "... Game/MainGame.i"
 	@echo "... Game/MainGame.s"
+	@echo "... Game/MainLevel.o"
+	@echo "... Game/MainLevel.i"
+	@echo "... Game/MainLevel.s"
+	@echo "... Game/Player.o"
+	@echo "... Game/Player.i"
+	@echo "... Game/Player.s"
+	@echo "... Game/PlayerInfo.o"
+	@echo "... Game/PlayerInfo.i"
+	@echo "... Game/PlayerInfo.s"
+	@echo "... Game/TestEvent.o"
+	@echo "... Game/TestEvent.i"
+	@echo "... Game/TestEvent.s"
 	@echo "... TestComponent.o"
 	@echo "... TestComponent.i"
 	@echo "... TestComponent.s"

@@ -21,8 +21,8 @@ void Engine::Collider::Start()
     m_width = m_parent->Width();
     m_height = m_parent->Height();
 
-    m_x = m_parent->GetPosition().x;
-    m_y = m_parent->GetPosition().y;
+    m_x = m_parent->GetWorldPosition().x;
+    m_y = m_parent->GetWorldPosition().y;
 }
 
 
@@ -32,8 +32,8 @@ void Engine::Collider::Update(float timeStep)
 
 
     CheckForAllCollisions();
-    m_x = m_parent->GetPosition().x;
-    m_y = m_parent->GetPosition().y;
+    m_x = m_parent->GetWorldPosition().x;
+    m_y = m_parent->GetWorldPosition().y;
 
 }
 

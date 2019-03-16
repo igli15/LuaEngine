@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/lua.dir/Engine/main.cpp.o  -o lua /usr/local/lib/liblua5.3.dylib 

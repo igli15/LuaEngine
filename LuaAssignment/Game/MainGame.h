@@ -12,7 +12,11 @@ class MainGame : public Engine::Game {
 public:
 
     MainGame();
+    void LoadResources(Engine::ResourceManager& resourceManager) override;
+    void Build() override;
+
 };
+
 
 
 #endif //SMFLPROJECT_MAINGAME_H

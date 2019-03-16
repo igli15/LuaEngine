@@ -17,12 +17,14 @@ namespace Engine
             sf::Sprite* m_sprite = nullptr;
             sf::Texture* m_texture = nullptr;
             void CreateSprite(const std::string& filename);
+
     public:
         SpriteRenderer();
         ~SpriteRenderer() override;
         void Start() override;
        void RenderSprite(sf::RenderWindow& window);
        sf::Sprite* ApplySprite(const std::string& filename);
+       sf::Sprite* ApplyTexture(sf::Texture *texture);
        sf::Sprite* GetSprite();
     };
 }
